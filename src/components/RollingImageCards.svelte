@@ -10,22 +10,38 @@
     onMount(() => {
         setInterval(() => {
             showIndex = (showIndex + 1) % images.length;
-        }, 3000);
+            console.log("XXXX timer set showIndex to: ", showIndex);
+        }, 2000);
     });
 </script>
 
 <div class="rollingimgcards">
     {#each images as src, index}
-        <div class="qfadein">
-            {#if index == showIndex}
-                <ImageCard {src} desc={"card:" + index}></ImageCard>
-            {/if}
+        <div
+            class="cardwrapper"
+            class:show={index == showIndex}
+            class:hide={index != showIndex}
+        >
+            <ImageCard {src} desc={"card:" + index}></ImageCard>
         </div>
     {/each}
 </div>
 
 <style>
     .rollingimgcards {
+        position: relative;
         width: 100%;
+    }
+    .cardwrapper {
+        position: absolute;
+        width: 100%;
+        transition-property: opacity;
+        transition-duration: 500ms;
+    }
+    .show {
+        opacity: 1;
+    }
+    .hide {
+        opacity: 0;
     }
 </style>
