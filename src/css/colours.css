@@ -1,0 +1,11 @@
+.qbg-std {
+  background-color: var(--bg-std);
+}
+
+.qbg-alt {
+  background-color: var(--bg-alt);
+}
+
+.qbg-duress {
+  background-color: var(--bg-duress);
+}

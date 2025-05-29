@@ -1,0 +1,31 @@
+.qpad-rem {
+    padding: calc(var(--fsize-std) * 1.0);
+}
+
+.qpad-2rem {
+    padding: calc(var(--fsize-std) * 2.0);
+}
+
+.qpad-left-rem {
+    padding-left: calc(var(--fsize-std) * 1.0);
+}
+
+.qpad-right-rem {
+    padding-right: calc(var(--fsize-std) * 1.0);
+}
+
+.qmargin-top-rem {
+    margin-top: calc(var(--fsize-std) * 1.0);
+}
+
+.qmargin-top-2rem {
+    margin-top: calc(var(--fsize-std) * 2.0);
+}
+
+.qmargin-top-4rem {
+    margin-top: calc(var(--fsize-std) * 4.0);
+}
+
+.qmargin-bot-1rem {
+    margin-bottom: calc(var(--fsize-std) * 1.0);
+}

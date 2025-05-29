@@ -1,0 +1,44 @@
+.qcol {
+    display: flex;
+    flex-direction: column;
+}
+
+.qrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.qgap-rem {
+    gap: calc(var(--fsize-std) * 1.0);
+}
+
+.qgap-2rem {
+    gap: calc(var(--fsize-std) * 2.0);
+}
+.qgap-3rem {
+    gap: calc(var(--fsize-std) * 3.0);
+}
+
+.qgap-4rem {
+    gap: calc(var(--fsize-std) * 4.0);
+}
+
+.qgap-tiny {
+    gap: calc(var(--fsize-std) * 0.5);
+}
+
+.qrowgap-rem {
+    row-gap: calc(var(--fsize-std) * 1.0);
+}
+
+.qrowgap-2rem {
+    row-gap: calc(var(--fsize-std) * 2.0);
+}
+
+.qcolgap-rem {
+    column-gap: calc(var(--fsize-std) * 1.0);
+}
+
+.qcolgap-2rem {
+    column-gap: calc(var(--fsize-std) * 2.0);
+}

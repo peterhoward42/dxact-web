@@ -1,0 +1,22 @@
+.qbtn-colours {
+  background-color: var(--bg-btn);
+}
+
+.qbtn-colours:hover {
+  background-color: var(--bg-btn-hov);
+}
+
+.qbtn-colours:active {
+  background-color: var(--bg-btn);
+}
+
+.qhover-emph:hover {
+  background-color: var(--emphasis1);
+}
+
+.qbtn-pad {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}

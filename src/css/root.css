@@ -1,0 +1,52 @@
+:root {
+
+
+  /*-----------------------------------------------------------------------
+Font sizing
+*/
+
+  --fsize-std: 0.8rem;
+  --fsize-sm: 0.6rem;
+  --fsize-lg1: 1.2rem;
+  --fsize-lg2: 1.8rem;
+  --fsize-lg3: 2.7rem;
+
+  /* Green is just green - mainly for checks/ticks */
+  --green: rgb(0, 200, 0);
+
+  /*-----------------------------------------------------------------------
+ Background colour variables
+ */
+
+  --bg-std: #fcf7f5;
+  --bg-alt: #f3eadd;
+  --bg-duress: AQUAMARINE;
+
+  /* A pair of backgrounds for buttons/hover.  */
+  --bg-btn: #E0E0E0;
+  --bg-btn-hov: #E0F0E0;
+
+  /* Specialised */
+  --popping-inverted-background: var(--error);
+  --background-inputs-hover: var(--bg-btn-hov);
+
+
+
+
+  /*-----------------------------------------------------------------------
+ Text and Stroke colour variables
+ */
+
+  --default-text-colour: #444;
+  --default-inverted-text-colour: #AAA;
+  --emphasis1: black;
+  --error: red;
+  --accent: blue;
+  --subdued: #AAA;
+
+  --border-col-std: #BBB;
+  --border-col-hover: #AAA;
+
+  --spinneroutline: var(--border-col-std);
+
+}

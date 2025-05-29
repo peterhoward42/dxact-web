@@ -5,17 +5,19 @@
     import FooterSection from "./components/FooterSection.svelte";
 </script>
 
-<main>
-    <HeroSection />
-    <FeaturesSection />
-    <HowItWorksSection />
-    <FooterSection />
-</main>
+<div class="screen">
+    <div class="layout qcol">
+        <HeroSection />
+    </div>
+</div>
 
 <style>
-    main {
-        font-family: sans-serif;
-        background: white;
-        color: black;
+    .screen{
+        width: 100vw;
+    }
+    .layout {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        align-items: center;
     }
 </style>

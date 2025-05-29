@@ -1,0 +1,22 @@
+.qbord-all {
+    border: 1px solid var(--border-col-std)
+}
+
+.qbord-left {
+    border-left: 1px solid var(--border-col-std)
+}
+
+.qrad-dlg {
+    border-radius: 1rem;
+}
+
+.qrad-btn {
+    border-radius: .5em;
+}
+
+/* By using an infeasibly large value, this produces buttons for example with fully rounded ends.
+   i.e. semicircles. The W3 spec requires browsers to truncate the value accordingly.
+*/
+.q-rounded-ends {
+    border-radius: 50vh;
+}

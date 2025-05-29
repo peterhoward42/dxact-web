@@ -1,0 +1,72 @@
+html {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+div {
+  color: var(--default-text-colour);
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  line-height: 1.2;
+}
+
+
+input {
+
+  /* You cannot reliably set the font or font attributes on input elements,
+  which also means that font size has an unpredictable effect.  */
+
+  border: 1px solid var(--border-col-std);
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: var(--bg-std);
+  padding: .25rem;
+}
+
+input:hover {
+  background-color: var(--background-inputs-hover);
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #89CFF0;
+  ;
+}
+
+textarea {
+  /* You cannot reliably set the font or font attributes on textarea elements,
+  which also means that font size has an unpredictable effect.  */
+  border: 1px solid var(--border-col-std);
+  outline: none;
+  background-color: var(--bg-std);
+  padding: .25rem;
+
+}
+
+textarea:hover {
+  background-color: var(--background-inputs-hover);
+}
+
+textarea:focus {
+  background-color: var(--bg-std);
+}
+
+a {
+  color: #6082B6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

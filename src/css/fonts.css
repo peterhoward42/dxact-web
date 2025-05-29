@@ -1,0 +1,39 @@
+.qe1 {
+  font-weight: 500;
+}
+
+.qerr {
+  color: var(--error);
+}
+
+.qaccent {
+  color: var(--accent);
+}
+
+.qsubdued {
+  color: var(--subdued);
+}
+
+.qgreen {
+  color: var(--green);
+}
+
+.qlarge1 {
+  font-size: var(--fsize-lg1);
+}
+
+.qlarge2 {
+  font-size: var(--fsize-lg2);
+}
+
+.qlarge3 {
+  font-size: var(--fsize-lg3);
+}
+
+.qsmall {
+  font-size: var(--fsize-sm);
+}
+
+.qital {
+  font-style: italic;
+}
