@@ -1,14 +1,16 @@
 <script>
-  import ImageCard from "./ImageCard.svelte";
   import RollingImageCards from "./RollingImageCards.svelte";
-  import apple from "/src/assets/images/apple.png";
+  import CTA from "./CTA.svelte";
 </script>
 
 <div class="hero qcol">
   <span class="head qgreen">DrawExact</span>
   <span class="sub qe1">You do the thinking. We'll steady the hand</span>
   <span class="desc">
-    Helps you shape ideas into precise drawings, right in your browser. Fast, efficient, no cost.</span>
+    Helps you shape ideas into precise drawings, right in your browser. Fast,
+    efficient, no cost.</span
+  >
+  <CTA />
   <RollingImageCards></RollingImageCards>
 </div>
 
