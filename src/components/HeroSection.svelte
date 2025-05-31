@@ -1,5 +1,6 @@
 <script>
   import RollingImageCards from "./RollingImageCards.svelte";
+  import Carousel from "./Carousel.svelte";
   import CTA from "./CTA.svelte";
 </script>
 
@@ -10,8 +11,7 @@
     Helps you shape ideas into precise drawings, right in your browser. Fast,
     efficient, no cost.</span
   >
-  <CTA />
-  <RollingImageCards></RollingImageCards>
+  <Carousel></Carousel>
 </div>
 
 <style>
