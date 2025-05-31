@@ -4,12 +4,11 @@
     import chain from "/src/assets/images/chain.png";
     import weather from "/src/assets/images/weather.png";
 
-    // images are the imported "src" attributes for the images we'll show.
+    // images are the imported "src" attributes for the images we'll show
     const images = [apple, chain, weather];
 
     // imageRefs are javascript variables that point to the Img html elements that get instantiated.
     // See bind:this in the layout.
-
     let imgRefs = [];
 
     // Incumbent and next are the indexes that define the image that is being shown,
@@ -21,15 +20,26 @@
         return n % images.length;
     }
 
-    function handleFirstImageLoaded(evt) {
-        const target = evt.target;
-        const w = target.naturalWidth;
-        const h = target.naturalHeight;
-        console.log("XXXX w: ", w);
-        console.log("XXXX h: ", h);
+    async function handleImageLoaded(evt, index) {
+        // Once we know the (universal) aspect ratio of the images in the set, we can
+        // use it to set the aspect ratio of the container.
+        if (index == 0) {
+            const aspectRatio =
+                evt.target.naturalWidth / evt.target.naturalHeight;
+            console.log("XXXX aspect ratio found: ", aspectRatio);
+        }
+        // Only as each image is loaded can we initialise its state.
+        if (index == incumbent || index == next) {
+            setVisible(index)
+        } else {
+            setInVisible(index)
+        }
+        // Manually trigger the iteration frame function at t0, because setInterval()
+        // doesn't do that.
+        await makeFrame()
     }
 
-    const interval = setInterval(async function () {
+    async function makeFrame() {
         // Slide next in to replace incumbent.
         setPositionRight(incumbent);
         setPositionCentre(next);
@@ -46,18 +56,9 @@
         // Cue up the "next" image at stage left and make it visible
         setPositionLeft(next);
         setVisible(next);
+    }
 
-        // Identify the image that just exited stage right X.
-        // Position X ready at stage left.
-        // Turn on display for X
-    }, 2000);
-
-    const goLeft = "goleft";
-    const goCentre = "gocentre";
-    const goRight = "goright";
-
-    const hide = "hide"
-    const show = "show"
+    const interval = setInterval(makeFrame, 2000);
 
     function setPositionRight(index) {
         imgRefs[index].classList.remove(goLeft);
@@ -87,6 +88,12 @@
         imgRefs[index].classList.add(hide);
     }
 
+    const goLeft = "goleft";
+    const goCentre = "gocentre";
+    const goRight = "goright";
+
+    const hide = "hide";
+    const show = "show";
 </script>
 
 <div class="carousel">
@@ -96,9 +103,7 @@
             alt=""
             bind:this={imgRefs[index]}
             on:load={(evt, el) => {
-                if (index == 0) {
-                    handleFirstImageLoaded(evt);
-                }
+                handleImageLoaded(evt, index);
             }}
         />
     {/each}
