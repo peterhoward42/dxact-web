@@ -1,5 +1,4 @@
 <script>
-  import RollingImageCards from "./RollingImageCards.svelte";
   import Carousel from "./Carousel.svelte";
   import CTA from "./CTA.svelte";
 </script>

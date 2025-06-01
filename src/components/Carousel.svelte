@@ -1,16 +1,20 @@
 <script>
     import { tick } from "svelte";
     import apple from "/src/assets/images/apple.png";
-    import chain from "/src/assets/images/chain.png";
+    import cyclist from "/src/assets/images/cyclist.png";
+    import flag from "/src/assets/images/flag.png";
+    import howitworks from "/src/assets/images/howitworks.png";
+    import legs from "/src/assets/images/legs.png";
+    import presso from "/src/assets/images/presso.png";
     import weather from "/src/assets/images/weather.png";
-    import lines from "/src/assets/images/lines.png";
-    import arcs from "/src/assets/images/arcs.png";
+
     import { onMount } from "svelte";
 
     let aspectRatioKnown = false;
+    let discoveredAspectRatio;
 
     // images are the imported "src" attributes for the images we'll show
-    const images = [apple, chain, weather, lines, arcs];
+    const images = [apple, cyclist, flag, howitworks, legs, presso, weather];
 
     // imageRefs give us javascript variables that point to the Img html elements that get instantiated.
     // See bind:this in the layout.
@@ -23,9 +27,8 @@
 
     onMount(async () => {
         if (!aspectRatioKnown) {
-            const aspectRatio =
+            discoveredAspectRatio =
                 imgRefs[0].naturalWidth / imgRefs[0].naturalHeight;
-            console.log("XXXX aspect ratio found: ", aspectRatio);
         }
         for (const [i, imgRef] of imgRefs.entries()) {
             if (i == incumbent) {
@@ -120,7 +123,7 @@
     }
 </script>
 
-<div class="carousel">
+<div class="carousel" style:aspect-ratio={discoveredAspectRatio}>
     {#each images as src, index}
         <img {src} alt="" bind:this={imgRefs[index]} />
     {/each}
@@ -129,8 +132,6 @@
 <style>
     .carousel {
         width: 100%;
-        /* XXXX temporary placeholder aspect ratio */
-        aspect-ratio: 2;
         overflow: hidden;
         position: relative;
     }
