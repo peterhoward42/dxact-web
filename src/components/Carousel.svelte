@@ -16,7 +16,7 @@
     // See bind:this in the layout.
     let imgRefs = [];
 
-     // Incumbent and next are the indexes that define the image that is being shown,
+    // Incumbent and next are the indexes that define the image that is being shown,
     // and the one that will be shown next.
     let incumbent = 0;
     let next = mod(incumbent + 1);
@@ -31,25 +31,35 @@
             if (i == incumbent) {
                 setPositionCentre(i);
                 setVisible(i);
-            } else if (i==next){
-                setPositionLeft(i)
+            } else if (i == next) {
+                setPositionLeft(i);
                 setVisible(i);
             } else {
-                setInVisible(i)
+                setInVisible(i);
             }
         }
     });
 
-   
+    let spentImageIndex = -1; // Uninitialised
+
     // makeFrame is the per-frame function that produces the state changes that produce
     // the desired animation.
     async function makeFrame() {
+        // Before we orchestrate the next transition, make the image we moved out to the right in
+        // the previous iteration invisible. Otherwise when in some later iteration we cue it up on the
+        // left ready to slide in again - you see it animating back across the one we're displaying.
+        if (spentImageIndex != -1) {
+            setInVisible(spentImageIndex);
+        }
+
         // Slide the next image in, to replace the incumbent, while at the same time,
         // sliding the incumbent out to the right. I.e. create a "push" effect.
         setPositionRight(incumbent);
         setPositionCentre(next);
 
-        await tick();
+        // Capture which one we just moved out to the right - which we access
+        // during the next iteration.
+        spentImageIndex = incumbent;
 
         // Update the indices for incumbent and next ready for the next animation iteration.
         incumbent = mod(incumbent + 1);
