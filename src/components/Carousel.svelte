@@ -40,6 +40,8 @@
                 setInVisible(i);
             }
         }
+        // Fire the timing-based animation event generator.
+        setInterval(makeFrame, 2000);
     });
 
     let spentImageIndex = -1; // Uninitialised
@@ -71,9 +73,6 @@
         setPositionLeft(next);
         setVisible(next);
     }
-
-    // This is the timing-based animation event generator.
-    const interval = setInterval(makeFrame, 2000);
 
     // The functions below have the effect of setting the targeted image
     // to the position stated in the function name.

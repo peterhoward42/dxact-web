@@ -5,7 +5,7 @@
 
 <div class="hero qcol">
   <span class="head qgreen">DrawExact</span>
-  <span class="sub qe1">You do the thinking. We'll steady the hand</span>
+  <span class="sub qe1">You do the thinking. We'll hold the ruler.</span>
   <span class="desc">
     Helps you shape ideas into precise drawings, right in your browser. Fast,
     efficient, no cost.</span
