@@ -1,11 +1,9 @@
 <script>
     import { tick } from "svelte";
     import apple from "/src/assets/images/apple.png";
-    import cyclist from "/src/assets/images/cyclist.png";
-    import flag from "/src/assets/images/flag.png";
-    import howitworks from "/src/assets/images/howitworks.png";
-    import legs from "/src/assets/images/legs.png";
-    import presso from "/src/assets/images/presso.png";
+    import chain from "/src/assets/images/chain.png";
+    import howworks from "/src/assets/images/howworks.png";
+    import copypastearc from "/src/assets/images/copypastearc.png";
     import weather from "/src/assets/images/weather.png";
 
     import { onMount } from "svelte";
@@ -14,7 +12,8 @@
     let discoveredAspectRatio;
 
     // images are the imported "src" attributes for the images we'll show
-    const images = [apple, cyclist, flag, howitworks, legs, presso, weather];
+    //const images = [apple, cyclist, flag, howitworks, legs, presso, weather];
+    const images = [weather, chain, apple, copypastearc, howworks];
 
     // imageRefs give us javascript variables that point to the Img html elements that get instantiated.
     // See bind:this in the layout.
