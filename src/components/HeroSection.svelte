@@ -1,16 +1,18 @@
 <script>
   import Carousel from "./Carousel.svelte";
+  import ComposedImages from "./ComposedImages.svelte";
   import CTA from "./CTA.svelte";
 </script>
 
 <div class="hero qcol">
-  <span class="head qgreen">DrawExact</span>
-  <span class="sub qe1">You do the thinking. We'll hold the ruler.</span>
-  <span class="desc">
+  <span class="head qe1 qbg-alt">DrawExact</span>
+  <span class="youthink qe1">You do the thinking. We'll hold the ruler.</span>
+  <span class="helpsshape">
     Helps you shape ideas into precise drawings, right in your browser. Fast,
     efficient, no cost.</span
   >
-  <Carousel></Carousel>
+  <!-- <Carousel></Carousel> -->
+  <ComposedImages aspectRatio="1.5"></ComposedImages>
 </div>
 
 <style>
@@ -19,20 +21,21 @@
     align-items: center;
   }
   .head {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: .75rem;
     font-size: 2rem;
-    margin-top: 1rem;
+    text-align: center;
   }
-  .sub {
+  .youthink {
     font-size: 1.2rem;
     text-align: center;
-    margin-top: 0.5rem;
+    padding-top: 1.5rem;
   }
-  .desc {
-    font-size: 1rem;
+  .helpsshape {
+    font-size: 1.1rem;
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
   }
 </style>
