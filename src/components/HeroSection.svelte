@@ -11,8 +11,8 @@
     Helps you shape ideas into precise drawings, right in your browser. Fast,
     efficient, no cost.</span
   >
-  <!-- <Carousel></Carousel> -->
   <ComposedImages aspectRatio="1.5"></ComposedImages>
+  <CTA />
 </div>
 
 <style>
@@ -23,7 +23,7 @@
   .head {
     width: 100%;
     padding-top: 1rem;
-    padding-bottom: .75rem;
+    padding-bottom: 0.75rem;
     font-size: 2rem;
     text-align: center;
   }
