@@ -13,7 +13,7 @@
     >
         Your Canvas Awaits!
     </div>
-    <div class="reinforce">(enters DrawExact)</div>
+    <div class="reinforce">(enter DrawExact)</div>
 </div>
 
 <style>

@@ -1,15 +1,16 @@
 <script>
     import HeroSection from "./components/HeroSection.svelte";
-    import FeaturesSection from "./components/FeaturesSection.svelte";
-    import HowItWorksSection from "./components/HowItWorksSection.svelte";
-    import FooterSection from "./components/FooterSection.svelte";
     import ScrollCue from "./components/ScrollCue.svelte";
+    import WhatIs from "./components/WhatIs.svelte"
+    import WhatMakeItWorth from "./components/WhatMakeItWorth.svelte";
 </script>
 
 <div class="screen">
     <div class="layout qcol">
         <HeroSection />
         <ScrollCue />
+        <WhatIs />
+        <WhatMakeItWorth/>
     </div>
 </div>
 
