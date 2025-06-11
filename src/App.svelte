@@ -4,7 +4,7 @@
     import WhatIs from "./components/WhatIs.svelte";
     import WhatMakeItWorth from "./components/WhatMakeItWorth.svelte";
     import GetStarted from "./components/GetStarted.svelte";
-    import BigScreen from "./components/BigScreen.svelte";
+    import BigScreen2 from "./components/BigScreen2.svelte";
     import PowerPoint2 from "./components/PowerPoint2.svelte";
 </script>
 
@@ -15,7 +15,7 @@
         <WhatIs />
         <WhatMakeItWorth />
         <GetStarted />
-        <BigScreen />
+        <BigScreen2 />
         <PowerPoint2 />
     </div>
 </div>
