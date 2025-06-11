@@ -6,7 +6,7 @@
 .qsec-head {
     font-size: 1.25rem;
     font-weight: 600;
-    padding-top:0rem;
+    padding-top:1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -20,8 +20,8 @@
 }
 
 .qsec-body ul {
-    list-style-type: disc;
     padding-left: 1.25rem;
+    margin-top:2rem;
 }
 
 .qsec-body li {
