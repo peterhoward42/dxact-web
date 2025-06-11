@@ -30,12 +30,12 @@
   .youthink {
     font-size: 1.2rem;
     text-align: center;
-    padding-top: 1.5rem;
+    padding-top: 1.75rem;
   }
   .helpsshape {
     font-size: 1.1rem;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.75rem;
   }
 </style>

@@ -1,5 +1,5 @@
 <div class="worth qsec">
-    <div class="qsec-head">What Makes It Worth Your Click?</div>
+    <div class="qsec-head">What makes it worth your click?</div>
     <div class="qsec-body">
         <ul>
             <li>

@@ -11,7 +11,7 @@
         class="button qpad-rem q-rounded-ends qfadein"
         onclick={handleOpenDrawExact}
     >
-        Your Canvas Awaits!
+        Your canvas awaits!
     </div>
     <div class="reinforce">(enter DrawExact)</div>
 </div>

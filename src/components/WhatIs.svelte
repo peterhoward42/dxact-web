@@ -1,5 +1,5 @@
 <div class="what qsec">
-    <div class="qsec-head">Unobtrusive Tools for Evolving Your Idea</div>
+    <div class="qsec-head">Unobtrusive tools for evolving your idea</div>
     <div class="qsec-body">
         <p>
             DrawExact is a browser-based drawing tool for people who want

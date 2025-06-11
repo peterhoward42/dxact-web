@@ -1,5 +1,5 @@
 <footer>
-  <p><a href="/privacy">Privacy Policy</a></p>
+  <p><a href="/privacy">Privacy [olicy</a></p>
   <p>Contact: support@drawexact.com</p>
   <p>&copy; 2025 DrawExact</p>
 </footer>
