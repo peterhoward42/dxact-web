@@ -28,7 +28,7 @@
                             radials... angles... parallels... ellipses...
                             cartesian and polar coordinates... — it's just
                             quietly waiting, and thinking the
-                            <strong>same</strong> language.
+                            <strong>same language</strong>.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>

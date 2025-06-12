@@ -1,5 +1,5 @@
-<script>
-    function handleOpenDrawExact() {
+<script module>
+    export function handleOpenDrawExact() {
         window.open("https://app.drawexact.click");
     }
 </script>
