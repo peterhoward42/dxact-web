@@ -15,7 +15,7 @@
         <p>
             It’ll quietly guide your first steps, just enough to get you going.
         </p>
-        <p>If it clicks, you can sign in later and start your own drawings.</p>
+        <p>If it clicks with you, you can sign in any time and start your own drawings.</p>
         <p>Either way, you'll know</p>
     </div>
     <!-- svelte-ignore a11y_click_events_have_key_events -->

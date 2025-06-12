@@ -12,7 +12,7 @@
 </script>
 
 <div class="worth qsec">
-    <div class="qsec-head">What makes it worthy of your click?</div>
+    <div class="qsec-head">What makes it worth your click?</div>
     <div class="qsec-body">
         <ul class="worthlist">
             <li>
@@ -82,9 +82,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            A year from now, you might have hundreds of drawings. Find
-                            one <strong>instantly</strong> with just 2 or 3 teeny-tiny
-                            fragments from its name.
+                            A year from now, you might have hundreds of
+                            drawings. Find one <strong>instantly</strong> with just
+                            2 or 3 teeny-tiny fragments from its name.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -103,7 +103,7 @@
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
-             <li>
+            <li>
                 <ListItemWithIcon>
                     {#snippet theIcon()}<Zap
                             size="40"
@@ -111,7 +111,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Built to help you draw fast. Serious, productive work. Quietly capable. 100% free. No catch. No kidding.
+                            Built to help you draw fast. Serious, productive
+                            work. Quietly capable. 100% free. No catch. No
+                            kidding.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
