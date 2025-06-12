@@ -29,7 +29,7 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Diamond clarity
+                            Diamond crisp drawing clarity
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>

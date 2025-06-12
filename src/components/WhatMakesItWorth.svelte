@@ -27,8 +27,8 @@
                             lines... arcs... tangents... fillets... normals...
                             radials... angles... parallels... ellipses...
                             cartesian and polar coordinates... — it's just
-                            quietly waiting, and thinking the
-                            <strong>same language</strong>.
+                            quietly waiting, and <strong>thinking the
+                            same language</strong>.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -40,7 +40,7 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span
-                            >Text exactly obeying your every whim. Position,
+                            >Text obeying your every whim. Position,
                             size, angle, justification. Mono-spaced for
                             effortless alignment</span
                         >{/snippet}
@@ -55,8 +55,8 @@
                         />{/snippet}
                     {#snippet theCpt()}<span
                             >Copy &amp; Paste on steroids. Auto repeat (along
-                            lines / around circles), with scale, rotate and
-                            mirror. Huge time saver and fragment re-use.</span
+                            lines / around circles). With scale, rotate and
+                            mirror. A huge time saver. And a platform for your component library.</span
                         >{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -111,7 +111,7 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Built to help you draw fast. Serious, productive
+                            Built to help you draw quickly. Serious, productive
                             work. Quietly capable. 100% free. No catch. No
                             kidding.
                         </span>{/snippet}
