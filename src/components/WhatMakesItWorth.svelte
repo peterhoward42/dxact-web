@@ -27,8 +27,8 @@
                             lines... arcs... tangents... fillets... normals...
                             radials... angles... parallels... ellipses...
                             cartesian and polar coordinates... — it's just
-                            quietly waiting, and <strong>thinking the
-                            same language</strong>.
+                            quietly waiting, and
+                            <strong>thinking the same language</strong>.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -40,9 +40,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span
-                            >Text obeying your every whim. Position,
-                            size, angle, justification. Mono-spaced for
-                            effortless alignment</span
+                            >Text obeying your every whim. Position, size,
+                            angle, justification. Mono-spaced for effortless
+                            alignment</span
                         >{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -54,9 +54,11 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span
-                            >Copy &amp; Paste on steroids. Auto repeat (along
-                            lines / around circles). With scale, rotate and
-                            mirror. A huge time saver. And a platform for your component library.</span
+                            >Copy & Paste, <strong>evolved</strong>. Auto-repeat
+                            along lines and around circles — with rotate, scale,
+                            and mirror. Complex patterns <strong>fast</strong>
+                            and <strong>easy</strong>. Grow your own component
+                            library.</span
                         >{/snippet}
                 </ListItemWithIcon>
             </li>
