@@ -22,20 +22,22 @@
   }
   .head {
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 0.75rem;
+    line-height: 0; /* prefer to tune padding */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-size: 2rem;
     text-align: center;
   }
   .youthink {
+    line-height: 0;
     font-size: 1.2rem;
     text-align: center;
-    padding-top: 1.75rem;
+    padding-top: 2.6rem;
   }
   .helpsshape {
     font-size: 1.1rem;
     text-align: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.75rem;
+    padding-top: 1.950rem;
+    padding-bottom: 2rem;
   }
 </style>

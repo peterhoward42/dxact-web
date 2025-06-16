@@ -1,5 +1,8 @@
 .qsec {
-    padding: 1rem 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     max-width: 38rem;
 }
 

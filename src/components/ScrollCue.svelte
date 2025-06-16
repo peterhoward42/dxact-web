@@ -4,6 +4,7 @@
 
 <style>
     .scroll-cue {
+        line-height: 0;
         text-align: center;
         color: #666;
         animation: floatDown 2s infinite ease-in-out;

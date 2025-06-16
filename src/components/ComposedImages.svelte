@@ -8,22 +8,32 @@
     const carouselFrames = [
         {
             label: "Choreographed text",
+            subLabel:
+                "it makes the world go round faster",
             imageSrc: weather,
         },
         {
             label: "Engineering dimensions",
+            subLabel:
+                "it makes the world go round faster",
             imageSrc: chain,
         },
         {
             label: "Compose and blend curves",
+            subLabel:
+                "it makes the world go round faster",
             imageSrc: apple,
         },
         {
             label: "Superpower copy & paste",
+            subLabel:
+                "it makes the world go round faster",
             imageSrc: copypastearc,
         },
         {
             label: "Instruction diagram",
+            subLabel:
+                "it makes the world go round faster",
             imageSrc: howworks,
         },
     ];
@@ -73,21 +83,25 @@
 
     onMount(async () => {
         // Start the animation frame generator
-        setInterval(nextFrame,2500);
+        setInterval(nextFrame, 2500);
     });
 </script>
 
 <div class="composed qcol">
     <Carousel frames={carouselFrames} {aspectRatio} />
-    <div class="label qe1 qbg-alt">
-        <!-- Conditional forces Svelte to refresh the fade class on each new animation frame -->
+    <div class="label qcol qgap-rem qbg-alt">
+        <!-- Conditional layout is a trick to force Svelte to refresh the fade class on each new animation frame -->
         {#if composedImagesState.tick % 2}
-            <span class="fade"
+            <span class="fade primary "
                 >{carouselFrames[composedImagesState.current].label}</span
+            ><span class="fade secondary"
+                >{carouselFrames[composedImagesState.current].subLabel}</span
             >
         {:else}
-            <span class="fade"
+            <span class="fade primary "
                 >{carouselFrames[composedImagesState.current].label}</span
+            ><span class="fade secondary"
+                >{carouselFrames[composedImagesState.current].subLabel}</span
             >
         {/if}
     </div>
@@ -98,7 +112,7 @@
         width: 100%;
         align-items: center;
     }
-    .label{
+    .label {
         width: 100%;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -109,6 +123,18 @@
         animation-name: fadeInKeyFrames;
         animation-timing-function: ease-in;
         animation-duration: 500ms;
+    }
+    .primary {
+        font-size: 1.1rem;
+        color: #225;
+        line-height: 0;
+        padding-top: 0.3rem;
+    }
+    .secondary {
+        font-size: 1rem;
+        color: #777;
+        line-height: 1.25rem;
+        padding-top: 0.35rem;
     }
 
     @keyframes fadeInKeyFrames {

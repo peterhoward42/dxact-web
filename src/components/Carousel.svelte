@@ -14,36 +14,48 @@
     }
 </script>
 
-<div class="carousel" style:aspect-ratio={aspectRatio}>
+<div class="carousel qbg-alt" style:aspect-ratio={aspectRatio}>
     {#each frames as frame, index}
-        <img
-            src={frame.imageSrc}
-            alt=""
+        <div
+            class="frame-wrapper"
             class:centre={index == composedImagesState.current}
             class:left={index == composedImagesState.upNext}
             class:right={index == composedImagesState.justPushedOut}
             class:show={shouldBeVisible(index)}
             class:hide={!shouldBeVisible(index)}
-        />
+        >
+            <img src={frame.imageSrc} alt="" />
+        </div>
     {/each}
 </div>
 
 <style>
     .carousel {
+        position: relative;
         width: 100%;
         overflow: hidden;
-        position: relative;
+    }
+
+    /* Apply padding to the container around each image */
+    .frame-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 0.75rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        box-sizing: border-box;
+        transition: left 1s ease-in-out;
     }
 
     img {
-        position: absolute;
-        /* The left attribute is set programmatically */
-        top: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
         pointer-events: none;
-        transition: left 1s ease-in-out;
+        display: block;
     }
 
     .right {
