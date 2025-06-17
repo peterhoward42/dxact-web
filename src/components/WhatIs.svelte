@@ -11,11 +11,11 @@
         </p>
 
         <p>
-            You can think of it like <em>Google Docs</em> reimagined for geometrically
+            You can think of it like <em>Google Docs</em> — reimagined for geometrically
             precise drawings.
         </p>
         <p>
-            Like <em>Docs</em> — it works in your Browser, uses Google Sign-In, saves
+            Like <em>Docs</em>, it works in your Browser, uses Google Sign-In, saves
             to Google Drive, and is free.
         </p>
     </div>

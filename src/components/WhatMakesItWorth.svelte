@@ -6,8 +6,13 @@
         Binoculars,
         Eye,
         Vault,
-        Brain,
+        Wrench,
         Zap,
+        Shuffle,
+        CopyPlus,
+        Combine,
+        Blocks,
+        CircleArrowOutUpRight,
     } from "@lucide/svelte";
 </script>
 
@@ -23,43 +28,57 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            When <strong>YOU</strong> are thinking about
-                            lines... arcs... tangents... fillets... normals...
-                            radials... angles... parallels... ellipses...
-                            cartesian and polar coordinates... — it's just
-                            quietly waiting, and
-                            <strong>thinking the same language</strong>.
+                            While you're thinking in the language of lines,
+                            arcs, tangents, fillets etc. It's quietly waiting
+                            and thinks the same language.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
             <li>
                 <ListItemWithIcon>
-                    {#snippet theIcon()}<Brain
+                    {#snippet theIcon()}<Shuffle
                             size="40"
                             strokeWidth="1"
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span
-                            >Text obeying your every whim. Position, size,
-                            angle, justification. Mono-spaced for effortless
-                            alignment</span
+                            >A different philosophy for precision text. It
+                            doesn't try to second-guess your intent - like <em
+                                >Powerpoint</em
+                            > does. You are in control.</span
                         >{/snippet}
                 </ListItemWithIcon>
             </li>
             <li>
                 <ListItemWithIcon>
-                    {#snippet theIcon()}<BicepsFlexed
+                    {#snippet theIcon()}<Combine
                             size="40"
                             strokeWidth="1"
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span
-                            >Copy & Paste, <strong>evolved</strong>. Auto-repeat
-                            along lines and around circles — with rotate, scale,
-                            and mirror. Complex patterns <strong>fast</strong>
-                            and <strong>easy</strong>. Grow your own component
-                            library.</span
+                            >Copy & Paste re-imagined for <strong
+                                >drawing chunks</strong
+                            >
+                            and amplified into a re-use and productivity toolkit.
+                            <span class="morebelow">(more on this below)</span
+                            ></span
                         >{/snippet}
+                </ListItemWithIcon>
+            </li>
+            <li>
+                <ListItemWithIcon>
+                    {#snippet theIcon()}<CircleArrowOutUpRight
+                            size="40"
+                            strokeWidth="1"
+                            absoluteStrokeWidth={true}
+                        />{/snippet}
+                    {#snippet theCpt()}<span>
+                            Your drawing can expand in any direction infinitely.
+                            Great for trying alternatives side by side. <span
+                                class="morebelow">(more on this below)</span
+                            >
+                        </span>{/snippet}
                 </ListItemWithIcon>
             </li>
             <li>
@@ -70,26 +89,14 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Zoom, zoom, &amp; zoom some more. Even at 1000x
-                            magnification - no blur. Zero. Which means even tiny
-                            details play well in your drawings
+                            Blisteringly fast zoom methods to navigate limitless
+                            scale.<span class="morebelow"
+                                >(more on this below)</span
+                            >
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
-            <li>
-                <ListItemWithIcon>
-                    {#snippet theIcon()}<Eye
-                            size="40"
-                            strokeWidth="1"
-                            absoluteStrokeWidth={true}
-                        />{/snippet}
-                    {#snippet theCpt()}<span>
-                            A year from now, you might have hundreds of
-                            drawings. Find one <strong>instantly</strong> with just
-                            2 or 3 teeny-tiny fragments from its name.
-                        </span>{/snippet}
-                </ListItemWithIcon>
-            </li>
+
             <li>
                 <ListItemWithIcon>
                     {#snippet theIcon()}<Vault
@@ -130,5 +137,10 @@
     }
     .worthlist li {
         margin-top: 1rem;
+    }
+    .morebelow {
+        font-size: 0.9rem;
+        color: #555;
+        font-style: italic;
     }
 </style>
