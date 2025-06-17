@@ -13,6 +13,7 @@
         Combine,
         Blocks,
         CircleArrowOutUpRight,
+        ArrowLeftRight,
     } from "@lucide/svelte";
 </script>
 
@@ -43,9 +44,9 @@
                         />{/snippet}
                     {#snippet theCpt()}<span
                             >A different philosophy for precision text. It
-                            doesn't try to second-guess your intent - like <em
+                            doesn't try to second-guess your intent (like <em
                                 >Powerpoint</em
-                            > does. You are in control.</span
+                            >). You are in control.</span
                         >{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -60,7 +61,7 @@
                             >Copy & Paste re-imagined for <strong
                                 >drawing chunks</strong
                             >
-                            and amplified into a re-use and productivity toolkit.
+                            , and amplified into a re-use and productivity toolkit.
                             <span class="morebelow">(more on this below)</span
                             ></span
                         >{/snippet}
@@ -90,7 +91,7 @@
                         />{/snippet}
                     {#snippet theCpt()}<span>
                             Blisteringly fast zoom methods to navigate limitless
-                            scale.<span class="morebelow"
+                            scale. <span class="morebelow"
                                 >(more on this below)</span
                             >
                         </span>{/snippet}
@@ -99,30 +100,28 @@
 
             <li>
                 <ListItemWithIcon>
-                    {#snippet theIcon()}<Vault
+                    {#snippet theIcon()}<ArrowLeftRight
                             size="40"
                             strokeWidth="1"
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Google-grade security and privacy from Google
-                            Sign-In. Google-grade ultra-reliable drawing storage
-                            in your Google Drive. Drawings available anywhere
-                            any time.
+                            Switching between drawing and interface breaks your
+                            flow. DrawExact keeps you focused.
+                            <span class="morebelow">(more on this below)</span>
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
             <li>
                 <ListItemWithIcon>
-                    {#snippet theIcon()}<Zap
+                    {#snippet theIcon()}<BicepsFlexed
                             size="40"
                             strokeWidth="1"
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Built to help you draw quickly. Serious, productive
-                            work. Quietly capable. 100% free. No catch. No
-                            kidding.
+                            Power and speed for serious work, even on a 20,000 line drawing.
+                            <span class="morebelow">(more on this below)</span>
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
