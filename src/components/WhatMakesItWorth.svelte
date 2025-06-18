@@ -4,14 +4,8 @@
         Handshake,
         BicepsFlexed,
         Binoculars,
-        Eye,
-        Vault,
-        Wrench,
-        Zap,
         Shuffle,
-        CopyPlus,
         Combine,
-        Blocks,
         CircleArrowOutUpRight,
         ArrowLeftRight,
     } from "@lucide/svelte";
@@ -19,6 +13,9 @@
 
 <div class="worth">
     <div class="qhead title">What makes it worth your click?</div>
+    <div class="sidenote qital">
+        We've kept these brief. You'll find deeper dives further down
+    </div>
     <div class="">
         <ul class="worthlist">
             <li>
@@ -61,10 +58,8 @@
                             >Copy & Paste re-imagined for <strong
                                 >drawing chunks</strong
                             >
-                            , and amplified into a re-use and productivity toolkit.
-                            <span class="morebelow">(more on this below)</span
-                            ></span
-                        >{/snippet}
+                            , and amplified into a re-use and productivity toolkit
+                        </span>{/snippet}
                 </ListItemWithIcon>
             </li>
             <li>
@@ -76,9 +71,7 @@
                         />{/snippet}
                     {#snippet theCpt()}<span>
                             Your drawing can expand in any direction infinitely.
-                            Great for trying alternatives side by side. <span
-                                class="morebelow">(more on this below)</span
-                            >
+                            Great for trying alternatives side by side
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -91,9 +84,7 @@
                         />{/snippet}
                     {#snippet theCpt()}<span>
                             Blisteringly fast zoom methods to navigate limitless
-                            scale. <span class="morebelow"
-                                >(more on this below)</span
-                            >
+                            scale
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -108,7 +99,6 @@
                     {#snippet theCpt()}<span>
                             Switching between drawing and interface breaks your
                             flow. DrawExact keeps you focused.
-                            <span class="morebelow">(more on this below)</span>
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -122,7 +112,6 @@
                     {#snippet theCpt()}<span>
                             Power and speed for serious work, even on a 20,000
                             line drawing.
-                            <span class="morebelow">(more on this below)</span>
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -138,16 +127,15 @@
     .title {
         padding-bottom: 1rem;
     }
+    .sidenote {
+        font-size: 0.9rem;
+        color: #777;
+    }
     .worthlist {
         list-style: none;
         padding: 0;
     }
     .worthlist li {
         margin-top: 1rem;
-    }
-    .morebelow {
-        font-size: 0.9rem;
-        color: #555;
-        font-style: italic;
     }
 </style>
