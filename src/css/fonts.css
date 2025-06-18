@@ -37,3 +37,8 @@
 .qital {
   font-style: italic;
 }
+
+.qhead {
+  font-size: 1.25rem;
+  font-weight: 600;
+}

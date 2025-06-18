@@ -1,13 +1,12 @@
 <script>
     import ListItemWithIcon from "./ListItemWithIcon.svelte";
     import { Laptop, ZoomIn, Pin, Eye, Armchair, Gem } from "@lucide/svelte";
-   
 </script>
 
-<div class="powerpoint qsec">
-    <div class="qsec-head">It likes a big screen</div>
-    <div class="qsec-body">
-        <ul class="bigscreenlist">
+<div class="powerpoint">
+    <div class="qhead title">It likes a big screen</div>
+    <div class="">
+        <ul class="screenlist">
             <li>
                 <ListItemWithIcon>
                     {#snippet theIcon()}<Laptop
@@ -63,7 +62,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            See your drawing change (live) as you're <strong>typing</strong>
+                            See your drawing change (live) as you're <strong
+                                >typing</strong
+                            >
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -84,11 +85,18 @@
 </div>
 
 <style>
-    .bigscreenlist {
+    .powerpoint {
+        padding-top: 2rem;
+        padding-left: 0.5rem;
+    }
+    .title {
+        padding-bottom: 1rem;
+    }
+    .screenlist {
         list-style: none;
         padding: 0;
     }
-    .bigscreenlist li {
+    .screenlist li {
         margin-top: 1rem;
     }
 </style>

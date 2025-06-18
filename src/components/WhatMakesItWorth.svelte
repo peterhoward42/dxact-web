@@ -17,9 +17,9 @@
     } from "@lucide/svelte";
 </script>
 
-<div class="worth qsec">
-    <div class="qsec-head">What makes it worth your click?</div>
-    <div class="qsec-body">
+<div class="worth">
+    <div class="qhead title">What makes it worth your click?</div>
+    <div class="">
         <ul class="worthlist">
             <li>
                 <ListItemWithIcon>
@@ -120,7 +120,8 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Power and speed for serious work, even on a 20,000 line drawing.
+                            Power and speed for serious work, even on a 20,000
+                            line drawing.
                             <span class="morebelow">(more on this below)</span>
                         </span>{/snippet}
                 </ListItemWithIcon>
@@ -130,6 +131,13 @@
 </div>
 
 <style>
+    .worth {
+        padding-top: 3rem;
+        padding-left: 0.5rem;
+    }
+    .title {
+        padding-bottom: 1rem;
+    }
     .worthlist {
         list-style: none;
         padding: 0;

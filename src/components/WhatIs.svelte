@@ -1,13 +1,13 @@
-<div class="what qsec">
-    <div class="qsec-head">Drawing, Done Differently</div>
-    <div class="qsec-body">
+<div class="what">
+    <div class="qhead">Drawing, Done Differently</div>
+    <div class="">
         <p>
             DrawExact is a drawing tool for exploring, adjusting, and clarifying
             your thoughts visually.
         </p>
         <p>
-            You have total control of your drawing geometry, DrawExact protects your thinking flow by never
-            getting in the way. 
+            You have total control of your drawing geometry, DrawExact protects
+            your thinking flow by never getting in the way.
         </p>
 
         <p>
@@ -15,8 +15,15 @@
             precise drawings.
         </p>
         <p>
-            Like <em>Docs</em>, it works in your Browser, uses Google Sign-In, saves
-            to Google Drive, and is free.
+            Like <em>Docs</em>, it works in your Browser, uses Google Sign-In,
+            saves to Google Drive, and is free.
         </p>
     </div>
 </div>
+
+<style>
+    .what{
+        padding-top: 3rem;
+        padding-left:.5rem;
+    }
+</style>

@@ -6,9 +6,9 @@
     import { DraftingCompass } from "@lucide/svelte";
 </script>
 
-<div class="powerpoint qsec">
-    <div class="qsec-head">Why not PowerPoint, CAD, Or Adobe?</div>
-    <div class="qsec-body">
+<div class="powerpoint">
+    <div class="qhead title">Why not PowerPoint, CAD, Or Adobe?</div>
+    <div class="">
         <ul class="powerpointlist">
             <li>
                 <ListItemWithIcon>
@@ -61,6 +61,13 @@
 </div>
 
 <style>
+    .powerpoint {
+        padding-top: 2rem;
+        padding-left: 0.5rem;
+    }
+    .title {
+        padding-bottom: 1rem;
+    }
     .powerpointlist {
         list-style: none;
         padding: 0;
