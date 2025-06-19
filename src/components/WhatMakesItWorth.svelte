@@ -98,7 +98,7 @@
                         />{/snippet}
                     {#snippet theCpt()}<span>
                             Switching between drawing and interface breaks your
-                            flow. DrawExact keeps you focused.
+                            flow. DrawExact preserves it.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -128,7 +128,6 @@
         padding-bottom: 1rem;
     }
     .sidenote {
-        font-size: 0.9rem;
         color: #777;
     }
     .worthlist {

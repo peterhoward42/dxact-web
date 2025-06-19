@@ -6,6 +6,7 @@
     import GetStarted from "./components/GetStarted.svelte";
     import BigScreen2 from "./components/BigScreen2.svelte";
     import PowerPoint2 from "./components/PowerPoint2.svelte";
+    import ExpandedPreserveFlow from "./components/ExpandedPreserveFlow.svelte";
 </script>
 
 <div class="screen">
@@ -17,6 +18,7 @@
         <GetStarted />
         <BigScreen2 />
         <PowerPoint2 />
+        <ExpandedPreserveFlow></ExpandedPreserveFlow>
     </div>
 </div>
 
