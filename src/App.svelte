@@ -8,6 +8,7 @@
     import PowerPoint2 from "./components/PowerPoint2.svelte";
     import ExpandedPreserveFlow from "./components/ExpandedPreserveFlow.svelte";
     import ExpandedLanguage from "./components/ExpandedLanguage.svelte";
+    import ExpandedText from "./components/ExpandedText.svelte";
 </script>
 
 <div class="screen">
@@ -20,6 +21,8 @@
         <BigScreen2 />
         <PowerPoint2 />
         <ExpandedLanguage></ExpandedLanguage>
+        <ExpandedText></ExpandedText>
+
         <ExpandedPreserveFlow></ExpandedPreserveFlow>
     </div>
 </div>
