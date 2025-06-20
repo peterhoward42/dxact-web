@@ -6,6 +6,12 @@
     the carousel.
     */
     const carouselFrames = [
+         {
+            label: "Thinking language",
+            subLabel:
+                "this sort of thing",
+            imageSrc: language,
+        },
         {
             label: "Choreographed text",
             subLabel:
@@ -74,6 +80,7 @@
     import howworks from "/src/assets/images/howworks.png";
     import copypastearc from "/src/assets/images/copypastearc.png";
     import weather from "/src/assets/images/weather.png";
+    import language from "/src/assets/images/language.png";
 
     function nextFrame() {
         setStateToShowGivenFrame(mod(composedImagesState.current + 1));
