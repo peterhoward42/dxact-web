@@ -9,6 +9,7 @@
     import ExpandedPreserveFlow from "./components/ExpandedPreserveFlow.svelte";
     import ExpandedLanguage from "./components/ExpandedLanguage.svelte";
     import ExpandedText from "./components/ExpandedText.svelte";
+    import ExpandedCopyPaste1 from "./components/ExpandedCopyPaste1.svelte";
 </script>
 
 <div class="screen">
@@ -22,8 +23,8 @@
         <PowerPoint2 />
         <ExpandedLanguage></ExpandedLanguage>
         <ExpandedText></ExpandedText>
-
         <ExpandedPreserveFlow></ExpandedPreserveFlow>
+        <ExpandedCopyPaste1></ExpandedCopyPaste1>
     </div>
 </div>
 
