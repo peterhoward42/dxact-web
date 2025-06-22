@@ -83,8 +83,7 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Blisteringly fast zoom methods to navigate limitless
-                            scale
+                            A specialised, surgical-grade zoom approach
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>

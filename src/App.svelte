@@ -12,6 +12,7 @@
     import ExpandedCopyPaste1 from "./components/ExpandedCopyPaste1.svelte";
     import ExpandedCopyPaste2 from "./components/ExpandedCopyPaste2.svelte";
     import ExpandedInfinite from "./components/ExpandedInfinite.svelte";
+    import ExpandedZoomMethods from "./components/ExpandedZoomMethods.svelte";
 </script>
 
 <div class="screen">
@@ -28,6 +29,7 @@
         <ExpandedCopyPaste1></ExpandedCopyPaste1>
         <ExpandedCopyPaste2></ExpandedCopyPaste2>
         <ExpandedInfinite></ExpandedInfinite>
+        <ExpandedZoomMethods></ExpandedZoomMethods>
         <ExpandedPreserveFlow></ExpandedPreserveFlow>
     </div>
 </div>

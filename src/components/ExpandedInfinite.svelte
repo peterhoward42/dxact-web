@@ -7,7 +7,7 @@
         <div class="qhead">More on — Expand in any direction</div>
         <span class="">You're drawing on an infinite canvas</span>
         <span class=""
-            >Go large by zooming out and drawing in the new space</span
+            >Go large by zooming out and drawing in the wide open spaces</span
         >
         <span class="">Go small by zooming in</span>
         <span class=""
@@ -15,9 +15,9 @@
             </span
         >
         <span class="steps"
-            ><strong>front half » the name » letter D » hidden bird » its eye.</strong></span
+            ><em>its front half » its name » letter D » hidden bird » its eye.</em></span
         >
-        <span class="">That's a 10,000X factor zoom. And still sharp</span>
+        <span class="">That's a 10,000X factor zoom. And graphics are still pin-sharp</span>
         <span class=""
             >The <strong>punchline</strong> is that one drawing can hold hierarchically
             revealed details as well as the big picture</span
@@ -38,9 +38,7 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    .steps{
-        font-style: italic;
-    }
+   
 
     img {
         width: 100%;
