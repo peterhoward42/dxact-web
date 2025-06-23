@@ -109,9 +109,12 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Power and speed for serious work, even on a 20,000
-                            line drawing.
-                        </span>{/snippet}
+                            DrawExact is <em>"in a new league FAST"</em> - which <strong
+                                >matters</strong
+                            >, because jerky and slow damages your flow.
+                            <em>(Geek alert - it uses WASM)</em></span
+                        >
+                    {/snippet}
                 </ListItemWithIcon>
             </li>
         </ul>

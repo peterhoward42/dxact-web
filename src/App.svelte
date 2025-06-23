@@ -13,6 +13,7 @@
     import ExpandedCopyPaste2 from "./components/ExpandedCopyPaste2.svelte";
     import ExpandedInfinite from "./components/ExpandedInfinite.svelte";
     import ExpandedZoomMethods from "./components/ExpandedZoomMethods.svelte";
+    import ExpandedSpeed from "./components/ExpandedSpeed.svelte";
 </script>
 
 <div class="screen">
@@ -31,6 +32,7 @@
         <ExpandedInfinite></ExpandedInfinite>
         <ExpandedZoomMethods></ExpandedZoomMethods>
         <ExpandedPreserveFlow></ExpandedPreserveFlow>
+        <ExpandedSpeed></ExpandedSpeed>
     </div>
 </div>
 
