@@ -1,29 +1,113 @@
-<div class="what">
-    <div class="qhead">Drawing, Done Differently</div>
-    <div class="">
-        <p>
-            DrawExact is a drawing tool for exploring, adjusting, and clarifying
-            your thoughts visually.
-        </p>
-        <p>
-            You have total control of your drawing geometry, DrawExact protects
-            your thinking flow by never getting in the way.
-        </p>
+<script>
+    import ListItemWithIcon from "./ListItemWithIcon.svelte";
+    import { Laptop, ZoomIn, Pin, Eye, Armchair, Gem, BrainCircuit, Pi, Chrome, Blocks, Mail } from "@lucide/svelte";
+</script>
 
-        <p>
-            You can think of it like <em>Google Docs</em> — reimagined for geometrically
-            precise drawings.
-        </p>
-        <p>
-            Like <em>Docs</em>, it works in your Browser, uses Google Sign-In,
-            saves to Google Drive, and is free.
-        </p>
+<div class="whatis qbg-alt">
+    <div class="qhead title">Drawing, Done Differently</div>
+    <div class="">
+        <ul class="screenlist">
+            <li>
+                <ListItemWithIcon>
+                    {#snippet theIcon()}<BrainCircuit
+                            size="40"
+                            strokeWidth="1"
+                            absoluteStrokeWidth={true}
+                        />{/snippet}
+                    {#snippet theCpt()}<span>
+                            Drawing demands deep thought.
+                            DrawExact is your quietly competent
+                            partner — safeguarding your thinking rhythm.
+                        </span>{/snippet}
+                </ListItemWithIcon>
+            </li>
+            <li>
+                <ListItemWithIcon>
+                    {#snippet theIcon()}<Pi
+                            size="40"
+                            strokeWidth="1"
+                            absoluteStrokeWidth={true}
+                        />{/snippet}
+                    {#snippet theCpt()}<span>
+                            It's kinda <em>Google Docs</em> reimagined for geometrically
+                            precise drawings (rather than documents).
+                        </span>{/snippet}
+                </ListItemWithIcon>
+            </li>
+            <li>
+                <ListItemWithIcon>
+                    {#snippet theIcon()}<Pin
+                            size="40"
+                            strokeWidth="1"
+                            absoluteStrokeWidth={true}
+                        />{/snippet}
+                    {#snippet theCpt()}<span
+                            >Instead of thinking it knows where a line should go <em
+                                >(like Powerpoint)</em
+                            >, <strong>you</strong> are in control.</span
+                        >{/snippet}
+                </ListItemWithIcon>
+            </li>
+            <li>
+                <ListItemWithIcon>
+                    {#snippet theIcon()}<Chrome
+                            size="40"
+                            strokeWidth="1"
+                            absoluteStrokeWidth={true}
+                        />{/snippet}
+                    {#snippet theCpt()}<span>
+                            Like <em>Docs</em>, it works in your browser, uses
+                            Google Sign-In, saves to Google Drive, and is free.
+                        </span>{/snippet}
+                </ListItemWithIcon>
+            </li>
+            <li>
+                <ListItemWithIcon>
+                    {#snippet theIcon()}<Blocks
+                            size="40"
+                            strokeWidth="1"
+                            absoluteStrokeWidth={true}
+                        />{/snippet}
+                    {#snippet theCpt()}<span>
+                            Google encourages <em
+                                >"Third-party Google Workspace Apps"</em
+                            > — that's what DrawExact is.
+                        </span>{/snippet}
+                </ListItemWithIcon>
+            </li>
+            <li>
+                <ListItemWithIcon>
+                    {#snippet theIcon()}<Mail
+                            size="40"
+                            strokeWidth="1"
+                            absoluteStrokeWidth={true}
+                        />{/snippet}
+                    {#snippet theCpt()}<span>
+                            <em
+                                >* If you have a Google email, you already have
+                                Drive</em
+                            >
+                        </span>{/snippet}
+                </ListItemWithIcon>
+            </li>
+        </ul>
     </div>
 </div>
 
 <style>
-    .what{
-        padding-top: 3rem;
-        padding-left:.5rem;
+    .whatis {
+        margin-top:3rem;
+        padding-top: 2rem;
+        padding-left: 0.5rem;
+    }
+    .title {
+        padding-bottom: 1rem;
+    }
+    .screenlist {
+        list-style: none;
+        padding: 0;
+    }
+    .screenlist li {
+        margin-top: 1rem;
     }
 </style>
