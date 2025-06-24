@@ -4,20 +4,28 @@
 
 <div class="expandedinfinite qcol">
     <div class="words qcol qbg-alt">
-        <div class="qhead">More on — Expand in any direction</div>
+        <div class="qhead">Expand infinitely</div>
         <span class="">You're drawing on an infinite canvas</span>
+        <span class=""
+            >So think and draw in the units that are in your head (it doesn't
+            know)</span
+        >
         <span class=""
             >Go large by zooming out and drawing in the wide open spaces</span
         >
         <span class="">Go small by zooming in</span>
         <span class=""
-            >For example, in DrawExact you can zoom progressively deeper into this boat:
-            </span
-        >
+            >For example, in DrawExact you can zoom progressively deeper into
+            this boat:
+        </span>
         <span class="steps"
-            ><em>its front half » its name » letter D » hidden bird » its eye.</em></span
+            ><em
+                >its front half » its name » letter D » hidden bird » its eye.</em
+            ></span
         >
-        <span class="">That's a 10,000X factor zoom. And graphics are still pin-sharp</span>
+        <span class=""
+            >That's a 10,000X factor zoom. And graphics are still pin-sharp</span
+        >
         <span class=""
             >The <strong>punchline</strong> is that one drawing can hold hierarchically
             revealed details as well as the big picture</span
@@ -38,7 +46,6 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-   
 
     img {
         width: 100%;

@@ -14,7 +14,7 @@
 
 <div class="expandedcp1 qcol">
     <div class="words qcol qbg-alt">
-        <div class="qhead">More on — Copy &amp; Paste Reimagined</div>
+        <div class="qhead">Copy &amp; Paste Reimagined</div>
         <span class=""
             >Here's how we've reimagined copy and paste for drawing fragments</span
         ><span class="">Instead of just Copy + Paste, we give you:</span>

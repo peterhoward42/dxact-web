@@ -19,9 +19,7 @@
                         />{/snippet}
                     {#snippet theCpt()}<span>
                             <strong>PowerPoint</strong> is great at deciding
-                            things for you. DrawExact is for people who want to
-                            decide
-                            <em>themselves.</em>
+                            things for you. In DrawExact, <strong>you</strong> decide.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -33,10 +31,10 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            <strong>CAD</strong> excels helping you design real things
-                            - asking you to think in 3D. DrawExact supports you in
-                            thinking and riffing with lines, arcs and text — thinking
-                            in 2D
+                            <strong>CAD</strong> centres you in 3D thinking about
+                            real physical objects. Just the 3D aspect takes up a
+                            portion of your brain. DrawExact centres you in 2D thinking
+                            and the drawing process itself.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -48,11 +46,10 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            <strong>Adobe's</strong> tools balance expressive freedom
-                            and technical complexity. DrawExact strips that back
-                            to focus solely on structured drawing: no layers, no
-                            brushes, no distractions. Just you, the geometry, and
-                            your ideas.
+                            <strong>Adobe's</strong> tools include a strong emphasis
+                            on aesthetics and artistic flair. DrawExact focusses
+                            ruthlessly on the geometric construction of your drawing
+                            - and keeping things simple.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>

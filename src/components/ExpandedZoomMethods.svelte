@@ -4,7 +4,7 @@
 
 <div class="expandedzoom qcol">
     <div class="words qcol qbg-alt">
-        <div class="qhead">More on — Surgical Grade Zoom</div>
+        <div class="qhead">Surgical Grade Zoom</div>
         <span class=""
             >Drawings, and the infinite canvas, deserve a dedicated zoom
             approach.</span
@@ -13,7 +13,9 @@
             >For zooming in, you can tunnel into the tiniest, precise target
             area by pulling a box round it.</span
         >
-        <span class="">That means — the perfect zoom in <strong>one</strong> step.</span>
+        <span class=""
+            >That means — the perfect zoom in <strong>one</strong> step.</span
+        >
         <span class=""
             >For zooming out, you'll likely want to either reset and see <strong
                 >everything</strong
@@ -24,7 +26,8 @@
             for speed.
         </span>
         <span class=""
-            >Zooming is so fast it feels instant, so no pause to interfere with your flow.
+            >Zooming is so fast it feels instant, so no pause to interfere with
+            your flow.
         </span>
     </div>
     <img src={zoomPrecise} alt="" />

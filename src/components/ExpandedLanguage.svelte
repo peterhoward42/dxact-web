@@ -4,7 +4,7 @@
 
 <div class="expandedlanguage qcol">
     <div class="words qcol qbg-alt">
-        <div class="qhead">More on — DrawExact's thinking language</div>
+        <div class="qhead">DrawExact's thinking language</div>
         <span class="kind">
             This is the <strong>kind</strong> of language DrawExact thinks in.
         </span>

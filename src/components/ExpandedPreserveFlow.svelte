@@ -5,7 +5,7 @@
 </script>
 
 <div class="expandedflow qbg-alt">
-    <div class="qhead">More on — Preserving your flow</div>
+    <div class="qhead">Preserving your flow</div>
     <div class="paras qcol">
         <p>
             Once you've clicked DrawExact's commands a few times, you start

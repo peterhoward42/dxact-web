@@ -4,15 +4,24 @@
 
 <div class="expandedtext qcol">
     <div class="words qcol qbg-alt">
-        <div class="qhead">More on — precision text</div>
-        <span class=""
-            >You size, position, and angle text in real-world units, with
-            precision, just like you do with lines and arcs</span
+        <div class="qhead">Independent text</div>
+        <span
+            >Say you draw a house 5m tall, and you want text as high as a house.
+            You set your text height to 5m.</span
         >
+        <span
+            >Text behaves geometrically the same as lines do. Height, angle, and
+            positioning. This plays well for integrating text in a drawing.
+        </span>
+
         <span class=""
-            >Include international characters and symbols</span
-        > <span class=""
-            >The fixed-width font makes indentation for tables easy</span
+            >You can use all the 96,000 Unicode characters. Which gives all
+            world languages, and all manner of symbols.</span
+        >
+        <span
+            >We've chosen a fixed-width font because they're convenient in
+            drawings. It gives you predictable and accurate vertical alignment
+            in multi-line text.</span
         >
     </div>
     <img src={expandedtext} alt="" />

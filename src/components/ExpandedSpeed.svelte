@@ -21,7 +21,7 @@
 </script>
 
 <div class="expandedspeed qcol qbg-alt">
-    <div class="qhead">More on — Fast Matters</div>
+    <div class="qhead">Fast Matters</div>
     <span class=""
         ><strong>Smooth fast</strong> matters because <strong>jerky slow</strong> ruins your flow</span
     >

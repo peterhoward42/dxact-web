@@ -15,8 +15,8 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Laptop or desktop with a proper keyboard, and mouse
-                            or trackpad
+                            Please visit on a laptop or desktop with a proper
+                            keyboard, and mouse or trackpad. Here's why:
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -28,20 +28,12 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Diamond crisp drawing clarity
+                            DrawExact exploits a big screen for diamond crisp
+                            drawing clarity
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
-            <li>
-                <ListItemWithIcon>
-                    {#snippet theIcon()}<ZoomIn
-                            size="40"
-                            strokeWidth="1"
-                            absoluteStrokeWidth={true}
-                        />{/snippet}
-                    {#snippet theCpt()}<span> Way less zooming </span>{/snippet}
-                </ListItemWithIcon>
-            </li>
+
             <li>
                 <ListItemWithIcon>
                     {#snippet theIcon()}<Pin
@@ -50,7 +42,8 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Your dexterity -> pin-sharp accuracy
+                            A mouse or trackpad brings out your dexterity for
+                            fine control.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -62,9 +55,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            See your drawing change (live) as you're <strong
-                                >typing</strong
-                            >
+                            A dedicated keyboard means that when you enter text
+                            you can see it going into your drawing key by key,
+                            which helps compose it and choose line breaks.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -76,7 +69,8 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Work in comfort. Not compromise
+                            The keyboard gives you access to the shortcuts which
+                            are a game changer.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
