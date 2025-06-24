@@ -26,9 +26,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            While you're thinking in the language of lines,
-                            arcs, tangents, fillets etc. It's quietly waiting
-                            and thinks the same language.
+                            When you draw, <strong>you're</strong> likely thinking
+                            the language of lines, arcs, tangents, fillets etc. Well,
+                            that's DrawExact's language too. No translation required.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -40,11 +40,10 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span
-                            >A different philosophy for precision text. It
-                            doesn't try to second-guess your intent (like <em
-                                >Powerpoint</em
-                            >). You are in control.</span
-                        >{/snippet}
+                            >In most apps, text <strong>belongs</strong> to graphics.
+                            In DrawExact, text is independent — a full citizen alongside
+                            lines and arcs.
+                        </span>{/snippet}
                 </ListItemWithIcon>
             </li>
             <li>
@@ -55,10 +54,11 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span
-                            >Copy & Paste re-imagined for <strong
-                                >drawing chunks</strong
+                            >We reimagined Copy & Paste for <strong
+                                >drawings.</strong
                             >
-                            , and amplified into a re-use and productivity toolkit
+                            And promoted it to
+                            <strong>"productivity superpower"</strong>
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -70,8 +70,10 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Your drawing can expand in any direction infinitely.
-                            Great for trying alternatives side by side
+                            Your drawing can expand infinitely in any direction.
+                            No preplanning distraction. Use drawing units that
+                            suit your world. Experiment with variations side by
+                            side.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -83,7 +85,8 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            A specialised, surgical-grade zoom approach
+                            A specialised, surgical, zooming approach. Purpose
+                            built for <strong>Drawings</strong>
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -96,8 +99,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Switching between drawing and interface breaks your
-                            flow. DrawExact preserves it.
+                            Switching between drawing and user interface can
+                            break your thinking flow. DrawExact respects flow,
+                            and has tools to protect it.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -109,9 +113,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            DrawExact is <em>"in a new league FAST"</em> - which <strong
-                                >matters</strong
-                            >, because jerky and slow damages your flow.
+                            DrawExact is <em>"in a new league"</em> FAST. That
+                            <strong>matters</strong>, because hesitation
+                            distrupts flow.
                             <em>(Geek alert - it uses WASM)</em></span
                         >
                     {/snippet}

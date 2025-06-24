@@ -1,6 +1,18 @@
 <script>
     import ListItemWithIcon from "./ListItemWithIcon.svelte";
-    import { Laptop, ZoomIn, Pin, Eye, Armchair, Gem, BrainCircuit, Pi, Chrome, Blocks, Mail } from "@lucide/svelte";
+    import {
+        Laptop,
+        ZoomIn,
+        Pin,
+        Eye,
+        Armchair,
+        Gem,
+        BrainCircuit,
+        Pi,
+        Chrome,
+        Blocks,
+        Mail,
+    } from "@lucide/svelte";
 </script>
 
 <div class="whatis qbg-alt">
@@ -15,9 +27,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            Drawing demands deep thought.
-                            DrawExact is your quietly competent
-                            partner — safeguarding your thinking rhythm.
+                            Drawing demands careful thought. DrawExact is your
+                            quietly competent partner — safeguarding your
+                            thinking rhythm.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -29,23 +41,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            It's kinda <em>Google Docs</em> reimagined for geometrically
+                            It's like <em>Google Docs</em> reimagined for geometrically
                             precise drawings (rather than documents).
                         </span>{/snippet}
-                </ListItemWithIcon>
-            </li>
-            <li>
-                <ListItemWithIcon>
-                    {#snippet theIcon()}<Pin
-                            size="40"
-                            strokeWidth="1"
-                            absoluteStrokeWidth={true}
-                        />{/snippet}
-                    {#snippet theCpt()}<span
-                            >Instead of thinking it knows where a line should go <em
-                                >(like Powerpoint)</em
-                            >, <strong>you</strong> are in control.</span
-                        >{/snippet}
                 </ListItemWithIcon>
             </li>
             <li>
@@ -61,6 +59,21 @@
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
+            <li>
+                <ListItemWithIcon>
+                    {#snippet theIcon()}<Pin
+                            size="40"
+                            strokeWidth="1"
+                            absoluteStrokeWidth={true}
+                        />{/snippet}
+                    {#snippet theCpt()}<span
+                            >Unlike tools that try to anticipate your intent
+                            (like PowerPoint snapping lines), DrawExact leaves
+                            the decisions to you.</span
+                        >{/snippet}
+                </ListItemWithIcon>
+            </li>
+
             <li>
                 <ListItemWithIcon>
                     {#snippet theIcon()}<Blocks
@@ -96,7 +109,7 @@
 
 <style>
     .whatis {
-        margin-top:3rem;
+        margin-top: 3rem;
         padding-top: 2rem;
         padding-left: 0.5rem;
     }
