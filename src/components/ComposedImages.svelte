@@ -7,34 +7,49 @@
     */
     const carouselFrames = [
          {
-            label: "Thinking language",
-            subLabel:
-                "this sort of thing",
+            label: "Choreographed text",
+            subLabel: "Precision position and angle. All world languages. And symbols.",
+            imageSrc: choreographedtext,
+        },
+        {
+            label: "Copy and Paste Auto Repeat (Line)",
+            subLabel: "Draw just ONE bicycle!",
+            imageSrc: copypasteline,
+        },
+        {
+            label: "copy ➛ TRANSFORM ➛ paste",
+            subLabel: "Draw once. Use many times.",
+            imageSrc: transforms,
+        },
+         {
+            label: "Copy and Paste Auto Repeat (Arc)",
+            subLabel: "Draw just ONE blade!",
+            imageSrc: copypastearc,
+        },
+        {
+            label: "You control the geometry",
+            subLabel: "None of that auto snapping you don't want",
+            imageSrc: flower,
+        },
+        {
+            label: "DrawExact's thinking language",
+            subLabel: "Same as your thinking language",
             imageSrc: language,
         },
         {
             label: "Choreographed text",
-            subLabel:
-                "it makes the world go round faster",
+            subLabel: "it makes the world go round faster",
             imageSrc: weather,
         },
         {
             label: "Engineering dimensions",
-            subLabel:
-                "it makes the world go round faster",
+            subLabel: "it makes the world go round faster",
             imageSrc: chain,
         },
         {
             label: "Compose and blend curves",
-            subLabel:
-                "it makes the world go round faster",
+            subLabel: "it makes the world go round faster",
             imageSrc: apple,
-        },
-        {
-            label: "Superpower copy & paste",
-            subLabel:
-                "it makes the world go round faster",
-            imageSrc: copypastearc,
         },
        
     ];
@@ -70,11 +85,15 @@
     import Carousel from "./Carousel.svelte";
     import { onMount, tick } from "svelte";
 
-    import apple from "/src/assets/images/forlandingpageapple.png"
+    import apple from "/src/assets/images/forlandingpageapple.png";
     import chain from "/src/assets/images/forlandingpagechain.png";
     import copypastearc from "/src/assets/images/forlandingpagecopiesonarc.png";
+    import copypasteline from "/src/assets/images/forlandingpagecopyrepeatline.png";
     import weather from "/src/assets/images/forlandingpageweather.png";
     import language from "/src/assets/images/forlandingpagelanguage.png";
+    import flower from "/src/assets/images/forlandingpageflower.png";
+    import transforms from "/src/assets/images/forlandingpagetransformpaste.png";
+    import choreographedtext from "/src/assets/images/forlandingpagechoreographedtext.png";
 
     function nextFrame() {
         setStateToShowGivenFrame(mod(composedImagesState.current + 1));
@@ -82,9 +101,10 @@
 
     let { aspectRatio } = $props();
 
+    const animationPeriod = 10000
     onMount(async () => {
         // Start the animation frame generator
-        setInterval(nextFrame, 2500);
+        setInterval(nextFrame, animationPeriod);
     });
 </script>
 
@@ -93,13 +113,13 @@
     <div class="label qcol qgap-rem qbg-alt">
         <!-- Conditional layout is a trick to force Svelte to refresh the fade class on each new animation frame -->
         {#if composedImagesState.tick % 2}
-            <span class="fade primary "
+            <span class="fade primary"
                 >{carouselFrames[composedImagesState.current].label}</span
             ><span class="fade secondary"
                 >{carouselFrames[composedImagesState.current].subLabel}</span
             >
         {:else}
-            <span class="fade primary "
+            <span class="fade primary"
                 >{carouselFrames[composedImagesState.current].label}</span
             ><span class="fade secondary"
                 >{carouselFrames[composedImagesState.current].subLabel}</span
