@@ -7,24 +7,22 @@
         <div class="qhead">Expand infinitely</div>
         <span class="">You're drawing on an infinite canvas</span>
         <span class=""
-            >So think and draw in the units that are in your head (it doesn't
-            know)</span
+            >So can think and draw in the units that are in your head (it
+            doesn't know)</span
         >
         <span class=""
             >Go large by zooming out and drawing in the wide open spaces</span
         >
         <span class="">Go small by zooming in</span>
         <span class=""
-            >For example, in DrawExact you can zoom progressively deeper into
-            this boat:
+            >You can zoom in as much as 10,000X, and the drawing is still
+            pin-sharp.
         </span>
-        <span class="steps"
-            ><em
-                >its front half » its name » letter D » hidden bird » its eye.</em
-            ></span
-        >
-        <span class=""
-            >That's a 10,000X factor zoom. And graphics are still pin-sharp</span
+        <span
+            >This boat is one of our example drawings. You can zoom to drill down all
+            the way from the boat's name, to inside one of the letters, to a
+            bird hidden in there, to the bird's eye, to a reflection of your
+            face looking back at you.</span
         >
         <span class=""
             >The <strong>punchline</strong> is that one drawing can hold hierarchically

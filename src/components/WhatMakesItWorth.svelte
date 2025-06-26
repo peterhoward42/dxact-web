@@ -115,7 +115,7 @@
                     {#snippet theCpt()}<span>
                             DrawExact is <em>"in a new league"</em> FAST. That
                             <strong>matters</strong>, because hesitation
-                            distrupts flow.
+                            disrupts flow.
                             <em>(Geek alert - it uses WASM)</em></span
                         >
                     {/snippet}

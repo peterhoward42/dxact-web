@@ -32,7 +32,7 @@
                         {#snippet theCpt()}<span>
                                 Draw the <strong>left</strong> handed version,
                                 and get the <strong>right</strong>
-                                handed one free with <strong>mirror</strong>
+                                one free with <strong>mirror</strong>
                             </span>{/snippet}
                     </ListItemWithIcon>
                 </li>
@@ -73,7 +73,7 @@
                             />{/snippet}
                         {#snippet theCpt()}<span>
                                 Stash things you draw often in a library drawing
-                                and use <strong>copy / transform</strong> to import
+                                and use <strong>copy / transform</strong> to reuse
                                 them
                             </span>{/snippet}
                     </ListItemWithIcon>
@@ -86,8 +86,9 @@
                                 absoluteStrokeWidth={true}
                             />{/snippet}
                         {#snippet theCpt()}<span>
-                                Experiment with a sister variant of your drawing
-                                by <strong>Pasting</strong> two copies side by side
+                                Make several copy and paste's side by side to
+                                experiment with evolutions of your drawing
+                                without risk.
                             </span>{/snippet}
                     </ListItemWithIcon>
                 </li>

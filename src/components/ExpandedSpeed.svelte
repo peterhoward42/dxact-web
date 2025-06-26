@@ -14,16 +14,15 @@
         SquareDashedMousePointer,
         SquareStack,
         Infinity,
-
-        Smile
-
+        Smile,
     } from "@lucide/svelte";
 </script>
 
 <div class="expandedspeed qcol qbg-alt">
     <div class="qhead">Fast Matters</div>
     <span class=""
-        ><strong>Smooth fast</strong> matters because <strong>jerky slow</strong> ruins your flow</span
+        >The app working fast and smoothly matters. Because any hesitation or
+        jerkiness disrupts your flow</span
     >
     <ul class="processlist">
         <li>
@@ -63,7 +62,7 @@
                 {#snippet theCpt()}<span>
                         Drawing apps in particular were limited to simple
                         drawings, and couldn't use rich feedback during mouse
-                        movements to help you.
+                        movements as part of the "conversation" with you.
                     </span>{/snippet}
             </ListItemWithIcon>
         </li>
@@ -89,8 +88,9 @@
                         absoluteStrokeWidth={true}
                     />{/snippet}
                 {#snippet theCpt()}<span>
-                        DrawExact is forging ahead with it, and can take
-                        a 20,000 line drawing in its stride, &amp; still feel instant.
+                        DrawExact is forging ahead with it, and can take a
+                        20,000 line drawing in its stride, &amp; still feel
+                        instant.
                     </span>{/snippet}
             </ListItemWithIcon>
         </li>
@@ -102,7 +102,9 @@
                         absoluteStrokeWidth={true}
                     />{/snippet}
                 {#snippet theCpt()}<span>
-                        In a nutshell; it's good for <strong>real world work</strong> and is a satisfying experience.
+                        In a nutshell; it's good for <strong
+                            >real world work</strong
+                        > and is a satisfying experience.
                     </span>{/snippet}
             </ListItemWithIcon>
         </li>
@@ -125,6 +127,4 @@
     .processlist li {
         margin-bottom: 0.9rem;
     }
-
-   
 </style>

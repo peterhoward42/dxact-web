@@ -41,7 +41,7 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            It's like <em>Google Docs</em> reimagined for geometrically
+                            It's like <em>Google Docs</em>, but reimagined for geometrically
                             precise drawings (rather than documents).
                         </span>{/snippet}
                 </ListItemWithIcon>

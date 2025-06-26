@@ -38,7 +38,7 @@
                                 absoluteStrokeWidth={true}
                             />{/snippet}
                         {#snippet theCpt()}<span>
-                                Now you can see it, and slide it around over your drawing
+                                You can see it &amp; and slide it around to explore where you want it.
                             </span>{/snippet}
                     </ListItemWithIcon>
                 </li>
@@ -50,8 +50,7 @@
                                 absoluteStrokeWidth={true}
                             />{/snippet}
                         {#snippet theCpt()}<span>
-                                Preview positions and repeat patterns (along
-                                lines/arcs)
+                                That includes latching to points, and auto-repeat patterns along lines or arcs.
                             </span>{/snippet}
                     </ListItemWithIcon>
                 </li>
@@ -63,8 +62,7 @@
                                 absoluteStrokeWidth={true}
                             />{/snippet}
                         {#snippet theCpt()}<span>
-                                Scale, mirror &amp; rotate the copy while
-                                previewing
+                                You can <em>transform</em> your Copy (iteratively) with scale, mirror &amp; rotate before Pasting.
                             </span>{/snippet}
                     </ListItemWithIcon>
                 </li>
@@ -76,7 +74,7 @@
                                 absoluteStrokeWidth={true}
                             />{/snippet}
                         {#snippet theCpt()}<span>
-                                Click to commit your Paste
+                                You click to commit your Paste
                             </span>{/snippet}
                     </ListItemWithIcon>
                 </li>

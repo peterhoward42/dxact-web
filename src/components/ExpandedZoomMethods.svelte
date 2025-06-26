@@ -4,9 +4,9 @@
 
 <div class="expandedzoom qcol">
     <div class="words qcol qbg-alt">
-        <div class="qhead">Surgical Grade Zoom</div>
+        <div class="qhead">Surgical Zoom</div>
         <span class=""
-            >Drawings, and the infinite canvas, deserve a dedicated zoom
+            >Drawings, and the infinite canvas, deserve a <strong>specialised</strong> zoom
             approach.</span
         >
         <span class=""

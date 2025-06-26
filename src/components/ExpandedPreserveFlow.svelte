@@ -8,8 +8,8 @@
     <div class="qhead">Preserving your flow</div>
     <div class="paras qcol">
         <p>
-            Once you've clicked DrawExact's commands a few times, you start
-            thinking in those words:
+            Once you've clicked DrawExact's commands a few times, you gradually
+            find yourself thinking in those command words:
         </p>
 
         <div class="cmdwords qrow qgap-rem">
@@ -33,14 +33,15 @@
                 absoluteStrokeWidth={true}
             />
             <span>
-                It's a light bulb moment when you realise you can instead just
-                hit the first letter key instead.
+                It's a light bulb moment when you realise you can fire the
+                command just by pressing its first letter key.
             </span>
         </div>
 
         <p>
-            NOW your eyes stay with the drawing, you're going almost
-            subliminally from thought to execution. That's flow.
+            That means your eyes can stay riveted to the drawing. And the
+            pathway from thought to action is a direct line, almost subliminal.
+            That's flow!
         </p>
     </div>
 </div>
