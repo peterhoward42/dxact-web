@@ -7,6 +7,11 @@
     */
     const carouselFrames = [
         {
+            label: "Surgical zoom",
+            subLabel: "Zoom precisely - right first time - in a single step",
+            imageSrc: zoomtarget,
+        },
+        {
             label: "Make library drawings",
             subLabel: "Reusable components to copy / scale / paste.",
             imageSrc: library,
@@ -100,6 +105,7 @@
     import transforms from "/src/assets/images/forlandingpagetransformpaste.png";
     import choreographedtext from "/src/assets/images/forlandingpagechoreographedtext.png";
     import library from "/src/assets/images/forlandingpagelibrary.png";
+    import zoomtarget from "/src/assets/images/forlandingpageaccuratezoom.png";
 
     function nextFrame() {
         setStateToShowGivenFrame(mod(composedImagesState.current + 1));
