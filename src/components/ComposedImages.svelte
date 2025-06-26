@@ -36,12 +36,7 @@
                 "it makes the world go round faster",
             imageSrc: copypastearc,
         },
-        {
-            label: "Instruction diagram",
-            subLabel:
-                "it makes the world go round faster",
-            imageSrc: howworks,
-        },
+       
     ];
     const nFrames = carouselFrames.length;
 
@@ -75,12 +70,11 @@
     import Carousel from "./Carousel.svelte";
     import { onMount, tick } from "svelte";
 
-    import apple from "/src/assets/images/apple.png";
-    import chain from "/src/assets/images/chain.png";
-    import howworks from "/src/assets/images/howworks.png";
-    import copypastearc from "/src/assets/images/copypastearc.png";
-    import weather from "/src/assets/images/weather.png";
-    import language from "/src/assets/images/language.png";
+    import apple from "/src/assets/images/forlandingpageapple.png"
+    import chain from "/src/assets/images/forlandingpagechain.png";
+    import copypastearc from "/src/assets/images/forlandingpagecopiesonarc.png";
+    import weather from "/src/assets/images/forlandingpageweather.png";
+    import language from "/src/assets/images/forlandingpagelanguage.png";
 
     function nextFrame() {
         setStateToShowGivenFrame(mod(composedImagesState.current + 1));

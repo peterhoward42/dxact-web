@@ -1,5 +1,5 @@
 <script>
-    import copypastearc from "/src/assets/images/copypastearc.png";
+    import copypastearc from "/src/assets/images/forlandingpagecopiesonarc.png";
     import ListItemWithIcon from "./ListItemWithIcon.svelte";
     import {
         ALargeSmall,

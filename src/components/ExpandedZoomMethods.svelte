@@ -1,5 +1,5 @@
 <script>
-    import zoomPrecise from "/src/assets/images/zoomprecise.png";
+    import zoomPrecise from "/src/assets/images/forlandingpageaccuratezoom.png";
 </script>
 
 <div class="expandedzoom qcol">

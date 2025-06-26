@@ -1,5 +1,5 @@
 <script>
-    import boatInfinite from "/src/assets/images/boatinfinite.png";
+    import boatInfinite from "/src/assets/images/forlandingpageinfinitecanvas.png";
 </script>
 
 <div class="expandedinfinite qcol">

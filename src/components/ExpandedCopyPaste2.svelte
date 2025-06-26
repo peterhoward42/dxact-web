@@ -1,5 +1,5 @@
 <script>
-    import mirror from "/src/assets/images/mirror.png";
+    import mirror from "/src/assets/images/forlandingpagemirror.png";
     import ListItemWithIcon from "./ListItemWithIcon.svelte";
     import {
         ALargeSmall,
