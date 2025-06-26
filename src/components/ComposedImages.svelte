@@ -6,9 +6,15 @@
     the carousel.
     */
     const carouselFrames = [
-         {
+        {
+            label: "Make library drawings",
+            subLabel: "Reusable components to copy / scale / paste.",
+            imageSrc: library,
+        },
+        {
             label: "Choreographed text",
-            subLabel: "Precision position and angle. All world languages. And symbols.",
+            subLabel:
+                "Precision position and angle. All world languages. And symbols.",
             imageSrc: choreographedtext,
         },
         {
@@ -21,7 +27,7 @@
             subLabel: "Draw once. Use many times.",
             imageSrc: transforms,
         },
-         {
+        {
             label: "Copy and Paste Auto Repeat (Arc)",
             subLabel: "Draw just ONE blade!",
             imageSrc: copypastearc,
@@ -51,7 +57,6 @@
             subLabel: "it makes the world go round faster",
             imageSrc: apple,
         },
-       
     ];
     const nFrames = carouselFrames.length;
 
@@ -94,6 +99,7 @@
     import flower from "/src/assets/images/forlandingpageflower.png";
     import transforms from "/src/assets/images/forlandingpagetransformpaste.png";
     import choreographedtext from "/src/assets/images/forlandingpagechoreographedtext.png";
+    import library from "/src/assets/images/forlandingpagelibrary.png";
 
     function nextFrame() {
         setStateToShowGivenFrame(mod(composedImagesState.current + 1));
@@ -101,7 +107,7 @@
 
     let { aspectRatio } = $props();
 
-    const animationPeriod = 10000
+    const animationPeriod = 10000;
     onMount(async () => {
         // Start the animation frame generator
         setInterval(nextFrame, animationPeriod);
