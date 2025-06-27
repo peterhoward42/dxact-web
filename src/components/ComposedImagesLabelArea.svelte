@@ -72,8 +72,7 @@
     .label {
         width: 100%;
     }
-    .pause {
-    }
+   
     .fade {
         opacity: 1;
         animation-name: fadeInKeyFrames;
@@ -82,7 +81,7 @@
     }
     .primary {
         font-size: 1.1rem;
-        color: #225;
+        color: blue;
         line-height: 0;
         padding-top: 0.3rem;
     }

@@ -17,12 +17,12 @@
 
     export const carouselFrames = [
         {
-            label: "DrawExact's thinking language",
-            subLabel: "Same as your thinking language",
+            label: "DrawExact's thinking words",
+            subLabel: "Same as your yours",
             imageSrc: language,
         },
         {
-            label: "You control the geometry",
+            label: "You command the geometry",
             subLabel: "None of that auto snapping you don't want",
             imageSrc: flower,
         },
@@ -32,17 +32,17 @@
             imageSrc: choreographedtext,
         },
         {
-            label: "copy ➛ TRANSFORM ➛ paste",
-            subLabel: "Draw once. Use many times.",
+            label: "Transforms",
+            subLabel: "A superpower when you Paste",
             imageSrc: transforms,
         },
         {
-            label: "Copy and Paste Auto Repeat (Line)",
-            subLabel: "Draw just ONE bicycle!",
+            label: "Linear Auto-Repeat Patterns",
+            subLabel: "Another Paste superpower",
             imageSrc: copypasteline,
         },
         {
-            label: "Copy and Paste Auto Repeat (Arc)",
+            label: "Circular Repeat Patterns",
             subLabel: "Draw just ONE blade!",
             imageSrc: copypastearc,
         },
@@ -57,7 +57,7 @@
             imageSrc: chain,
         },
         {
-            label: "Compose with circles and arcs",
+            label: "Compose circles and arcs",
             subLabel: "Easy to arrange, blend and trim curves.",
             imageSrc: apple,
         },
