@@ -18,7 +18,7 @@
     export const carouselFrames = [
         {
             label: "DrawExact's thinking words",
-            subLabel: "Same as your yours",
+            subLabel: "Same as your thinking words",
             imageSrc: language,
         },
         {
