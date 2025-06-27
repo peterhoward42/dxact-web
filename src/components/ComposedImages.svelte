@@ -7,14 +7,14 @@
     */
     const carouselFrames = [
         {
-            label: "Surgical zoom",
-            subLabel: "Zoom precisely - right first time - in a single step",
-            imageSrc: zoomtarget,
+            label: "DrawExact's thinking language",
+            subLabel: "Same as your thinking language",
+            imageSrc: language,
         },
         {
-            label: "Make library drawings",
-            subLabel: "Reusable components to copy / scale / paste.",
-            imageSrc: library,
+            label: "You control the geometry",
+            subLabel: "None of that auto snapping you don't want",
+            imageSrc: flower,
         },
         {
             label: "Choreographed text",
@@ -23,14 +23,14 @@
             imageSrc: choreographedtext,
         },
         {
-            label: "Copy and Paste Auto Repeat (Line)",
-            subLabel: "Draw just ONE bicycle!",
-            imageSrc: copypasteline,
-        },
-        {
             label: "copy ➛ TRANSFORM ➛ paste",
             subLabel: "Draw once. Use many times.",
             imageSrc: transforms,
+        },
+        {
+            label: "Copy and Paste Auto Repeat (Line)",
+            subLabel: "Draw just ONE bicycle!",
+            imageSrc: copypasteline,
         },
         {
             label: "Copy and Paste Auto Repeat (Arc)",
@@ -38,29 +38,26 @@
             imageSrc: copypastearc,
         },
         {
-            label: "You control the geometry",
-            subLabel: "None of that auto snapping you don't want",
-            imageSrc: flower,
+            label: "Surgical zoom",
+            subLabel: "Zoom precisely - right first time - in a single step",
+            imageSrc: zoomtarget,
         },
         {
-            label: "DrawExact's thinking language",
-            subLabel: "Same as your thinking language",
-            imageSrc: language,
-        },
-        {
-            label: "Choreographed text",
-            subLabel: "it makes the world go round faster",
-            imageSrc: weather,
-        },
-        {
-            label: "Engineering dimensions",
-            subLabel: "it makes the world go round faster",
+            label: "Engineering drawings",
+            subLabel:
+                "It has the construction techniques. And auto-dimensioning.",
             imageSrc: chain,
         },
         {
-            label: "Compose and blend curves",
-            subLabel: "it makes the world go round faster",
+            label: "Compose with circles and arcs",
+            subLabel:
+                "Easy to arrange, blend and trim curves with tangent and fillet tools",
             imageSrc: apple,
+        },
+        {
+            label: "Make library drawings",
+            subLabel: "Reusable components to copy / scale / paste.",
+            imageSrc: library,
         },
     ];
     const nFrames = carouselFrames.length;
@@ -99,7 +96,6 @@
     import chain from "/src/assets/images/forlandingpagechain.png";
     import copypastearc from "/src/assets/images/forlandingpagecopiesonarc.png";
     import copypasteline from "/src/assets/images/forlandingpagecopyrepeatline.png";
-    import weather from "/src/assets/images/forlandingpageweather.png";
     import language from "/src/assets/images/forlandingpagelanguage.png";
     import flower from "/src/assets/images/forlandingpageflower.png";
     import transforms from "/src/assets/images/forlandingpagetransformpaste.png";
@@ -113,7 +109,7 @@
 
     let { aspectRatio } = $props();
 
-    const animationPeriod = 10000;
+    const animationPeriod = 2000;
     onMount(async () => {
         // Start the animation frame generator
         setInterval(nextFrame, animationPeriod);

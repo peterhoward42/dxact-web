@@ -7,7 +7,7 @@
         <div class="qhead">Expand infinitely</div>
         <span class="">You're drawing on an infinite canvas</span>
         <span class=""
-            >So can think and draw in the units that are in your head (it
+            >So you can think and draw in the units that are in your head (it
             doesn't know)</span
         >
         <span class=""
@@ -19,10 +19,10 @@
             pin-sharp.
         </span>
         <span
-            >This boat is one of our example drawings. You can zoom to drill down all
-            the way from the boat's name, to inside one of the letters, to a
-            bird hidden in there, to the bird's eye, to a reflection of your
-            face looking back at you.</span
+            >This boat is one of our example drawings. You can zoom to drill
+            down all the way from the boat's name, to inside one of the letters,
+            to a bird hidden in there, to the bird's eye, to a reflection of
+            your face looking back at you.</span
         >
         <span class=""
             >The <strong>punchline</strong> is that one drawing can hold hierarchically
