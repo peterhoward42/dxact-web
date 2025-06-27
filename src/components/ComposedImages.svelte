@@ -5,7 +5,17 @@
     governs it animation sequence - in lock step with a label that is laid out with
     the carousel.
     */
-    const carouselFrames = [
+    export let theTicker;
+
+    export function stopTheTicker() {
+        clearInterval(theTicker);
+    }
+
+    export function nextFrame() {
+        setStateToShowGivenFrame(mod(composedImagesState.current + 1));
+    }
+
+    export const carouselFrames = [
         {
             label: "DrawExact's thinking language",
             subLabel: "Same as your thinking language",
@@ -18,8 +28,7 @@
         },
         {
             label: "Choreographed text",
-            subLabel:
-                "Precision position and angle. All world languages. And symbols.",
+            subLabel: "Precise. Multilingual. And symbols.",
             imageSrc: choreographedtext,
         },
         {
@@ -39,24 +48,22 @@
         },
         {
             label: "Surgical zoom",
-            subLabel: "Zoom precisely - right first time - in a single step",
+            subLabel: "Zoom precisely - in a single step",
             imageSrc: zoomtarget,
         },
         {
-            label: "Engineering drawings",
-            subLabel:
-                "It has the construction techniques. And auto-dimensioning.",
+            label: "Auto dimensions",
+            subLabel: "For engineering drawings",
             imageSrc: chain,
         },
         {
             label: "Compose with circles and arcs",
-            subLabel:
-                "Easy to arrange, blend and trim curves with tangent and fillet tools",
+            subLabel: "Easy to arrange, blend and trim curves.",
             imageSrc: apple,
         },
         {
             label: "Make library drawings",
-            subLabel: "Reusable components to copy / scale / paste.",
+            subLabel: "Copy - Scale - Reuse",
             imageSrc: library,
         },
     ];
@@ -102,37 +109,21 @@
     import choreographedtext from "/src/assets/images/forlandingpagechoreographedtext.png";
     import library from "/src/assets/images/forlandingpagelibrary.png";
     import zoomtarget from "/src/assets/images/forlandingpageaccuratezoom.png";
-
-    function nextFrame() {
-        setStateToShowGivenFrame(mod(composedImagesState.current + 1));
-    }
+    import ComposedImagesLabelArea from "./ComposedImagesLabelArea.svelte";
 
     let { aspectRatio } = $props();
 
     const animationPeriod = 2000;
     onMount(async () => {
         // Start the animation frame generator
-        setInterval(nextFrame, animationPeriod);
+        theTicker = setInterval(nextFrame, animationPeriod);
     });
 </script>
 
 <div class="composed qcol">
     <Carousel frames={carouselFrames} {aspectRatio} />
-    <div class="label qcol qgap-rem qbg-alt">
-        <!-- Conditional layout is a trick to force Svelte to refresh the fade class on each new animation frame -->
-        {#if composedImagesState.tick % 2}
-            <span class="fade primary"
-                >{carouselFrames[composedImagesState.current].label}</span
-            ><span class="fade secondary"
-                >{carouselFrames[composedImagesState.current].subLabel}</span
-            >
-        {:else}
-            <span class="fade primary"
-                >{carouselFrames[composedImagesState.current].label}</span
-            ><span class="fade secondary"
-                >{carouselFrames[composedImagesState.current].subLabel}</span
-            >
-        {/if}
+    <div class="labelarea">
+        <ComposedImagesLabelArea />
     </div>
 </div>
 
@@ -141,29 +132,8 @@
         width: 100%;
         align-items: center;
     }
-    .label {
+    .labelarea {
         width: 100%;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        text-align: center;
-    }
-    .fade {
-        opacity: 1;
-        animation-name: fadeInKeyFrames;
-        animation-timing-function: ease-in;
-        animation-duration: 500ms;
-    }
-    .primary {
-        font-size: 1.1rem;
-        color: #225;
-        line-height: 0;
-        padding-top: 0.3rem;
-    }
-    .secondary {
-        font-size: 1rem;
-        color: #777;
-        line-height: 1.25rem;
-        padding-top: 0.35rem;
     }
 
     @keyframes fadeInKeyFrames {
