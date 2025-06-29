@@ -1,4 +1,5 @@
 <script>
+    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
     import boatInfinite from "/src/assets/images/forlandingpageinfinitecanvas_M.png";
 </script>
 
@@ -29,7 +30,7 @@
             revealed details as well as the big picture</span
         >
     </div>
-    <img src={boatInfinite} alt="" />
+    <img src={deviceOptimisedImageSrc(boatInfinite)} alt="" />
 </div>
 
 <style>

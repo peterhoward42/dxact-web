@@ -1,4 +1,5 @@
 <script>
+    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
     import language from "/src/assets/images/forlandingpagelanguage_M.png";
 </script>
 
@@ -12,7 +13,7 @@
             >As opposed to things like connecting two boxes on a flow chart</span
         >
     </div>
-    <img src={language} alt="" />
+    <img src={deviceOptimisedImageSrc(language)} alt="" />
 </div>
 
 <style>

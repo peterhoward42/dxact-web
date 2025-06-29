@@ -10,6 +10,7 @@
         MousePointerClick,
         SquareStack,
     } from "@lucide/svelte";
+    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
 </script>
 
 <div class="expandedcp1 qcol">
@@ -84,7 +85,7 @@
             </ul>
         </div>
     </div>
-    <img src={copypastearc} alt="" />
+    <img src={deviceOptimisedImageSrc(copypastearc)} alt="" />
 </div>
 
 <style>

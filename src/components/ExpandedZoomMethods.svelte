@@ -1,4 +1,5 @@
 <script>
+    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
     import zoomPrecise from "/src/assets/images/forlandingpageaccuratezoom_M.png";
 </script>
 
@@ -31,7 +32,7 @@
             your flow.
         </span>
     </div>
-    <img src={zoomPrecise} alt="" />
+    <img src={deviceOptimisedImageSrc(zoomPrecise)} alt="" />
 </div>
 
 <style>

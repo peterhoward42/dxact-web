@@ -1,4 +1,5 @@
 <script>
+    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
     import expandedtext from "/src/assets/images/forlandingpagemoreontext_M.png";
 </script>
 
@@ -24,7 +25,7 @@
             in multi-line text.</span
         >
     </div>
-    <img src={expandedtext} alt="" />
+    <img src={deviceOptimisedImageSrc(expandedtext)} alt="" />
 </div>
 
 <style>

@@ -14,6 +14,7 @@
         RotateCw,
         SquareStack,
     } from "@lucide/svelte";
+    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
 </script>
 
 <div class="expandedcp2 qcol">
@@ -95,7 +96,7 @@
             </ul>
         </div>
     </div>
-    <img src={mirror} alt="" />
+    <img src={deviceOptimisedImageSrc(mirror)} alt="" />
 </div>
 
 <style>
