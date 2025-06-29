@@ -1,4 +1,5 @@
 <script>
+    import { responsiveMeta } from "../services/responsive.svelte";
     import { composedImagesState } from "./ComposedImages.svelte";
 
     let { frames, aspectRatio } = $props();
@@ -12,6 +13,22 @@
             index == composedImagesState.upNext
         );
     }
+
+    // Replace the given mobileImageSrc (e.g. "apple_M.png") with for example "apple_T.png",
+    // to correspond to the current viewport size.
+    function deviceOptimisedImageSrc(mobileImageSrc) {
+        switch (responsiveMeta.deviceFormFactor) {
+            case "mobile":
+                return mobileImageSrc;
+                break;
+            case "tablet":
+                return mobileImageSrc.replace("M.png", "T.png");
+                break;
+            default:
+                return mobileImageSrc.replace("M.png", "D.png");
+                break;
+        }
+    }
 </script>
 
 <div class="carousel qbg-alt" style:aspect-ratio={aspectRatio}>
@@ -24,7 +41,7 @@
             class:show={shouldBeVisible(index)}
             class:hide={!shouldBeVisible(index)}
         >
-            <img src={frame.imageSrc} alt="" />
+            <img src={deviceOptimisedImageSrc(frame.imageSrc)} alt="" />
         </div>
     {/each}
 </div>

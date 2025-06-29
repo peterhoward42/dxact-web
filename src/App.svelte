@@ -1,4 +1,6 @@
 <script>
+    import { onMount } from "svelte";
+
     import HeroSection from "./components/HeroSection.svelte";
     import ScrollCue from "./components/ScrollCue.svelte";
     import WhatIs from "./components/WhatIs.svelte";
@@ -14,6 +16,13 @@
     import ExpandedInfinite from "./components/ExpandedInfinite.svelte";
     import ExpandedZoomMethods from "./components/ExpandedZoomMethods.svelte";
     import ExpandedSpeed from "./components/ExpandedSpeed.svelte";
+    import { setupMediaQueryObserver } from "./services/responsive.svelte";
+
+    // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
+    // via a rune.
+    onMount(async () => {
+        setupMediaQueryObserver();
+    });
 </script>
 
 <div class="screen">
@@ -41,8 +50,8 @@
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: .5rem;
-        padding-right: .5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .layout {
