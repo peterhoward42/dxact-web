@@ -31,23 +31,7 @@
 </script>
 
 <div class="screen">
-    {#if responsiveMeta.deviceFormFactor == "desktop"}
-        <div class="deskylayout qcol">
-            <FrontMatterTitles />
-            <ComposedImages aspectRatio="1.5"></ComposedImages>
-            <CTA />
-            <RowOfPanelsForDesktop>
-                <ScrollCue />
-                <WhatIs />
-                <WhatMakesItWorth />
-            </RowOfPanelsForDesktop>
-            <RowOfPanelsForDesktop>
-                <GetStarted />
-                <BigScreen2 />
-                <PowerPoint2 />
-            </RowOfPanelsForDesktop>
-        </div>
-    {:else}
+    {#if responsiveMeta.deviceFormFactor == "mobile" || responsiveMeta.deviceFormFactor == "tablet"}
         <div class="mobilelayout qcol">
             <FrontMatterTitles />
             <ComposedImages aspectRatio="1.5"></ComposedImages>
@@ -66,6 +50,23 @@
             <ExpandedZoomMethods></ExpandedZoomMethods>
             <ExpandedPreserveFlow></ExpandedPreserveFlow>
             <ExpandedSpeed></ExpandedSpeed>
+        </div>
+    {/if}
+    {#if responsiveMeta.deviceFormFactor == "desktop"}
+        <div class="deskylayout qcol">
+            <FrontMatterTitles />
+            <ComposedImages aspectRatio="1.5"></ComposedImages>
+            <CTA />
+            <RowOfPanelsForDesktop>
+                <ScrollCue />
+                <WhatIs />
+                <WhatMakesItWorth />
+            </RowOfPanelsForDesktop>
+            <RowOfPanelsForDesktop>
+                <GetStarted />
+                <BigScreen2 />
+                <PowerPoint2 />
+            </RowOfPanelsForDesktop>
         </div>
     {/if}
 </div>

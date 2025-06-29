@@ -1,19 +1,21 @@
 <script>
-    import {
-        deviceOptimisedImageSrc,
-        responsiveMeta,
-    } from "../services/responsive.svelte";
-    import { composedImagesState } from "./ComposedImages.svelte";
+    import { composedImagesState, wrapped } from "./ComposedImages.svelte";
 
     let { frames, aspectRatio } = $props();
 
+    let indexToShow = $derived(composedImagesState.frameIndexToShow);
+    let indexToParkLeft = $derived(
+        wrapped(composedImagesState.frameIndexToShow + 1),
+    );
+    let indexToParkRight = $derived(
+        wrapped(composedImagesState.frameIndexToShow - 1),
+    );
+
     function shouldBeVisible(index) {
-        // The frames that should be visible are the sequence of 3 centred under the
-        // viewing window.
         return (
-            index == composedImagesState.current ||
-            index == composedImagesState.justPushedOut ||
-            index == composedImagesState.upNext
+            index == indexToShow ||
+            index == indexToParkLeft ||
+            index == indexToParkRight
         );
     }
 </script>
@@ -22,9 +24,9 @@
     {#each frames as frame, index}
         <div
             class="frame-wrapper"
-            class:centre={index == composedImagesState.current}
-            class:left={index == composedImagesState.upNext}
-            class:right={index == composedImagesState.justPushedOut}
+            class:centre={index == indexToShow}
+            class:left={index == indexToParkLeft}
+            class:right={index == indexToParkRight}
             class:show={shouldBeVisible(index)}
             class:hide={!shouldBeVisible(index)}
         >
@@ -47,7 +49,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        /* box-sizing: border-box; */
         transition: left 1s ease-in-out;
     }
 

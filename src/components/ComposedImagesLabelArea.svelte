@@ -1,7 +1,7 @@
 <script>
     import {
         composedImagesState,
-        nextFrame,
+        advanceOneFrame,
         stopTheTicker,
     } from "./ComposedImages.svelte";
     import { carouselFrames } from "./ComposedImages.svelte";
@@ -14,25 +14,28 @@
         paused = true;
     }
     function handleNext() {
-        nextFrame()
+        advanceOneFrame();
     }
-
 </script>
 
 <div class="labelarea qrow qbg-alt">
     <div class="label qcol qgap-rem">
         <!-- Conditional layout is a trick to force Svelte to refresh the fade class on each new animation frame -->
-        {#if composedImagesState.tick % 2}
+        {#if composedImagesState.frameIndexToShow % 2}
             <span class="fade primary"
-                >{carouselFrames[composedImagesState.current].label}</span
+                >{carouselFrames[composedImagesState.frameIndexToShow]
+                    .label}</span
             ><span class="fade secondary"
-                >{carouselFrames[composedImagesState.current].subLabel}</span
+                >{carouselFrames[composedImagesState.frameIndexToShow]
+                    .subLabel}</span
             >
         {:else}
             <span class="fade primary"
-                >{carouselFrames[composedImagesState.current].label}</span
+                >{carouselFrames[composedImagesState.frameIndexToShow]
+                    .label}</span
             ><span class="fade secondary"
-                >{carouselFrames[composedImagesState.current].subLabel}</span
+                >{carouselFrames[composedImagesState.frameIndexToShow]
+                    .subLabel}</span
             >
         {/if}
     </div>
@@ -72,7 +75,7 @@
     .label {
         width: 100%;
     }
-   
+
     .fade {
         opacity: 1;
         animation-name: fadeInKeyFrames;

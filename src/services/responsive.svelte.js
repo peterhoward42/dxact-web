@@ -1,17 +1,18 @@
 // This rune emits state changes to the host device form factor.
 export let responsiveMeta = $state({
-    deviceFormFactor: "mobile",
+    // Initialise it to a value that won't trigger a layout to load,
+    // because we want to defer that until the form factor is known.
+    deviceFormFactor: "",
 })
 
 export function setupMediaQueryObserver() {
-    console.log("XXXX arrived in setupMediaQueryObserver()")
-
     const isMobile = window.matchMedia("(300px <= width <= 576px)");
     const isTablet = window.matchMedia("(576px < width <= 992px)");
     const isDesktop = window.matchMedia("(992px < width <= 99999px)");
 
     function handleChange(mql, formFactor) {
         if (mql.matches) {
+            console.log("XXXX handleChange is updating deviceFormFactor to: ", formFactor)
             responsiveMeta.deviceFormFactor = formFactor
         }
     }
@@ -29,18 +30,13 @@ export function setupMediaQueryObserver() {
 // to correspond to the current viewport size.
 export function deviceOptimisedImageSrc(existingSrc) {
 
-    console.log("XXXX deviceOptimisedImageSrc input: ", existingSrc)
     var newSuffixLetter = {
         mobile: "M",
         tablet: "T",
         desktop: "D",
     }[responsiveMeta.deviceFormFactor]
-    console.log("XXXX existingSrc: ", existingSrc)
-    console.log("XXXX newSuffixLetter: ", newSuffixLetter)
     const re = /_.\.png/;
-
     const newSrc = existingSrc.replace(re, "_" + newSuffixLetter + ".png")
-    console.log("XXXX newSrc: ", newSrc)
     return newSrc
 }
 

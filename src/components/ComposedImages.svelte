@@ -11,8 +11,14 @@
         clearInterval(theTicker);
     }
 
-    export function nextFrame() {
-        setStateToShowGivenFrame(mod(composedImagesState.current + 1));
+    export function advanceOneFrame() {
+        composedImagesState.frameIndexToShow = wrapped(
+            composedImagesState.frameIndexToShow + 1,
+        );
+        console.log(
+            "XXXX composedImagesState.frameIndexToShow: ",
+            composedImagesState.frameIndexToShow,
+        );
     }
 
     import appleM from "/src/assets/images/forlandingpageapple_M.png";
@@ -97,37 +103,30 @@
             imageSrc: libraryM,
         },
     ];
+
     const nFrames = carouselFrames.length;
 
-    function mod(i) {
-        return Math.abs(i % nFrames);
-    }
-
-    // This sets the 3 indices in the composedImageState to the necessary
-    // values to show the image of the given index, and the image "either" side of it.
-    async function setStateToShowGivenFrame(i) {
-        composedImagesState.current = i;
-        composedImagesState.upNext = mod(i + 1);
-        composedImagesState.justPushedOut = mod(i - 1);
-        composedImagesState.tick++;
+    // wrapped receives a calculated index into the frame data, which will inevitably go
+    // out of bounds sometimes. And it returns the equivalent (wrapped) index that is not
+    // out of bounds.
+    export function wrapped(idx) {
+        // The usual module division produces the wrong answer for negative numbers, and that occurs
+        // at the initial conditions. So we just add nFrames to the idx before we start.
+        const avoidNegative = idx + nFrames;
+        const wrapped = avoidNegative % nFrames;
+        return wrapped;
     }
 
     // Shared state to synchronise both the child Carousel compoment and the label shown
     // in this component.
     export let composedImagesState = $state({
-        current: undefined,
-        upNext: undefined,
-        justPushedOut: undefined,
-        tick: 0,
+        frameIndexToShow: 0,
     });
-
-    // Set up the correct initial state.
-    setStateToShowGivenFrame(0);
 </script>
 
 <script>
     import Carousel from "./Carousel.svelte";
-    import { onMount, tick } from "svelte";
+    import { onMount } from "svelte";
     import ComposedImagesLabelArea from "./ComposedImagesLabelArea.svelte";
     import { responsiveMeta } from "../services/responsive.svelte";
 
@@ -139,13 +138,8 @@
     });
 
     function updateFramesMetaToMatchDevice(device) {
-        console.log(
-            "XXXX arrived updateFramesMetaToMatchDevice with device: ",
-            device,
-        );
         carouselFrames.forEach((frame, i) => {
             frame.imageSrc = deviceOptimisedImageSrc(frame.imageSrc);
-            console.log("XXXX updated frame.imageSrc to: ", frame.imageSrc);
         });
     }
 
@@ -153,8 +147,9 @@
 
     const animationPeriod = 3000;
     onMount(async () => {
+        console.log("XXXX ComposedImages::onMount fired");
         // Start the animation frame generator
-        theTicker = setInterval(nextFrame, animationPeriod);
+        theTicker = setInterval(advanceOneFrame, animationPeriod);
     });
 </script>
 
