@@ -1,7 +1,7 @@
 
 .PHONY: imagespre
 imagespre:
-	rm  ./src/assets/images/*
+	- rm  ./src/assets/images/*
 	rm ~/My\ Drive/dxact-images/*
 
 

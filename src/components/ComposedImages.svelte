@@ -38,7 +38,7 @@
         },
         {
             label: "Linear Auto-Repeat Patterns",
-            subLabel: "Another Paste superpower",
+            subLabel: "Draw just ONE bike",
             imageSrc: copypasteline,
         },
         {
@@ -99,21 +99,21 @@
     import Carousel from "./Carousel.svelte";
     import { onMount, tick } from "svelte";
 
-    import apple from "/src/assets/images/forlandingpageapple.png";
-    import chain from "/src/assets/images/forlandingpagechain.png";
-    import copypastearc from "/src/assets/images/forlandingpagecopiesonarc.png";
-    import copypasteline from "/src/assets/images/forlandingpagecopyrepeatline.png";
-    import language from "/src/assets/images/forlandingpagelanguage.png";
-    import flower from "/src/assets/images/forlandingpageflower.png";
-    import transforms from "/src/assets/images/forlandingpagetransformpaste.png";
-    import choreographedtext from "/src/assets/images/forlandingpagechoreographedtext.png";
-    import library from "/src/assets/images/forlandingpagelibrary.png";
-    import zoomtarget from "/src/assets/images/forlandingpageaccuratezoom.png";
+    import apple from "/src/assets/images/forlandingpageapple_M.png";
+    import chain from "/src/assets/images/forlandingpagechain_M.png";
+    import copypastearc from "/src/assets/images/forlandingpagecopiesonarc_M.png";
+    import copypasteline from "/src/assets/images/forlandingpagecopyrepeatline_M.png";
+    import language from "/src/assets/images/forlandingpagelanguage_M.png";
+    import flower from "/src/assets/images/forlandingpageflower_M.png";
+    import transforms from "/src/assets/images/forlandingpagetransformpaste_M.png";
+    import choreographedtext from "/src/assets/images/forlandingpagechoreographedtext_M.png";
+    import library from "/src/assets/images/forlandingpagelibrary_M.png";
+    import zoomtarget from "/src/assets/images/forlandingpageaccuratezoom_M.png";
     import ComposedImagesLabelArea from "./ComposedImagesLabelArea.svelte";
 
     let { aspectRatio } = $props();
 
-    const animationPeriod = 2000;
+    const animationPeriod = 3000;
     onMount(async () => {
         // Start the animation frame generator
         theTicker = setInterval(nextFrame, animationPeriod);

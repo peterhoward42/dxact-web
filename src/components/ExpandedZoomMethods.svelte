@@ -1,13 +1,14 @@
 <script>
-    import zoomPrecise from "/src/assets/images/forlandingpageaccuratezoom.png";
+    import zoomPrecise from "/src/assets/images/forlandingpageaccuratezoom_M.png";
 </script>
 
 <div class="expandedzoom qcol">
     <div class="words qcol qbg-alt">
         <div class="qhead">Surgical Zoom</div>
         <span class=""
-            >Drawings, and the infinite canvas, deserve a <strong>specialised</strong> zoom
-            approach.</span
+            >Drawings, and the infinite canvas, deserve a <strong
+                >specialised</strong
+            > zoom approach.</span
         >
         <span class=""
             >For zooming in, you can tunnel into the tiniest, precise target

@@ -1,5 +1,5 @@
 <script>
-    import copypastearc from "/src/assets/images/forlandingpagecopiesonarc.png";
+    import copypastearc from "/src/assets/images/forlandingpagecopiesonarc_M.png";
     import ListItemWithIcon from "./ListItemWithIcon.svelte";
     import {
         ALargeSmall,
@@ -38,7 +38,8 @@
                                 absoluteStrokeWidth={true}
                             />{/snippet}
                         {#snippet theCpt()}<span>
-                                You can see it &amp; and slide it around to explore where you want it.
+                                You can see it &amp; and slide it around to
+                                explore where you want it.
                             </span>{/snippet}
                     </ListItemWithIcon>
                 </li>
@@ -50,7 +51,8 @@
                                 absoluteStrokeWidth={true}
                             />{/snippet}
                         {#snippet theCpt()}<span>
-                                That includes latching to points, and auto-repeat patterns along lines or arcs.
+                                That includes latching to points, and
+                                auto-repeat patterns along lines or arcs.
                             </span>{/snippet}
                     </ListItemWithIcon>
                 </li>
@@ -62,7 +64,8 @@
                                 absoluteStrokeWidth={true}
                             />{/snippet}
                         {#snippet theCpt()}<span>
-                                You can <em>transform</em> your Copy (iteratively) with scale, mirror &amp; rotate before Pasting.
+                                You can <em>transform</em> your Copy (iteratively)
+                                with scale, mirror &amp; rotate before Pasting.
                             </span>{/snippet}
                     </ListItemWithIcon>
                 </li>

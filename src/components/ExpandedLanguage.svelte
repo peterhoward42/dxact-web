@@ -1,5 +1,5 @@
 <script>
-    import language from "/src/assets/images/forlandingpagelanguage.png";
+    import language from "/src/assets/images/forlandingpagelanguage_M.png";
 </script>
 
 <div class="expandedlanguage qcol">

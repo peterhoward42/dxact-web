@@ -1,5 +1,5 @@
 <script>
-    import expandedtext from "/src/assets/images/forlandingpagemoreontext.png";
+    import expandedtext from "/src/assets/images/forlandingpagemoreontext_M.png";
 </script>
 
 <div class="expandedtext qcol">
