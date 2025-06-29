@@ -38,11 +38,14 @@
 
 <style>
     .screen {
-        width: 100vw;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: .5rem;
+        padding-right: .5rem;
     }
+
     .layout {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
         align-items: center;
     }
 </style>
