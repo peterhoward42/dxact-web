@@ -1,5 +1,8 @@
 <script>
-    import { deviceOptimisedImageSrc, responsiveMeta } from "../services/responsive.svelte";
+    import {
+        deviceOptimisedImageSrc,
+        responsiveMeta,
+    } from "../services/responsive.svelte";
     import { composedImagesState } from "./ComposedImages.svelte";
 
     let { frames, aspectRatio } = $props();
@@ -13,8 +16,6 @@
             index == composedImagesState.upNext
         );
     }
-
-    
 </script>
 
 <div class="carousel qbg-alt" style:aspect-ratio={aspectRatio}>
@@ -27,7 +28,7 @@
             class:show={shouldBeVisible(index)}
             class:hide={!shouldBeVisible(index)}
         >
-            <img src={deviceOptimisedImageSrc(frame.imageSrc)} alt="" />
+            <img src={frame.imageSrc} alt="" />
         </div>
     {/each}
 </div>
@@ -46,10 +47,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding-top: 0.75rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         transition: left 1s ease-in-out;
     }
 

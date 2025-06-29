@@ -12,7 +12,6 @@ export function setupMediaQueryObserver() {
 
     function handleChange(mql, formFactor) {
         if (mql.matches) {
-            console.log("XXXX setting ff to: ", formFactor)
             responsiveMeta.deviceFormFactor = formFactor
         }
     }
@@ -28,17 +27,21 @@ export function setupMediaQueryObserver() {
 
 // Replace the given mobileImageSrc (e.g. "apple_M.png") with for example "apple_T.png",
 // to correspond to the current viewport size.
-export function deviceOptimisedImageSrc(mobileImageSrc) {
-    switch (responsiveMeta.deviceFormFactor) {
-        case "mobile":
-            return mobileImageSrc;
-            break;
-        case "tablet":
-            return mobileImageSrc.replace("M.png", "T.png");
-            break;
-        default:
-            return mobileImageSrc.replace("M.png", "D.png");
-            break;
-    }
+export function deviceOptimisedImageSrc(existingSrc) {
+
+    console.log("XXXX deviceOptimisedImageSrc input: ", existingSrc)
+    var newSuffixLetter = {
+        mobile: "M",
+        tablet: "T",
+        desktop: "D",
+    }[responsiveMeta.deviceFormFactor]
+    console.log("XXXX existingSrc: ", existingSrc)
+    console.log("XXXX newSuffixLetter: ", newSuffixLetter)
+    const re = /_.\.png/;
+
+    const newSrc = existingSrc.replace(re, "_" + newSuffixLetter + ".png")
+    console.log("XXXX newSrc: ", newSrc)
+    return newSrc
 }
+
 

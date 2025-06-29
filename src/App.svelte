@@ -3,7 +3,6 @@
 
     import { responsiveMeta } from "./services/responsive.svelte";
 
-    import HeroSection from "./components/HeroSection.svelte";
     import ScrollCue from "./components/ScrollCue.svelte";
     import WhatIs from "./components/WhatIs.svelte";
     import WhatMakesItWorth from "./components/WhatMakesItWorth.svelte";
@@ -20,6 +19,9 @@
     import ExpandedSpeed from "./components/ExpandedSpeed.svelte";
     import { setupMediaQueryObserver } from "./services/responsive.svelte";
     import RowOfPanelsForDesktop from "./components/RowOfPanelsForDesktop.svelte";
+    import FrontMatterTitles from "./components/FrontMatterTitles.svelte";
+    import ComposedImages from "./components/ComposedImages.svelte";
+    import CTA from "./components/CTA.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
@@ -31,7 +33,9 @@
 <div class="screen">
     {#if responsiveMeta.deviceFormFactor == "desktop"}
         <div class="deskylayout qcol">
-            <HeroSection />
+            <FrontMatterTitles />
+            <ComposedImages aspectRatio="1.5"></ComposedImages>
+            <CTA />
             <RowOfPanelsForDesktop>
                 <ScrollCue />
                 <WhatIs />
@@ -45,7 +49,9 @@
         </div>
     {:else}
         <div class="mobilelayout qcol">
-            <HeroSection />
+            <FrontMatterTitles />
+            <ComposedImages aspectRatio="1.5"></ComposedImages>
+            <CTA />
             <ScrollCue />
             <WhatIs />
             <WhatMakesItWorth />
@@ -75,5 +81,7 @@
 
     .mobilelayout {
         align-items: center;
+    }
+    .deskylayout {
     }
 </style>

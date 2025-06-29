@@ -129,6 +129,25 @@
     import Carousel from "./Carousel.svelte";
     import { onMount, tick } from "svelte";
     import ComposedImagesLabelArea from "./ComposedImagesLabelArea.svelte";
+    import { responsiveMeta } from "../services/responsive.svelte";
+
+    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
+
+    $effect(() => {
+        const newDevice = responsiveMeta.deviceFormFactor; // the thing we are observing.
+        updateFramesMetaToMatchDevice(newDevice);
+    });
+
+    function updateFramesMetaToMatchDevice(device) {
+        console.log(
+            "XXXX arrived updateFramesMetaToMatchDevice with device: ",
+            device,
+        );
+        carouselFrames.forEach((frame, i) => {
+            frame.imageSrc = deviceOptimisedImageSrc(frame.imageSrc);
+            console.log("XXXX updated frame.imageSrc to: ", frame.imageSrc);
+        });
+    }
 
     let { aspectRatio } = $props();
 
@@ -139,20 +158,37 @@
     });
 </script>
 
-<div class="composed qcol">
-    <Carousel frames={carouselFrames} {aspectRatio} />
-    <div class="labelarea">
-        <ComposedImagesLabelArea />
+{#if responsiveMeta.deviceFormFactor == "desktop"}
+    <div class="composed-row qrow qbg-alt">
+        <div class="labelarea-row">
+            <ComposedImagesLabelArea />
+        </div>
+        <Carousel frames={carouselFrames} {aspectRatio} />
     </div>
-</div>
+{:else}
+    <div class="composed-col qcol">
+        <Carousel frames={carouselFrames} {aspectRatio} />
+        <div class="labelarea-col">
+            <ComposedImagesLabelArea />
+        </div>
+    </div>
+{/if}
 
 <style>
-    .composed {
+    .composed-row {
+        gap: 3rem;
+        justify-content: space-between;
+    }
+    .composed-col {
         width: 100%;
         align-items: center;
     }
-    .labelarea {
+    .labelarea-col {
         width: 100%;
+    }
+
+    .labelarea-row {
+        width: 30rem;
     }
 
     @keyframes fadeInKeyFrames {
