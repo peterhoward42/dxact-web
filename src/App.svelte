@@ -1,6 +1,8 @@
 <script>
     import { onMount } from "svelte";
 
+    import { responsiveMeta } from "./services/responsive.svelte";
+
     import HeroSection from "./components/HeroSection.svelte";
     import ScrollCue from "./components/ScrollCue.svelte";
     import WhatIs from "./components/WhatIs.svelte";
@@ -17,6 +19,7 @@
     import ExpandedZoomMethods from "./components/ExpandedZoomMethods.svelte";
     import ExpandedSpeed from "./components/ExpandedSpeed.svelte";
     import { setupMediaQueryObserver } from "./services/responsive.svelte";
+    import RowOfPanelsForDesktop from "./components/RowOfPanelsForDesktop.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
@@ -26,23 +29,39 @@
 </script>
 
 <div class="screen">
-    <div class="layout qcol">
-        <HeroSection />
-        <ScrollCue />
-        <WhatIs />
-        <WhatMakesItWorth />
-        <GetStarted />
-        <BigScreen2 />
-        <PowerPoint2 />
-        <ExpandedLanguage></ExpandedLanguage>
-        <ExpandedText></ExpandedText>
-        <ExpandedCopyPaste1></ExpandedCopyPaste1>
-        <ExpandedCopyPaste2></ExpandedCopyPaste2>
-        <ExpandedInfinite></ExpandedInfinite>
-        <ExpandedZoomMethods></ExpandedZoomMethods>
-        <ExpandedPreserveFlow></ExpandedPreserveFlow>
-        <ExpandedSpeed></ExpandedSpeed>
-    </div>
+    {#if responsiveMeta.deviceFormFactor == "desktop"}
+        <div class="deskylayout qcol">
+            <HeroSection />
+            <RowOfPanelsForDesktop>
+                <ScrollCue />
+                <WhatIs />
+                <WhatMakesItWorth />
+            </RowOfPanelsForDesktop>
+            <RowOfPanelsForDesktop>
+                <GetStarted />
+                <BigScreen2 />
+                <PowerPoint2 />
+            </RowOfPanelsForDesktop>
+        </div>
+    {:else}
+        <div class="mobilelayout qcol">
+            <HeroSection />
+            <ScrollCue />
+            <WhatIs />
+            <WhatMakesItWorth />
+            <GetStarted />
+            <BigScreen2 />
+            <PowerPoint2 />
+            <ExpandedLanguage></ExpandedLanguage>
+            <ExpandedText></ExpandedText>
+            <ExpandedCopyPaste1></ExpandedCopyPaste1>
+            <ExpandedCopyPaste2></ExpandedCopyPaste2>
+            <ExpandedInfinite></ExpandedInfinite>
+            <ExpandedZoomMethods></ExpandedZoomMethods>
+            <ExpandedPreserveFlow></ExpandedPreserveFlow>
+            <ExpandedSpeed></ExpandedSpeed>
+        </div>
+    {/if}
 </div>
 
 <style>
@@ -54,7 +73,7 @@
         padding-right: 0.5rem;
     }
 
-    .layout {
+    .mobilelayout {
         align-items: center;
     }
 </style>
