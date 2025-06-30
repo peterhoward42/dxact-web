@@ -40,8 +40,7 @@
 
         <p>
             That means your eyes can stay riveted to the drawing. And the
-            pathway from thought to action is a direct line, almost subliminal.
-            That's flow!
+            pathway from thought to action is almost subliminal. That's flow!
         </p>
     </div>
 </div>

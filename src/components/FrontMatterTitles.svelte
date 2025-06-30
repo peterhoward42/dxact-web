@@ -1,4 +1,8 @@
-<div class="hero qcol">
+<script>
+    import { responsiveMeta } from "../services/responsive.svelte";
+</script>
+
+<div class="qcol" class:desktop={responsiveMeta.deviceFormFactor == "desktop"}>
     <span class="head qe1 qbg-alt">DrawExact</span>
     <span class="youthink qe1">You do the thinking. We'll hold the ruler.</span>
     <span class="helpsshape">
@@ -16,15 +20,24 @@
         font-size: 2rem;
         text-align: center;
     }
+
     .youthink {
         font-size: 1.2rem;
         text-align: center;
         padding-top: 1.5rem;
     }
+    .desktop .youthink {
+        padding-top: 2.5rem;
+    }
+
     .helpsshape {
         font-size: 1.1rem;
         text-align: center;
         padding-top: 1rem;
         padding-bottom: 2rem;
+    }
+    .desktop .helpsshape {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
     }
 </style>

@@ -1,4 +1,6 @@
-// This rune emits state changes to the host device form factor.
+// This rune emits state changes when the host viewport switches between
+// for example, a mobile and desktop media query breakpoint.
+// 
 export let responsiveMeta = $state({
     // Initialise it to a value that won't trigger a layout to load,
     // because we want to defer that until the form factor is known.
@@ -12,15 +14,16 @@ export function setupMediaQueryObserver() {
 
     function handleChange(mql, formFactor) {
         if (mql.matches) {
-            console.log("XXXX handleChange is updating deviceFormFactor to: ", formFactor)
             responsiveMeta.deviceFormFactor = formFactor
         }
     }
 
+    // Call the handler manually to set the initial condition.
     handleChange(isMobile, "mobile")
     handleChange(isTablet, "tablet")
     handleChange(isDesktop, "desktop")
 
+    // Then observe future changes.
     isMobile.addEventListener("change", (mql) => { handleChange(mql, "mobile") });
     isTablet.addEventListener("change", (mql) => { handleChange(mql, "tablet") });
     isDesktop.addEventListener("change", (mql) => { handleChange(mql, "desktop") });

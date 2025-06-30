@@ -48,7 +48,7 @@
                     />{/snippet}
                 {#snippet theCpt()}<span>
                         So these apps had to limit their scope to avoid being
-                        unbearbly slow and clunky.
+                        unbearably slow and clunky.
                     </span>{/snippet}
             </ListItemWithIcon>
         </li>

@@ -15,10 +15,6 @@
         composedImagesState.frameIndexToShow = wrapped(
             composedImagesState.frameIndexToShow + 1,
         );
-        console.log(
-            "XXXX composedImagesState.frameIndexToShow: ",
-            composedImagesState.frameIndexToShow,
-        );
     }
 
     import appleM from "/src/assets/images/forlandingpageapple_M.png";
@@ -69,7 +65,7 @@
         },
         {
             label: "Transforms",
-            subLabel: "A superpower when you Paste",
+            subLabel: "A superpower when you Copy & Paste",
             imageSrc: transformsM,
         },
         {
@@ -187,7 +183,9 @@
     }
 
     .labelarea-row {
-        width: 30rem;
+        width: 35rem;
+        margin-top:1rem;
+        margin-left:1rem;
     }
 
     @keyframes fadeInKeyFrames {
