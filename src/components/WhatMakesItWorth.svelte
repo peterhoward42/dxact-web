@@ -11,7 +11,7 @@
     } from "@lucide/svelte";
 </script>
 
-<div class="worth">
+<div class="worth qpanel-width">
     <div class="qhead title">What makes it worth your click?</div>
     <div class="sidenote qital">
         We've kept these brief. You'll find deeper dives further down
@@ -127,7 +127,7 @@
 
 <style>
     .worth {
-        padding-top: 3rem;
+        padding-top: 2rem;
         padding-left: 0.5rem;
     }
     .title {

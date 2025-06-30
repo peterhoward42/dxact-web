@@ -1,12 +1,8 @@
 <script>
+    import { responsiveMeta } from "../services/responsive.svelte";
     import ListItemWithIcon from "./ListItemWithIcon.svelte";
     import {
-        Laptop,
-        ZoomIn,
         Pin,
-        Eye,
-        Armchair,
-        Gem,
         BrainCircuit,
         Pi,
         Chrome,
@@ -15,7 +11,10 @@
     } from "@lucide/svelte";
 </script>
 
-<div class="whatis qbg-alt">
+<div
+    class="whatis qpanel-width"
+    class:qbg-alt={responsiveMeta.deviceFormFactor != "desktop"}
+>
     <div class="qhead title">Drawing, Done Differently</div>
     <div class="">
         <ul class="screenlist">
@@ -41,8 +40,9 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            It's like <em>Google Docs</em>, but reimagined for geometrically
-                            precise drawings (rather than documents).
+                            It's like <em>Google Docs</em>, but reimagined for
+                            geometrically precise drawings (rather than
+                            documents).
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -109,7 +109,6 @@
 
 <style>
     .whatis {
-        margin-top: 3rem;
         padding-top: 2rem;
         padding-left: 0.5rem;
     }
