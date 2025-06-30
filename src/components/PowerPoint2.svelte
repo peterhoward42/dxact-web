@@ -6,7 +6,7 @@
     import { DraftingCompass } from "@lucide/svelte";
 </script>
 
-<div class="powerpoint">
+<div class="powerpoint qpanel-width">
     <div class="qhead title">Why not PowerPoint, CAD, Or Adobe?</div>
     <div class="">
         <ul class="powerpointlist">

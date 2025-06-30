@@ -8,7 +8,7 @@
 
 <style>
     .rowpanels {
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
         justify-content: space-between;
     }
 </style>

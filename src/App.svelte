@@ -70,7 +70,23 @@
             <RowOfPanelsForDesktop>
                 <GetStarted />
                 <BigScreen2 />
+            </RowOfPanelsForDesktop>
+            <RowOfPanelsForDesktop>
                 <PowerPoint2 />
+                <ExpandedLanguage></ExpandedLanguage>
+            </RowOfPanelsForDesktop><RowOfPanelsForDesktop>
+                <ExpandedText></ExpandedText>
+                <ExpandedCopyPaste1></ExpandedCopyPaste1>
+            </RowOfPanelsForDesktop><RowOfPanelsForDesktop>
+                <ExpandedCopyPaste2></ExpandedCopyPaste2>
+                <ExpandedInfinite></ExpandedInfinite>
+            </RowOfPanelsForDesktop>
+            <RowOfPanelsForDesktop>
+                <ExpandedZoomMethods></ExpandedZoomMethods>
+                <ExpandedPreserveFlow></ExpandedPreserveFlow>
+            </RowOfPanelsForDesktop>
+            <RowOfPanelsForDesktop>
+                <ExpandedSpeed></ExpandedSpeed>
             </RowOfPanelsForDesktop>
         </div>
     {/if}

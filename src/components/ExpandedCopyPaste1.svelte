@@ -13,7 +13,7 @@
     import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
 </script>
 
-<div class="expandedcp1 qcol">
+<div class="expandedcp1 qcol qpanel-width">
     <div class="words qcol qbg-alt">
         <div class="qhead">Copy &amp; Paste Reimagined</div>
         <span class=""

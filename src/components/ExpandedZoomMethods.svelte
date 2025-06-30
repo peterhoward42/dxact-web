@@ -3,7 +3,7 @@
     import zoomPrecise from "/src/assets/images/forlandingpageaccuratezoom_M.png";
 </script>
 
-<div class="expandedzoom qcol">
+<div class="expandedzoom qcol qpanel-width">
     <div class="words qcol qbg-alt">
         <div class="qhead">Surgical Zoom</div>
         <span class=""

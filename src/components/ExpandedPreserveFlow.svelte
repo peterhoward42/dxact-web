@@ -4,7 +4,7 @@
     import FirstLetterCommand from "./FirstLetterCommand.svelte";
 </script>
 
-<div class="expandedflow qbg-alt">
+<div class="expandedflow qbg-alt qpanel-width">
     <div class="qhead">Preserving your flow</div>
     <div class="paras qcol">
         <p>

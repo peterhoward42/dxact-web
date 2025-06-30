@@ -2,7 +2,7 @@
     import { handleOpenDrawExact } from "./CTA.svelte";
 </script>
 
-<div class="getstarted qbg-alt">
+<div class="getstarted qbg-alt qpanel-width">
     <div class="head qhead">Have a quick play; see what you think.</div>
     <div class="paras qcol">
         <span

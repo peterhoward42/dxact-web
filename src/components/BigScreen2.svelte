@@ -3,7 +3,7 @@
     import { Laptop, ZoomIn, Pin, Eye, Armchair, Gem } from "@lucide/svelte";
 </script>
 
-<div class="powerpoint">
+<div class="powerpoint qpanel-width">
     <div class="qhead title">It likes a big screen</div>
     <div class="">
         <ul class="screenlist">

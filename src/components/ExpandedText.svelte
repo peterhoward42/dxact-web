@@ -3,7 +3,7 @@
     import expandedtext from "/src/assets/images/forlandingpagemoreontext_M.png";
 </script>
 
-<div class="expandedtext qcol">
+<div class="expandedtext qcol qpanel-width">
     <div class="words qcol qbg-alt">
         <div class="qhead">Independent text</div>
         <span

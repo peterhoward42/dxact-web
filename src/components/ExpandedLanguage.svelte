@@ -3,7 +3,7 @@
     import language from "/src/assets/images/forlandingpagelanguage_M.png";
 </script>
 
-<div class="expandedlanguage qcol">
+<div class="expandedlanguage qcol qpanel-width">
     <div class="words qcol qbg-alt">
         <div class="qhead">DrawExact's thinking language</div>
         <span class="kind">

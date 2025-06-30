@@ -18,7 +18,7 @@
     } from "@lucide/svelte";
 </script>
 
-<div class="expandedspeed qcol qbg-alt">
+<div class="expandedspeed qcol qbg-alt qpanel-width">
     <div class="qhead">Fast Matters</div>
     <span class=""
         >The app working fast and smoothly matters. Because any hesitation or

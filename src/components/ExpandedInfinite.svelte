@@ -3,7 +3,7 @@
     import boatInfinite from "/src/assets/images/forlandingpageinfinitecanvas_M.png";
 </script>
 
-<div class="expandedinfinite qcol">
+<div class="expandedinfinite qcol qpanel-width">
     <div class="words qcol qbg-alt">
         <div class="qhead">Expand infinitely</div>
         <span class="">You're drawing on an infinite canvas</span>
