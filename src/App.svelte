@@ -22,6 +22,7 @@
     import FrontMatterTitles from "./components/FrontMatterTitles.svelte";
     import ComposedImages from "./components/ComposedImages.svelte";
     import CTA from "./components/CTA.svelte";
+    import MainTitle from "./components/MainTitle.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
@@ -33,6 +34,7 @@
 <div class="screen">
     {#if responsiveMeta.deviceFormFactor == "mobile" || responsiveMeta.deviceFormFactor == "tablet"}
         <div class="mobilelayout qcol">
+            <MainTitle />
             <FrontMatterTitles />
             <ComposedImages aspectRatio="1.5"></ComposedImages>
             <CTA />
@@ -54,11 +56,14 @@
     {/if}
     {#if responsiveMeta.deviceFormFactor == "desktop"}
         <div class="deskylayout qcol">
-            <FrontMatterTitles />
+            <MainTitle />
+            <div class="subtitlesandcta qrow">
+                <FrontMatterTitles />
+                <CTA />
+            </div>
             <ComposedImages aspectRatio="1.5"></ComposedImages>
-            <CTA />
+
             <RowOfPanelsForDesktop>
-                <ScrollCue />
                 <WhatIs />
                 <WhatMakesItWorth />
             </RowOfPanelsForDesktop>
@@ -83,6 +88,8 @@
     .mobilelayout {
         align-items: center;
     }
-    .deskylayout {
+    .subtitlesandcta {
+        justify-content: space-around;
+        align-items: center;
     }
 </style>

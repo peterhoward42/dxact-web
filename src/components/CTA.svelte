@@ -12,10 +12,6 @@
 
 <style>
     .cta {
-        /* width: 100%; */
-        margin-top: 2.6rem;
-        align-items: center;
-
         padding-left: 2rem;
         padding-right: 2rem;
         text-align: center;

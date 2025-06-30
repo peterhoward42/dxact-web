@@ -173,10 +173,12 @@
     .composed-row {
         gap: 3rem;
         justify-content: space-between;
+        margin-bottom: 3rem;
     }
     .composed-col {
         width: 100%;
         align-items: center;
+        margin-bottom: 2rem;
     }
     .labelarea-col {
         width: 100%;
@@ -184,8 +186,8 @@
 
     .labelarea-row {
         width: 35rem;
-        margin-top:1rem;
-        margin-left:1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
     }
 
     @keyframes fadeInKeyFrames {
