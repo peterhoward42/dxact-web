@@ -147,7 +147,11 @@
 
     const animationPeriod = 3000;
     onMount(async () => {
-        console.log("XXXX ComposedImages::onMount fired");
+        // Guard against this component being mounted more than once.
+        // It happens if the viewport changes size to cross media query
+        // boundaries. Without this you end up with two tickers running and
+        // causing havoc.
+        stopTheTicker();
         // Start the animation frame generator
         theTicker = setInterval(advanceOneFrame, animationPeriod);
     });
