@@ -67,24 +67,21 @@
                 <WhatIs />
                 <WhatMakesItWorth />
             </RowOfPanelsForDesktop>
-            <RowOfPanelsForDesktop>
+            <RowOfPanelsForDesktop bgAlt={true}>
                 <GetStarted />
                 <BigScreen2 />
             </RowOfPanelsForDesktop>
-            <RowOfPanelsForDesktop>
-                <PowerPoint2 />
-                <ExpandedLanguage></ExpandedLanguage>
-            </RowOfPanelsForDesktop><RowOfPanelsForDesktop>
-                <ExpandedText></ExpandedText>
-                <ExpandedCopyPaste1></ExpandedCopyPaste1>
-            </RowOfPanelsForDesktop><RowOfPanelsForDesktop>
-                <ExpandedCopyPaste2></ExpandedCopyPaste2>
-                <ExpandedInfinite></ExpandedInfinite>
-            </RowOfPanelsForDesktop>
-            <RowOfPanelsForDesktop>
-                <ExpandedZoomMethods></ExpandedZoomMethods>
-                <ExpandedPreserveFlow></ExpandedPreserveFlow>
-            </RowOfPanelsForDesktop>
+            <PowerPoint2 />
+            <ExpandedLanguage sideBySide={true}></ExpandedLanguage>
+
+            <ExpandedText sideBySide={true}></ExpandedText>
+            <ExpandedCopyPaste1 sideBySide={true}></ExpandedCopyPaste1>
+
+            <ExpandedCopyPaste2 sideBySide={true}></ExpandedCopyPaste2>
+            <ExpandedInfinite sideBySide={true}></ExpandedInfinite>
+
+            <ExpandedZoomMethods sideBySide={true}></ExpandedZoomMethods>
+            <ExpandedPreserveFlow></ExpandedPreserveFlow>
             <RowOfPanelsForDesktop>
                 <ExpandedSpeed></ExpandedSpeed>
             </RowOfPanelsForDesktop>
@@ -103,6 +100,9 @@
 
     .mobilelayout {
         align-items: center;
+    }
+    .deskylayout{
+        gap:4rem;
     }
     .subtitlesandcta {
         justify-content: space-around;

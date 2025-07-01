@@ -1,8 +1,8 @@
 <script>
-    let { children } = $props();
+    let { children, bgAlt = false } = $props();
 </script>
 
-<div class="rowpanels qrow">
+<div class="rowpanels qrow {bgAlt ? 'qbg-alt' : ''}">
     {@render children()}
 </div>
 

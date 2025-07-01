@@ -59,8 +59,9 @@
 
 <style>
     .powerpoint {
-        padding-top: 2rem;
         padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin: auto;
     }
     .title {
         padding-bottom: 1rem;

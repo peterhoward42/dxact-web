@@ -1,9 +1,10 @@
 <script>
     import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
     import zoomPrecise from "/src/assets/images/forlandingpageaccuratezoom_M.png";
+    let { sideBySide = false } = $props();
 </script>
 
-<div class="expandedzoom qcol qpanel-width">
+<div class="expandedzoom {sideBySide ? 'qrow' : 'qcol'}">
     <div class="words qcol qbg-alt">
         <div class="qhead">Surgical Zoom</div>
         <span class=""
@@ -32,7 +33,10 @@
             your flow.
         </span>
     </div>
-    <img src={deviceOptimisedImageSrc(zoomPrecise)} alt="" />
+    <img 
+	        class={sideBySide ? "qside-by-side-img" : ""}
+
+	src={deviceOptimisedImageSrc(zoomPrecise)} alt="" />
 </div>
 
 <style>
@@ -51,10 +55,4 @@
         font-style: italic;
     }
 
-    img {
-        width: 100%;
-        object-fit: cover;
-        pointer-events: none;
-        display: block;
-    }
 </style>

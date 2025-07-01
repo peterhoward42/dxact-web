@@ -1,9 +1,10 @@
 <script>
     import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
     import expandedtext from "/src/assets/images/forlandingpagemoreontext_M.png";
+    let { sideBySide = false } = $props();
 </script>
 
-<div class="expandedtext qcol qpanel-width">
+<div class="expandedtext {sideBySide ? 'qrow' : 'qcol'} ">
     <div class="words qcol qbg-alt">
         <div class="qhead">Independent text</div>
         <span
@@ -25,7 +26,11 @@
             in multi-line text.</span
         >
     </div>
-    <img src={deviceOptimisedImageSrc(expandedtext)} alt="" />
+    <img
+        class={sideBySide ? "qside-by-side-img" : ""}
+        src={deviceOptimisedImageSrc(expandedtext)}
+        alt=""
+    />
 </div>
 
 <style>
@@ -39,12 +44,5 @@
         padding-right: 1rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-    }
-
-    img {
-        width: 100%;
-        object-fit: cover;
-        pointer-events: none;
-        display: block;
     }
 </style>

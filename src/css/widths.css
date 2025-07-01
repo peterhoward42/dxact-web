@@ -1,3 +1,10 @@
 .qpanel-width {
     max-width: 35rem;
 }
+
+.qside-by-side-img {
+    width: 45rem;
+    object-fit: cover;
+    pointer-events: none;
+    display: block;
+}

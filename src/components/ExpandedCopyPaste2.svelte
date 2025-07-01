@@ -15,10 +15,11 @@
         SquareStack,
     } from "@lucide/svelte";
     import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
+    let { sideBySide = false } = $props();
 </script>
 
-<div class="expandedcp2 qcol qpanel-width">
-    <div class="words qcol qbg-alt">
+<div class="expandedcp2 {sideBySide ? 'qrow' : 'qcol'} ">
+    <div class="words qbg-alt">
         <div class="qhead">Copy &amp; Paste as productivity toolkit</div>
 
         <div class="">
@@ -96,7 +97,10 @@
             </ul>
         </div>
     </div>
-    <img src={deviceOptimisedImageSrc(mirror)} alt="" />
+    <img 
+	        class={sideBySide ? "qside-by-side-img" : ""}
+
+	src={deviceOptimisedImageSrc(mirror)} alt="" />
 </div>
 
 <style>
@@ -119,10 +123,4 @@
         padding-bottom: 1rem;
     }
 
-    img {
-        width: 100%;
-        object-fit: cover;
-        pointer-events: none;
-        display: block;
-    }
 </style>

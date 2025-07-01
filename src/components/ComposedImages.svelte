@@ -16,6 +16,11 @@
             composedImagesState.frameIndexToShow + 1,
         );
     }
+    export function retreatOneFrame() {
+        composedImagesState.frameIndexToShow = wrapped(
+            composedImagesState.frameIndexToShow - 1,
+        );
+    }
 
     import appleM from "/src/assets/images/forlandingpageapple_M.png";
     import appleD from "/src/assets/images/forlandingpageapple_D.png";
@@ -50,7 +55,8 @@
     export var carouselFrames = [
         {
             label: "DrawExact's thinking words",
-            subLabel: "Same as your thinking words",
+            subLabel:
+                "The same as your thinking words. No translaton required.",
             imageSrc: languageM,
         },
         {
@@ -64,18 +70,19 @@
             imageSrc: choreographedtextM,
         },
         {
-            label: "Transforms",
-            subLabel: "A superpower when you Copy & Paste",
+            label: "Beyond Copy & Paste",
+            subLabel:
+                "Pasted shapes aren’t fixed. Transform them visually before placing",
             imageSrc: transformsM,
         },
         {
-            label: "Linear Auto-Repeat Patterns",
-            subLabel: "Draw just ONE bike",
+            label: "Copy & Paste Row Pattern",
+            subLabel: "Specify 4 copies and click the line. Done.",
             imageSrc: copypastelineM,
         },
         {
-            label: "Circular Repeat Patterns",
-            subLabel: "Draw just ONE blade!",
+            label: "Copy & Paste Circular Patterns",
+            subLabel: "Specify 32 copies and click the circle. Done.",
             imageSrc: copypastearcM,
         },
         {
@@ -94,8 +101,9 @@
             imageSrc: appleM,
         },
         {
-            label: "Make library drawings",
-            subLabel: "Copy - Scale - Reuse",
+            label: "Make a library drawing",
+            subLabel:
+                "To Copy & Paste from. Save hours.",
             imageSrc: libraryM,
         },
     ];

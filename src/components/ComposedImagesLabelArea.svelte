@@ -3,9 +3,10 @@
         composedImagesState,
         advanceOneFrame,
         stopTheTicker,
+        retreatOneFrame,
     } from "./ComposedImages.svelte";
     import { carouselFrames } from "./ComposedImages.svelte";
-    import { Pause, StepForward } from "@lucide/svelte";
+    import { Pause, StepForward, StepBack } from "@lucide/svelte";
 
     let paused;
 
@@ -13,8 +14,11 @@
         stopTheTicker();
         paused = true;
     }
-    function handleNext() {
+    function handleFwd() {
         advanceOneFrame();
+    }
+    function handleBack() {
+        retreatOneFrame();
     }
 </script>
 
@@ -51,21 +55,20 @@
             />
         </div>
     {:else}
-        <!-- svelte-ignore a11y_click_events_have_key_events -->
-        <!-- svelte-ignore a11y_no_static_element_interactions -->
-        <div onclick={handleNext}>
-            <StepForward
-                size="40"
-                strokeWidth="2"
-                color="black"
-                absoluteStrokeWidth={true}
-            />
+        <div class="btns qrow">
+            <!-- svelte-ignore a11y_click_events_have_key_events -->
+            <!-- svelte-ignore a11y_no_static_element_interactions -->
+            <div class="fwdback" onclick={handleBack}>◀</div>
+            <!-- svelte-ignore a11y_click_events_have_key_events -->
+            <!-- svelte-ignore a11y_no_static_element_interactions -->
+            <div class="fwdback" onclick={handleFwd}>▶</div>
         </div>
     {/if}
 </div>
 
 <style>
     .labelarea {
+        gap: 2rem;
         align-items: center;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -90,9 +93,16 @@
     }
     .secondary {
         font-size: 1rem;
+        height: 3rem;
         color: #777;
         line-height: 1.25rem;
         padding-top: 0.35rem;
+    }
+    .btns {
+        gap: 1rem;
+    }
+    .fwdback {
+        font-size: 2rem;
     }
 
     @keyframes fadeInKeyFrames {
