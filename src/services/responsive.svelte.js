@@ -34,6 +34,8 @@ export function setupMediaQueryObserver() {
 // to correspond to the current viewport size.
 export function deviceOptimisedImageSrc(existingSrc) {
 
+    console.log("XXXX deviceOptimisedImageSrc() fired with existing source: ", existingSrc)
+
     var newSuffixLetter = {
         mobile: "M",
         tablet: "T",
@@ -41,6 +43,8 @@ export function deviceOptimisedImageSrc(existingSrc) {
     }[responsiveMeta.deviceFormFactor]
     const re = /_.\.png/;
     const newSrc = existingSrc.replace(re, "_" + newSuffixLetter + ".png")
+    console.log("XXXX optimised src is: ", newSrc)
+
     return newSrc
 }
 
