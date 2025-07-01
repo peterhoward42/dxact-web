@@ -3,7 +3,7 @@
 // 
 export let responsiveMeta = $state({
     // Initialise it to a value that won't trigger a layout to load,
-    // because we want to defer that until the form factor is known.
+    // because we want to defer the initial load until the form factor is known.
     deviceFormFactor: "",
 })
 
@@ -14,6 +14,7 @@ export function setupMediaQueryObserver() {
 
     function handleChange(mql, formFactor) {
         if (mql.matches) {
+            console.log("XXXX media query fired for: ", formFactor)
             responsiveMeta.deviceFormFactor = formFactor
         }
     }
