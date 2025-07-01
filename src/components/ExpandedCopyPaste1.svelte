@@ -86,10 +86,11 @@
             </ul>
         </div>
     </div>
-    <img 
-	        class={sideBySide ? "qside-by-side-img" : ""}
-
-	src={deviceOptimisedImageSrc(copypastearc)} alt="" />
+    <img
+        class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
+        src={deviceOptimisedImageSrc(copypastearc)}
+        alt=""
+    />
 </div>
 
 <style>
@@ -111,5 +112,4 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-
 </style>

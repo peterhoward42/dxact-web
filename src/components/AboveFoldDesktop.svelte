@@ -13,8 +13,8 @@
                 >You do the thinking. We'll hold the ruler.</span
             >
             <span class="helpsshape">
-                Helps you make drawings; right in your browser. Fast, efficient,
-                no cost.</span
+                DrawExact helps you make drawings; right in your browser. Fast,
+                efficient, no cost.</span
             >
         </div>
         <div class="cta"><CTA /></div>
@@ -38,10 +38,10 @@
     .subtitlesandcta {
         justify-content: space-around;
         margin-bottom: 4rem;
-        margin-top:3rem;
+        margin-top: 3rem;
     }
-    .subtitles{
-        gap:1rem;
+    .subtitles {
+        gap: 1rem;
     }
     .youthink {
         font-size: 1.2rem;

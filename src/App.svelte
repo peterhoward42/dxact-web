@@ -3,7 +3,6 @@
 
     import { responsiveMeta } from "./services/responsive.svelte";
 
-    import ScrollCue from "./components/ScrollCue.svelte";
     import WhatIs from "./components/WhatIs.svelte";
     import WhatMakesItWorth from "./components/WhatMakesItWorth.svelte";
     import GetStarted from "./components/GetStarted.svelte";
@@ -19,11 +18,6 @@
     import ExpandedSpeed from "./components/ExpandedSpeed.svelte";
     import { setupMediaQueryObserver } from "./services/responsive.svelte";
     import RowOfPanelsForDesktop from "./components/RowOfPanelsForDesktop.svelte";
-    import FrontMatterTitles from "./components/FrontMatterTitles.svelte";
-    import ComposedImages from "./components/ComposedImages.svelte";
-    import CTA from "./components/CTA.svelte";
-    import MainTitle from "./components/MainTitle.svelte";
-    import FrontMatterMobile from "./components/AboveFoldMobile.svelte";
     import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
     import AboveFoldDesktop from "./components/AboveFoldDesktop.svelte";
 

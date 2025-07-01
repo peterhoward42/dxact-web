@@ -8,3 +8,7 @@
     pointer-events: none;
     display: block;
 }
+
+.qabove-below-img {
+    width: 100%;
+}

@@ -9,7 +9,7 @@
 
     <span class="youthink qe1">You do the thinking. We'll hold the ruler.</span>
     <span class="helpsshape">
-        Helps you make drawings; right in your browser. Fast, efficient, no
+        DrawExact helps you make drawings; right in your browser. Fast, efficient, no
         cost.</span
     >
     <ComposedImages aspectRatio="1.5"></ComposedImages>

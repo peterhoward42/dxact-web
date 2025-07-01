@@ -97,15 +97,16 @@
             </ul>
         </div>
     </div>
-    <img 
-	        class={sideBySide ? "qside-by-side-img" : ""}
-
-	src={deviceOptimisedImageSrc(mirror)} alt="" />
+    <img
+        class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
+        src={deviceOptimisedImageSrc(mirror)}
+        alt=""
+    />
 </div>
 
 <style>
-    .head{
-        padding-bottom:1rem;
+    .head {
+        padding-bottom: 1rem;
     }
     .expandedcp2 {
         padding-top: 2rem;
@@ -125,5 +126,4 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-
 </style>

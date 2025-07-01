@@ -33,10 +33,11 @@
             your flow.
         </span>
     </div>
-    <img 
-	        class={sideBySide ? "qside-by-side-img" : ""}
-
-	src={deviceOptimisedImageSrc(zoomPrecise)} alt="" />
+    <img
+        class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
+        src={deviceOptimisedImageSrc(zoomPrecise)}
+        alt=""
+    />
 </div>
 
 <style>
@@ -54,5 +55,4 @@
     .steps {
         font-style: italic;
     }
-
 </style>

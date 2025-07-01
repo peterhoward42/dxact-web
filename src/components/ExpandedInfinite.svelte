@@ -1,11 +1,10 @@
 <script>
     import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
     import boatInfinite from "/src/assets/images/forlandingpageinfinitecanvas_M.png";
-        let { sideBySide = false } = $props();
-
+    let { sideBySide = false } = $props();
 </script>
 
-<div class="expandedinfinite  {sideBySide ? 'qrow' : 'qcol'} ">
+<div class="expandedinfinite {sideBySide ? 'qrow' : 'qcol'} ">
     <div class="words qcol {sideBySide ? '' : 'qbg-alt'}">
         <div class="qhead">Expand infinitely</div>
         <span class="">You're drawing on an infinite canvas</span>
@@ -32,10 +31,11 @@
             revealed details as well as the big picture</span
         >
     </div>
-    <img 
-	        class={sideBySide ? "qside-by-side-img" : ""}
-
-	src={deviceOptimisedImageSrc(boatInfinite)} alt="" />
+    <img
+        class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
+        src={deviceOptimisedImageSrc(boatInfinite)}
+        alt=""
+    />
 </div>
 
 <style>
@@ -50,5 +50,4 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-
 </style>

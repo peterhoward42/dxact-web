@@ -16,7 +16,7 @@
         >
     </div>
     <img
-        class={sideBySide ? "qside-by-side-img" : ""}
+        class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
         src={deviceOptimisedImageSrc(language)}
         alt=""
     />

@@ -77,12 +77,12 @@
         },
         {
             label: "Copy & Paste Row Pattern",
-            subLabel: "Specify 4 copies and click the line. Done.",
+            subLabel: "Specify 4 copies. Click the line. Done.",
             imageSrc: copypastelineM,
         },
         {
             label: "Copy & Paste Circular Patterns",
-            subLabel: "Specify 32 copies and click the circle. Done.",
+            subLabel: "Specify 32 copies. Click the circle. Done.",
             imageSrc: copypastearcM,
         },
         {
