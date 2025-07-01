@@ -18,7 +18,7 @@
     } from "@lucide/svelte";
 </script>
 
-<div class="expandedspeed qcol qbg-alt qpanel-width">
+<div class="expandedspeed qcol  qpanel-width">
     <div class="qhead">Fast Matters</div>
     <span class=""
         >The app working fast and smoothly matters. Because any hesitation or
@@ -113,8 +113,7 @@
 
 <style>
     .expandedspeed {
-        margin-top: 3rem;
-        padding-top: 2rem;
+        padding-top: 1rem;
         padding-bottom: 1rem;
         gap: 1rem;
         padding-left: 1rem;

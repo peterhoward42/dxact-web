@@ -5,7 +5,7 @@
 </script>
 
 <div class="expandedzoom {sideBySide ? 'qrow' : 'qcol'}">
-    <div class="words qcol qbg-alt">
+    <div class="words qcol {sideBySide ? '' : 'qbg-alt'}">
         <div class="qhead">Surgical Zoom</div>
         <span class=""
             >Drawings, and the infinite canvas, deserve a <strong
@@ -47,7 +47,7 @@
     .words {
         gap: 1rem;
         padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }

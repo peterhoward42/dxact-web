@@ -56,10 +56,12 @@
     {/if}
     {#if responsiveMeta.deviceFormFactor == "desktop"}
         <div class="deskylayout qcol">
-            <MainTitle />
-            <div class="subtitlesandcta qrow">
-                <FrontMatterTitles />
-                <CTA />
+            <div class="titlesarea qcol">
+                <MainTitle />
+                <div class="subtitlesandcta qrow">
+                    <FrontMatterTitles />
+                    <CTA />
+                </div>
             </div>
             <ComposedImages aspectRatio="1.5"></ComposedImages>
 
@@ -81,8 +83,8 @@
             <ExpandedInfinite sideBySide={true}></ExpandedInfinite>
 
             <ExpandedZoomMethods sideBySide={true}></ExpandedZoomMethods>
-            <ExpandedPreserveFlow></ExpandedPreserveFlow>
             <RowOfPanelsForDesktop>
+                <ExpandedPreserveFlow></ExpandedPreserveFlow>
                 <ExpandedSpeed></ExpandedSpeed>
             </RowOfPanelsForDesktop>
         </div>
@@ -101,8 +103,8 @@
     .mobilelayout {
         align-items: center;
     }
-    .deskylayout{
-        gap:4rem;
+    .deskylayout {
+        gap: 4rem;
     }
     .subtitlesandcta {
         justify-content: space-around;

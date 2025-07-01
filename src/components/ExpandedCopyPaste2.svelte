@@ -19,8 +19,8 @@
 </script>
 
 <div class="expandedcp2 {sideBySide ? 'qrow' : 'qcol'} ">
-    <div class="words qbg-alt">
-        <div class="qhead">Copy &amp; Paste as productivity toolkit</div>
+    <div class="words {sideBySide ? '' : 'qbg-alt'}">
+        <div class="qhead head">Copy &amp; Paste as productivity toolkit</div>
 
         <div class="">
             <ul class="processlist">
@@ -104,6 +104,9 @@
 </div>
 
 <style>
+    .head{
+        padding-bottom:1rem;
+    }
     .expandedcp2 {
         padding-top: 2rem;
         padding-bottom: 1rem;
@@ -118,7 +121,7 @@
     .words {
         gap: 1rem;
         padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }

@@ -5,7 +5,7 @@
 </script>
 
 <div class="expandedtext {sideBySide ? 'qrow' : 'qcol'} ">
-    <div class="words qcol qbg-alt">
+    <div class="words qcol {sideBySide ? '' : 'qbg-alt'}">
         <div class="qhead">Independent text</div>
         <span
             >Say you draw a house 5m tall, and you want text as high as a house.
@@ -41,7 +41,7 @@
     .words {
         gap: 1rem;
         padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }

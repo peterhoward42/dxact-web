@@ -15,10 +15,10 @@
 </script>
 
 <div class="expandedcp1 {sideBySide ? 'qrow' : 'qcol'} ">
-    <div class="words qbg-alt">
+    <div class="words {sideBySide ? '' : 'qbg-alt'} qcol">
         <div class="qhead">Copy &amp; Paste Reimagined</div>
         <span class=""
-            >Here's how we've reimagined copy and paste for drawing fragments</span
+            >Here's how we've reimagined copy and paste for drawings</span
         ><span class="">Instead of just Copy + Paste, we give you:</span>
         <div class="">
             <ul class="processlist">
@@ -107,7 +107,7 @@
     .words {
         gap: 1rem;
         padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }

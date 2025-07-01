@@ -29,7 +29,7 @@
 
 <style>
     .getstarted {
-        margin-top: 2rem;
+        margin-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 1rem;

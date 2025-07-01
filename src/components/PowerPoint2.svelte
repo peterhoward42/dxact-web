@@ -19,7 +19,7 @@
                         />{/snippet}
                     {#snippet theCpt()}<span>
                             <strong>PowerPoint</strong> is great at deciding
-                            things for you. In DrawExact, <strong>you</strong> decide.
+                            things for you. In DrawExact, <strong>you decide</strong>.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -46,10 +46,10 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            <strong>Adobe's</strong> tools include a strong emphasis
-                            on aesthetics and artistic flair. DrawExact focusses
-                            ruthlessly on the geometric construction of your drawing
-                            - and keeping things simple.
+                            <strong>Adobe's</strong> tools include a strong
+                            emphasis on aesthetics and artistic flair. DrawExact
+                            focusses ruthlessly on geometric construction - and
+                            keeping it <strong>simple</strong>.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
