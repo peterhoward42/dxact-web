@@ -102,8 +102,7 @@
         },
         {
             label: "Make a library drawing",
-            subLabel:
-                "To Copy & Paste from. Save hours.",
+            subLabel: "To Copy & Paste from. Save hours.",
             imageSrc: libraryM,
         },
     ];
@@ -186,7 +185,7 @@
     .composed-col {
         width: 100%;
         align-items: center;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     .labelarea-col {
         width: 100%;

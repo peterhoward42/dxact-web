@@ -23,6 +23,9 @@
     import ComposedImages from "./components/ComposedImages.svelte";
     import CTA from "./components/CTA.svelte";
     import MainTitle from "./components/MainTitle.svelte";
+    import FrontMatterMobile from "./components/AboveFoldMobile.svelte";
+    import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
+    import AboveFoldDesktop from "./components/AboveFoldDesktop.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
@@ -34,11 +37,7 @@
 <div class="screen">
     {#if responsiveMeta.deviceFormFactor == "mobile" || responsiveMeta.deviceFormFactor == "tablet"}
         <div class="mobilelayout qcol">
-            <MainTitle />
-            <FrontMatterTitles />
-            <ComposedImages aspectRatio="1.5"></ComposedImages>
-            <CTA />
-            <ScrollCue />
+            <AboveFoldMobile />
             <WhatIs />
             <WhatMakesItWorth />
             <GetStarted />
@@ -56,14 +55,7 @@
     {/if}
     {#if responsiveMeta.deviceFormFactor == "desktop"}
         <div class="deskylayout qcol">
-            <div class="titlesarea qcol">
-                <MainTitle />
-                <div class="subtitlesandcta qrow">
-                    <FrontMatterTitles />
-                    <CTA />
-                </div>
-            </div>
-            <ComposedImages aspectRatio="1.5"></ComposedImages>
+            <AboveFoldDesktop />
 
             <RowOfPanelsForDesktop>
                 <WhatIs />
@@ -93,17 +85,19 @@
 
 <style>
     .screen {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
 
     .mobilelayout {
+        width: 100%;
         align-items: center;
+        gap: 2rem;
     }
     .deskylayout {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
         gap: 4rem;
     }
     .subtitlesandcta {
