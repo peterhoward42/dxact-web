@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+    // @ts-nocheck
 
     import { responsiveImage } from "../services/responsive.svelte";
     import { composedImagesState, wrapped } from "./ComposedImages.svelte";

@@ -20,8 +20,7 @@
     import RowOfPanelsForDesktop from "./components/RowOfPanelsForDesktop.svelte";
     import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
     import AboveFoldDesktop from "./components/AboveFoldDesktop.svelte";
-
-    import { toTriggerLoad } from "./services/imagerouter";
+    import FooterSection from "./components/FooterSection.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
@@ -47,6 +46,7 @@
             <ExpandedZoomMethods></ExpandedZoomMethods>
             <ExpandedPreserveFlow></ExpandedPreserveFlow>
             <ExpandedSpeed></ExpandedSpeed>
+            <FooterSection />
         </div>
     {/if}
     {#if responsiveMeta.deviceFormFactor == "desktop"}
@@ -75,6 +75,7 @@
                 <ExpandedPreserveFlow></ExpandedPreserveFlow>
                 <ExpandedSpeed></ExpandedSpeed>
             </RowOfPanelsForDesktop>
+            <FooterSection />
         </div>
     {/if}
 </div>
