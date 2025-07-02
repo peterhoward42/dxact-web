@@ -1,5 +1,7 @@
 <script>
-    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
+    import {
+        responsiveImage,
+    } from "../services/responsive.svelte";
     import zoomPrecise from "/src/assets/images/forlandingpageaccuratezoom_M.png";
     let { sideBySide = false } = $props();
 </script>
@@ -35,7 +37,7 @@
     </div>
     <img
         class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
-        src={deviceOptimisedImageSrc(zoomPrecise)}
+        src={responsiveImage("accuratezoom")}
         alt=""
     />
 </div>

@@ -1,6 +1,5 @@
 <script>
-    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
-    import expandedtext from "/src/assets/images/forlandingpagemoreontext_M.png";
+    import { responsiveImage } from "../services/responsive.svelte";
     let { sideBySide = false } = $props();
 </script>
 
@@ -28,7 +27,7 @@
     </div>
     <img
         class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
-        src={deviceOptimisedImageSrc(expandedtext)}
+        src={responsiveImage("moreontext")}
         alt=""
     />
 </div>

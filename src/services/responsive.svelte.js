@@ -1,5 +1,8 @@
 // This rune emits state changes when the host viewport switches between
 // for example, a mobile and desktop media query breakpoint.
+
+import { selectImageForFormFactor } from "./imagerouter";
+
 // 
 export let responsiveMeta = $state({
     // Initialise it to a value that won't trigger a layout to load,
@@ -14,7 +17,6 @@ export function setupMediaQueryObserver() {
 
     function handleChange(mql, formFactor) {
         if (mql.matches) {
-            console.log("XXXX media query fired for: ", formFactor)
             responsiveMeta.deviceFormFactor = formFactor
         }
     }
@@ -30,22 +32,12 @@ export function setupMediaQueryObserver() {
     isDesktop.addEventListener("change", (mql) => { handleChange(mql, "desktop") });
 }
 
-// Replace the given mobileImageSrc (e.g. "apple_M.png") with for example "apple_T.png",
-// to correspond to the current viewport size.
-export function deviceOptimisedImageSrc(existingSrc) {
 
-    console.log("XXXX deviceOptimisedImageSrc() fired with existing source: ", existingSrc)
-
-    var newSuffixLetter = {
-        mobile: "M",
-        tablet: "T",
-        desktop: "D",
-    }[responsiveMeta.deviceFormFactor]
-    const re = /_.\.png/;
-    const newSrc = existingSrc.replace(re, "_" + newSuffixLetter + ".png")
-    console.log("XXXX optimised src is: ", newSrc)
-
-    return newSrc
+// XXXX todo
+export function responsiveImage(imageSearchTerm) {
+    const chosenImg = selectImageForFormFactor(imageSearchTerm, responsiveMeta.deviceFormFactor)
+    return chosenImg
 }
+
 
 

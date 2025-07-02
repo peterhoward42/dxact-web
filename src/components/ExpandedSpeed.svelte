@@ -1,24 +1,17 @@
 <script>
-    import copypastearc from "/src/assets/images/forlandingpagecopiesonarc_M.png";
     import ListItemWithIcon from "./ListItemWithIcon.svelte";
     import {
-        ALargeSmall,
-        Clock9,
-        Copy,
         DoorOpen,
         Eye,
         Frown,
-        Handshake,
-        MousePointerClick,
         Snail,
         SquareDashedMousePointer,
-        SquareStack,
         Infinity,
         Smile,
     } from "@lucide/svelte";
 </script>
 
-<div class="expandedspeed qcol  qpanel-width">
+<div class="expandedspeed qcol qpanel-width">
     <div class="qhead">Fast Matters</div>
     <span class=""
         >The app working fast and smoothly matters. Because any hesitation or

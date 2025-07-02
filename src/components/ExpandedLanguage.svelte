@@ -1,5 +1,5 @@
 <script>
-    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
+    import { responsiveImage } from "../services/responsive.svelte";
     import language from "/src/assets/images/forlandingpagelanguage_M.png";
 
     let { sideBySide = false } = $props();
@@ -17,7 +17,7 @@
     </div>
     <img
         class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
-        src={deviceOptimisedImageSrc(language)}
+        src={responsiveImage("language")}
         alt=""
     />
 </div>

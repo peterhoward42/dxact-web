@@ -22,88 +22,58 @@
         );
     }
 
-    import appleM from "/src/assets/images/forlandingpageapple_M.png";
-    import appleD from "/src/assets/images/forlandingpageapple_D.png";
-
-    import chainM from "/src/assets/images/forlandingpagechain_M.png";
-    import chainD from "/src/assets/images/forlandingpagechain_D.png";
-
-    import copypastearcM from "/src/assets/images/forlandingpagecopiesonarc_M.png";
-    import copypastearcD from "/src/assets/images/forlandingpagecopiesonarc_D.png";
-
-    import copypastelineM from "/src/assets/images/forlandingpagecopyrepeatline_M.png";
-    import copypastelineD from "/src/assets/images/forlandingpagecopyrepeatline_D.png";
-
-    import languageM from "/src/assets/images/forlandingpagelanguage_M.png";
-    import languageD from "/src/assets/images/forlandingpagelanguage_D.png";
-
-    import flowerM from "/src/assets/images/forlandingpageflower_M.png";
-    import flowerD from "/src/assets/images/forlandingpageflower_D.png";
-
-    import transformsM from "/src/assets/images/forlandingpagetransformpaste_M.png";
-    import transformsD from "/src/assets/images/forlandingpagetransformpaste_D.png";
-
-    import choreographedtextM from "/src/assets/images/forlandingpagechoreographedtext_M.png";
-    import choreographedtextD from "/src/assets/images/forlandingpagechoreographedtext_D.png";
-
-    import libraryM from "/src/assets/images/forlandingpagelibrary_M.png";
-    import libraryD from "/src/assets/images/forlandingpagelibrary_D.png";
-
-    import zoomtargetM from "/src/assets/images/forlandingpageaccuratezoom_M.png";
-    import zoomtargetD from "/src/assets/images/forlandingpageaccuratezoom_D.png";
-
     export var carouselFrames = [
         {
             label: "DrawExact's thinking words",
             subLabel:
                 "The same as your thinking words. No translaton required.",
-            imageSrc: languageM,
+            imageSearchTerm: "language",
         },
         {
             label: "You command the geometry",
             subLabel: "None of that auto snapping you don't want",
-            imageSrc: flowerM,
+            imageSearchTerm: "flower",
         },
         {
             label: "Choreographed text",
             subLabel: "Precise. Multilingual. And symbols.",
-            imageSrc: choreographedtextM,
+            imageSearchTerm: "choreographedtext",
         },
         {
             label: "Beyond Copy & Paste",
             subLabel:
                 "Pasted shapes aren’t fixed. Transform them visually before placing",
-            imageSrc: transformsM,
+            imageSearchTerm: "transform",
         },
         {
             label: "Copy & Paste Row Pattern",
             subLabel: "Specify 4 copies. Click the line. Done.",
-            imageSrc: copypastelineM,
+            imageSearchTerm: "copyrepeat",
         },
         {
-            label: "Copy & Paste Circular Patterns",
+            label: "Copy & Paste Circular",
             subLabel: "Specify 32 copies. Click the circle. Done.",
-            imageSrc: copypastearcM,
+            imageSearchTerm: "copiesonarc",
         },
         {
             label: "Surgical zoom",
             subLabel: "Zoom precisely - in a single step",
-            imageSrc: zoomtargetM,
+            imageSearchTerm: "accuratezoom",
         },
         {
             label: "Auto dimensions",
             subLabel: "For engineering drawings",
-            imageSrc: chainM,
+            imageSearchTerm: "chain",
         },
         {
             label: "Compose circles and arcs",
             subLabel: "Easy to arrange, blend and trim curves.",
-            imageSrc: appleM,
+            imageSearchTerm: "apple",
         },
         {
             label: "Make a library drawing",
             subLabel: "To Copy & Paste from. Save hours.",
-            imageSrc: libraryM,
+            imageSearchTerm: "library",
         },
     ];
 
@@ -132,19 +102,6 @@
     import { onMount } from "svelte";
     import ComposedImagesLabelArea from "./ComposedImagesLabelArea.svelte";
     import { responsiveMeta } from "../services/responsive.svelte";
-
-    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
-
-    $effect(() => {
-        const newDevice = responsiveMeta.deviceFormFactor; // the thing we are observing.
-        updateFramesMetaToMatchDevice(newDevice);
-    });
-
-    function updateFramesMetaToMatchDevice(device) {
-        carouselFrames.forEach((frame, i) => {
-            frame.imageSrc = deviceOptimisedImageSrc(frame.imageSrc);
-        });
-    }
 
     let { aspectRatio } = $props();
 

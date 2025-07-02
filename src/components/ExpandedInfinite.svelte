@@ -1,6 +1,5 @@
 <script>
-    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
-    import boatInfinite from "/src/assets/images/forlandingpageinfinitecanvas_M.png";
+    import {responsiveImage } from "../services/responsive.svelte";
     let { sideBySide = false } = $props();
 </script>
 
@@ -33,7 +32,7 @@
     </div>
     <img
         class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
-        src={deviceOptimisedImageSrc(boatInfinite)}
+        src={responsiveImage("infinitecanvas")}
         alt=""
     />
 </div>

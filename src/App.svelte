@@ -21,6 +21,8 @@
     import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
     import AboveFoldDesktop from "./components/AboveFoldDesktop.svelte";
 
+    import { toTriggerLoad } from "./services/imagerouter";
+
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
     onMount(async () => {

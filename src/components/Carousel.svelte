@@ -1,4 +1,5 @@
 <script>
+    import { responsiveImage } from "../services/responsive.svelte";
     import { composedImagesState, wrapped } from "./ComposedImages.svelte";
 
     let { frames, aspectRatio } = $props();
@@ -30,7 +31,7 @@
             class:show={shouldBeVisible(index)}
             class:hide={!shouldBeVisible(index)}
         >
-            <img src={frame.imageSrc} alt="" />
+            <img src={responsiveImage(frame.imageSearchTerm)} alt="" />
         </div>
     {/each}
 </div>

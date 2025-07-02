@@ -1,5 +1,4 @@
 <script>
-    import copypastearc from "/src/assets/images/forlandingpagecopiesonarc_M.png";
     import ListItemWithIcon from "./ListItemWithIcon.svelte";
     import {
         ALargeSmall,
@@ -10,7 +9,7 @@
         MousePointerClick,
         SquareStack,
     } from "@lucide/svelte";
-    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
+    import { responsiveImage } from "../services/responsive.svelte";
     let { sideBySide = false } = $props();
 </script>
 
@@ -88,7 +87,7 @@
     </div>
     <img
         class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
-        src={deviceOptimisedImageSrc(copypastearc)}
+        src={responsiveImage("transformpaste")}
         alt=""
     />
 </div>

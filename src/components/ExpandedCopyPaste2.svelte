@@ -1,20 +1,15 @@
 <script>
-    import mirror from "/src/assets/images/forlandingpagemirror_M.png";
     import ListItemWithIcon from "./ListItemWithIcon.svelte";
     import {
         ALargeSmall,
-        Clock9,
         Columns2,
-        Copy,
-        Eye,
         FlipHorizontal,
-        Handshake,
         Library,
-        MousePointerClick,
         RotateCw,
-        SquareStack,
     } from "@lucide/svelte";
-    import { deviceOptimisedImageSrc } from "../services/responsive.svelte";
+    import {
+        responsiveImage,
+    } from "../services/responsive.svelte";
     let { sideBySide = false } = $props();
 </script>
 
@@ -99,7 +94,7 @@
     </div>
     <img
         class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
-        src={deviceOptimisedImageSrc(mirror)}
+        src={responsiveImage("mirror")}
         alt=""
     />
 </div>
