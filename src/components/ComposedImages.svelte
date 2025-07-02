@@ -22,6 +22,10 @@
         );
     }
 
+    // This data structure enumerates meta data for a sequence of carousel frames.
+    // Specifically the title and subtitle that should be shown as labels for the image.
+    // Plus a reference to the image required (abstracted as a search term), so that
+    // the Carousel can switch in or out the mobile/desktop versions.
     export var carouselFrames = [
         {
             label: "DrawExact's thinking words",

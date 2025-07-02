@@ -1,15 +1,16 @@
-// This rune emits state changes when the host viewport switches between
-// for example, a mobile and desktop media query breakpoint.
-
 import { selectImageForFormFactor } from "./imagerouter";
 
-// 
+// This rune emits state changes when the host viewport switches between
+// for example, a mobile and desktop media query breakpoint.
 export let responsiveMeta = $state({
     // Initialise it to a value that won't trigger a layout to load,
     // because we want to defer the initial load until the form factor is known.
     deviceFormFactor: "",
 })
 
+// setupMediaQueryObserver has a set of internal media queries, and
+// installs change observers for those queries that mutate the responsiveMeta.deviceFormFactor
+// rune field accordingly.
 export function setupMediaQueryObserver() {
     const isMobile = window.matchMedia("(300px <= width <= 576px)");
     const isTablet = window.matchMedia("(576px < width <= 992px)");
@@ -33,7 +34,9 @@ export function setupMediaQueryObserver() {
 }
 
 
-// XXXX todo
+// responsiveImage() returns one of the built in images that satisfies the given search term.
+// Specifically it chooses the one that is optimised for the current device's form factor,
+// as given by the responsiveMeta.deviceFormFactor rune.
 export function responsiveImage(imageSearchTerm) {
     const chosenImg = selectImageForFormFactor(imageSearchTerm, responsiveMeta.deviceFormFactor)
     return chosenImg
