@@ -30,6 +30,7 @@
 </script>
 
 <div class="screen">
+    <!-- At the moment we use the mobile layout also for tablets.  -->
     {#if responsiveMeta.deviceFormFactor == "mobile" || responsiveMeta.deviceFormFactor == "tablet"}
         <div class="mobilelayout qcol">
             <AboveFoldMobile />

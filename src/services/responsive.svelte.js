@@ -12,6 +12,7 @@ export let responsiveMeta = $state({
 // installs change observers for those queries that mutate the responsiveMeta.deviceFormFactor
 // rune field accordingly.
 export function setupMediaQueryObserver() {
+    // Note the isTablet test is enabled, but we treat it the same as mobile in the rest of the code.
     const isMobile = window.matchMedia("(300px <= width <= 576px)");
     const isTablet = window.matchMedia("(576px < width <= 992px)");
     const isDesktop = window.matchMedia("(992px < width <= 99999px)");
