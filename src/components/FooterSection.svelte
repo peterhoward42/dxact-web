@@ -18,8 +18,8 @@
     particular kind of experience — focused, intentional, and tuned for clarity
     over coverage.</span
   ><span
-    >But if it clicks with you, we’d love to hear what’s working — and if it
-    doesn’t, your feedback helps us see where the resonance fades — and why.</span
+    >But if it clicks with you, we’d love to hear what’s working, and if it
+    doesn’t, your feedback helps us see where the resonance fades, and why.</span
   >
   <span>Just email us at <em>feedback@drawexact.click</em></span>
 </div>
