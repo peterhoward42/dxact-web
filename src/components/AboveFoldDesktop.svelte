@@ -4,55 +4,61 @@
     import CTA from "./CTA.svelte";
 </script>
 
-<div class="abovefolddesktop qcol">
-    <span class="head qe1 qbg-alt">DrawExact</span>
+<div class="abovefoldmobile qcol">
+    <span class="qe1 head">DrawExact</span>
 
-    <div class="subtitlesandcta qrow">
-        <div class="subtitles qcol">
-            <span class="youthink qe1"
-                >You do the thinking. We'll hold the ruler.</span
-            >
-            <span class="helpsshape">
-                DrawExact helps you make drawings; right in your browser. Fast,
-                efficient, no cost.</span
-            >
-        </div>
-        <div class="cta"><CTA /></div>
-    </div>
+    <span class="subhead qe1"
+        >Is an app for making drawings in your browser.</span
+    >
+    <span class="toplines"
+        >It's like Google Docs, but reimagined for <strong>Drawings</strong
+        >.</span
+    >
+    <span class="toplines"
+        >Sign in with Google. Save to Google Drive. Free.
+    </span>
+    <span class="toplines">It's aimed mainly for technical drawings.</span>
+
+    <span class="capabilities qlarge1 qe1">Key capabilities</span>
+    <span class="willexpand qsubdued qital"
+        >(We expand on these further down the page.)</span
+    >
 
     <ComposedImages aspectRatio="1.5"></ComposedImages>
+    <div class="cta"><CTA /></div>
 </div>
 
 <style>
-    .abovefolddesktop {
+    .abovefoldmobile {
         width: 100%;
         text-align: center;
-        gap: 1rem;
     }
 
     .head {
-        font-size: 2rem;
+        font-size: 4rem;
         padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 1rem;
     }
-    .subtitlesandcta {
-        justify-content: space-around;
-        margin-bottom: 4rem;
-        margin-top: 3rem;
+    .subhead {
+        font-size: 2rem;
+        padding-bottom: 1rem;
     }
-    .subtitles {
-        gap: 1rem;
-    }
-    .youthink {
-        font-size: 1.2rem;
-        margin-top: 0.5rem;
+    .toplines {
+        font-size: 1.3rem;
+        margin-top: 1rem;
     }
 
-    .helpsshape {
-        font-size: 1.1rem;
+    .capabilities {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        align-self: flex-start;
+    }
+    .willexpand {
+        margin-bottom: 2rem;
+        align-self: flex-start;
     }
     .cta {
         align-self: center;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 </style>
