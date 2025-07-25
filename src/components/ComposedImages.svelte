@@ -28,55 +28,45 @@
     // the Carousel can switch in or out the mobile/desktop versions.
     export var carouselFrames = [
         {
-            label: "DrawExact's thinking words",
             subLabel:
-                "The same as your thinking words. No translaton required.",
+                "You create Lines, Arcs and Text, using these kinds of construction methods and tools.",
             imageSearchTerm: "language",
         },
         {
-            label: "You command the geometry",
-            subLabel: "None of that auto snapping you don't want",
+            subLabel: "YOU decide the geometric details, unlike say Powerpoint, which guesses for you. ",
             imageSearchTerm: "flower",
         },
         {
-            label: "Choreographed text",
-            subLabel: "Precise. Multilingual. And symbols.",
+            subLabel: "You also decide the position, height and angle for text.",
             imageSearchTerm: "choreographedtext",
         },
         {
-            label: "Beyond Copy & Paste",
             subLabel:
-                "Pasted shapes aren’t fixed. Transform them visually before placing",
+                "Instead of just copy & paste, you get (interactive) copy➤scale➤paste. (And rotate and mirror).",
             imageSearchTerm: "transform",
         },
         {
-            label: "Copy & Paste Row Pattern",
-            subLabel: "Specify 4 copies. Click the line. Done.",
+            subLabel: "It can Paste repeat patterns along a line automatically.",
             imageSearchTerm: "copyrepeat",
         },
         {
-            label: "Copy & Paste Circular",
-            subLabel: "Specify 32 copies. Click the circle. Done.",
+            subLabel: "It can also Paste repeats patterns around an arc automatically.",
             imageSearchTerm: "copiesonarc",
         },
         {
-            label: "Surgical zoom",
-            subLabel: "Zoom precisely - in a single step",
+            subLabel: "You get ultra precise zoom-in by dragging a rectangle.",
             imageSearchTerm: "accuratezoom",
         },
         {
-            label: "Auto dimensions",
-            subLabel: "For engineering drawings",
+            subLabel: "It's good for engineering drawings. Including putting in dimensions automatically.",
             imageSearchTerm: "chain",
         },
         {
-            label: "Compose circles and arcs",
-            subLabel: "Easy to arrange, blend and trim curves.",
+            subLabel: "It helps you align and trim arcs precisely.",
             imageSearchTerm: "apple",
         },
         {
-            label: "Make a library drawing",
-            subLabel: "To Copy & Paste from. Save hours.",
+            subLabel: "You can create a drawing with all your often-used stuff, and rapidly copy and paste from it.",
             imageSearchTerm: "library",
         },
     ];
@@ -117,7 +107,10 @@
         // causing havoc.
         stopTheTicker();
         // Start the animation frame generator
-        theTicker = setInterval(advanceOneFrame, animationPeriod);
+
+        // XXXX todo - an experiment to see if it feels better if it starts in paused state.
+
+        // theTicker = setInterval(advanceOneFrame, animationPeriod);
     });
 </script>
 
@@ -130,10 +123,10 @@
     </div>
 {:else}
     <div class="composed-col qcol">
-        <Carousel frames={carouselFrames} {aspectRatio} />
         <div class="labelarea-col">
             <ComposedImagesLabelArea />
         </div>
+        <Carousel frames={carouselFrames} {aspectRatio} />
     </div>
 {/if}
 
