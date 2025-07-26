@@ -11,11 +11,10 @@
         >Is an app for making drawings in your browser.</span
     >
     <span class="toplines"
-        >It's like Google Docs, but reimagined for <strong>Drawings</strong
-        >.</span
+        >It's like Google Docs — reimagined for <strong>Drawings</strong>.</span
     >
     <span class="toplines"
-        >Sign in with Google. Save to Google Drive. Free.
+        >Sign in with Google. Save to Google Drive. It's Free.
     </span>
     <span class="toplines">It's aimed mainly for technical drawings.</span>
 

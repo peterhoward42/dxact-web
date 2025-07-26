@@ -11,16 +11,16 @@
         >Is an app for making drawings in your browser.</span
     >
     <span class="toplines"
-        >It's like Google Docs, but reimagined for <strong>Drawings</strong
-        >.</span
+        >It's like Google Docs — reimagined for <strong>Drawings</strong>.</span
     >
     <span class="toplines"
-        >Sign in with Google. Save to Google Drive. Free.
+        >Sign in with Google. Save to Google Drive. It's Free.
     </span>
     <span class="toplines">It's aimed mainly for technical drawings.</span>
 
     <span class="capabilities qlarge1 qe1">Key capabilities</span>
-    <span class="willexpand qsubdued qital">(We expand on these further down the page.)</span
+    <span class="willexpand qsubdued qital"
+        >(We expand on these further down the page.)</span
     >
 
     <ComposedImages aspectRatio="1.5"></ComposedImages>
@@ -41,15 +41,15 @@
     .subhead {
         padding-bottom: 1rem;
     }
-    .toplines{
+    .toplines {
         margin-top: 1rem;
     }
 
     .capabilities {
         margin-top: 2rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
     }
-    .willexpand{
+    .willexpand {
         margin-bottom: 1rem;
     }
     .cta {

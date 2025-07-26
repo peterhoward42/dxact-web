@@ -35,7 +35,6 @@
         <div class="mobilelayout qcol">
             <AboveFoldMobile />
             <WhatIs />
-            <WhatMakesItWorth />
             <GetStarted />
             <BigScreen2 />
             <PowerPoint2 />
@@ -54,10 +53,7 @@
         <div class="deskylayout qcol">
             <AboveFoldDesktop />
 
-            <RowOfPanelsForDesktop>
-                <WhatIs />
-                <WhatMakesItWorth />
-            </RowOfPanelsForDesktop>
+            <WhatIs />
             <RowOfPanelsForDesktop bgAlt={true}>
                 <GetStarted />
                 <BigScreen2 />
@@ -98,8 +94,5 @@
         margin-right: auto;
         gap: 4rem;
     }
-    .subtitlesandcta {
-        justify-content: space-around;
-        align-items: center;
-    }
+   
 </style>

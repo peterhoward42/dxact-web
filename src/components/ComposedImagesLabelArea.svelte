@@ -52,8 +52,11 @@
     {:else}
         <!-- svelte-ignore a11y_click_events_have_key_events -->
         <!-- svelte-ignore a11y_no_static_element_interactions -->
-        <div class="next qaccent" onclick={handleFwd}>
-            next ▶
+        <div
+            class="next qlarge1 qaccent qbord-all qrad-btn"
+            onclick={handleFwd}
+        >
+            Next ▶
         </div>
     {/if}
 </div>
@@ -61,7 +64,7 @@
 <style>
     .labelarea {
         gap: 0rem;
-        height: 5.5rem;
+        height: 7rem;
         align-items: center;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -87,11 +90,11 @@
         padding-top: 0rem;
     }
     .next {
-        align-self: flex-end;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        align-self: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 1rem;
+        border-color: var(--accent);
     }
 
     @keyframes fadeInKeyFrames {

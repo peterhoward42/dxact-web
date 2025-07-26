@@ -9,7 +9,7 @@
             >If you open DrawExact you'll see a few example drawings to play
             around with.</span
         >
-        <span>You drop straight in. No need to sign-in.</span>
+        <span>You drop straight in. You don't need to sign-in to play with it.</span>
 
         <span>
             It’ll quietly guide your first steps, just enough to get you going.

@@ -33,24 +33,28 @@
             imageSearchTerm: "language",
         },
         {
-            subLabel: "YOU decide the geometric details, unlike say Powerpoint, which guesses for you. ",
+            subLabel:
+                "YOU decide the geometric details, unlike say Powerpoint, which guesses for you. ",
             imageSearchTerm: "flower",
         },
         {
-            subLabel: "You also decide the position, height and angle for text.",
+            subLabel:
+                "You also decide the position, height and angle for text.",
             imageSearchTerm: "choreographedtext",
         },
         {
             subLabel:
-                "Instead of just copy & paste, you get (interactive) copy➤scale➤paste. (And rotate and mirror).",
+                "Instead of just copy & paste, you get copy➤scale➤paste. (And rotate and mirror).",
             imageSearchTerm: "transform",
         },
         {
-            subLabel: "It can Paste repeat patterns along a line automatically.",
+            subLabel:
+                "It can Paste repeat patterns along a line automatically.",
             imageSearchTerm: "copyrepeat",
         },
         {
-            subLabel: "It can also Paste repeats patterns around an arc automatically.",
+            subLabel:
+                "It can also Paste repeats patterns around an arc automatically.",
             imageSearchTerm: "copiesonarc",
         },
         {
@@ -58,7 +62,13 @@
             imageSearchTerm: "accuratezoom",
         },
         {
-            subLabel: "It's good for engineering drawings. Including putting in dimensions automatically.",
+            subLabel:
+                "You can zoom out on the infinite canvas any time, to make more space.",
+            imageSearchTerm: "sidebyside",
+        },
+        {
+            subLabel:
+                "It's good for engineering drawings. Including putting in dimensions automatically.",
             imageSearchTerm: "chain",
         },
         {
@@ -66,7 +76,8 @@
             imageSearchTerm: "apple",
         },
         {
-            subLabel: "You can create a drawing with all your often-used stuff, and rapidly copy and paste from it.",
+            subLabel:
+                "You can create a drawing with all your often-used stuff, and rapidly copy and paste from it.",
             imageSearchTerm: "library",
         },
     ];
