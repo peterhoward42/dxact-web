@@ -5,14 +5,20 @@
 </script>
 
 <div class="expandedflow qpanel-width">
-    <div class="qhead">Preserving your flow</div>
-    <div class="paras qcol">
-        <p>
-            Once you've clicked DrawExact's commands a few times, you gradually
-            find yourself thinking in those command words:
-        </p>
+    <div class="title qhead">Shortcut keys - a subtle superpower</div>
+    <div class="paras qcol qgap-rem">
+        <span
+            >Shortcut keys in most apps are really only for power users who
+            don't mind remembering awkward key combinations.</span
+        >
+        <span
+            >DrawExact on the other hand was built around a shortcut key vision
+            right from the beginning. They are
+            <strong>almost unbelievably simple</strong>.</span
+        >
+        <span>Take these examples of DrawExact's command words: </span>
 
-        <div class="cmdwords qrow qgap-rem">
+        <span class="cmdwords qrow qgap-rem">
             <FirstLetterCommand first="l" remainder="ine, "
             ></FirstLetterCommand>
             <FirstLetterCommand first="f" remainder="illet, "
@@ -23,36 +29,31 @@
                 remainder="ndo, "
             ></FirstLetterCommand>
             <span class="etc"> ...etc.</span>
-        </div>
+        </span>
 
-        <div class="withicon qrow qgap-rem">
-            <Lightbulb
-                size="60"
-                strokeWidth="4"
-                color="#5c7ea7"
-                absoluteStrokeWidth={true}
-            />
-            <span>
-                It's a light bulb moment when you realise you can fire the
-                command just by pressing its first letter key.
-            </span>
-        </div>
-
-        <p>
-            That means your eyes can stay riveted to the drawing. And the
-            pathway from thought to action is almost subliminal. That's flow!
-        </p>
+        <span
+            >You quite quickly start thinking in those words. There aren't
+            very many.</span
+        >
+        <span
+            >The key presses become second nature. You find yourself visiting
+            the menu less and less often, which not only speeds you up, but more
+            importantly, they mean your eyes needn't leave their focus on the
+            drawing area. That greatly reduces context switching and maintains
+            your flow.</span
+        >
     </div>
 </div>
 
 <style>
-    .cmdwords {
-        padding-bottom: 1rem;
-    }
     .expandedflow {
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+    }
+    .title {
+        margin-bottom: 1rem;
+    }
+    .cmdwords {
+        margin-left: 2rem;
     }
 </style>

@@ -1,40 +1,37 @@
 <script>
-    import {responsiveImage } from "../services/responsive.svelte";
+    import { responsiveImage } from "../services/responsive.svelte";
     let { sideBySide = false } = $props();
 </script>
 
 <div class="expandedinfinite {sideBySide ? 'qrow' : 'qcol'} ">
-    <div class="words qcol {sideBySide ? '' : 'qbg-alt'}">
-        <div class="qhead">Expand infinitely</div>
-        <span class="">You're drawing on an infinite canvas</span>
+    <div class="words qcol">
+        <div class="qhead">Zoom out — infinitely</div>
         <span class=""
-            >So you can think and draw in the units that are in your head (it
-            doesn't know)</span
+            >DrawExact of course has X/Y values for everything in your drawings.
+            But it has no opinion on how large or small those values should be.</span
         >
-        <span class=""
-            >Go large by zooming out and drawing in the wide open spaces</span
-        >
-        <span class="">Go small by zooming in</span>
-        <span class=""
-            >You can zoom in as much as 10,000X, and the drawing is still
-            pin-sharp.
-        </span>
         <span
-            >This boat is one of our example drawings. You can zoom to drill
-            down all the way from the boat's name, to inside one of the letters,
-            to a bird hidden in there, to the bird's eye, to a reflection of
-            your face looking back at you.</span
+            ><strong>And</strong> the drawings have no boundary or perimeter. They
+            are an infinite canvas. So you can zoom out to any size you want at any
+            time.</span
         >
-        <span class=""
-            >The <strong>punchline</strong> is that one drawing can hold hierarchically
-            revealed details as well as the big picture</span
+        <span>There are two very valuable implications . . .</span>
+        <span
+            >The first implication is that you can decide for each of your
+            drawings what measurement units feel natural. For the boat in some
+            of our examples, the natural units were mm. That's what we were
+            thinking when we drew it, and we entered coordinates to draw it in
+            mm.</span
+        >
+        <span
+            >You can do the same. You might want to draw something in feet for
+            example. Just go ahead and set lengths and distances to the right
+            values in feet. The coordinate readouts and automatic dimensioning
+            don't know about units. They just show the <strong
+                >numerical values that you used</strong
+            ></span
         >
     </div>
-    <img
-        class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
-        src={responsiveImage("infinitecanvas")}
-        alt=""
-    />
 </div>
 
 <style>
