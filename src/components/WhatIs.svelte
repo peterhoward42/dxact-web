@@ -37,7 +37,7 @@
                             <span
                                 >So we keep the screen very uncluttered so you
                                 can keep your eyes fixed on your drawing — and
-                                you don't have to shift your focus.</span
+                                you don't have to shift your mental focus.</span
                             >
                         </div>{/snippet}
                 </ListItemWithIcon>
@@ -53,7 +53,7 @@
                     {#snippet theCpt()}<div class="qcol qgap-rem">
                             <span>
                                 We’re not keen on apps that guess what you want
-                                — and get it wrong. Like stopping you from
+                                — but get it wrong. Like stopping you from
                                 connecting a line where you intended.
                             </span>
                             <span
@@ -77,9 +77,9 @@
                                 about control of your data.
                             </span>
                             <span
-                                >That's why we chose the Google Workspace
-                                environment - it's as good as it gets for
-                                privacy and reliability.</span
+                                >That's why we chose Google Sign-in, and Google
+                                Drive. They're as good as it gets for privacy
+                                and reliability.</span
                             >
                         </div>{/snippet}
                 </ListItemWithIcon>
