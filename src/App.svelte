@@ -9,18 +9,20 @@
     import BigScreen2 from "./components/BigScreen2.svelte";
     import PowerPoint2 from "./components/PowerPoint2.svelte";
     import ExpandedPreserveFlow from "./components/ExpandedPreserveFlow.svelte";
-    import ExpandedLanguage from "./components/ExpandedLanguage.svelte";
     import ExpandedText from "./components/ExpandedText.svelte";
     import ExpandedCopyPaste1 from "./components/ExpandedCopyPaste1.svelte";
-    import ExpandedCopyPaste2 from "./components/ExpandedCopyPaste2.svelte";
+    import ExpandedCopyPasteRepeats from "./components/ExpandedCopyPasteRepeats.svelte";
+    import ExpandedCopyPasteTransforms from "./components/ExpandedCopyPasteTransforms.svelte";
     import ExpandedInfinite from "./components/ExpandedInfinite.svelte";
     import ExpandedZoomMethods from "./components/ExpandedZoomMethods.svelte";
-    import ExpandedSpeed from "./components/ExpandedSpeed.svelte";
     import { setupMediaQueryObserver } from "./services/responsive.svelte";
     import RowOfPanelsForDesktop from "./components/RowOfPanelsForDesktop.svelte";
     import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
     import AboveFoldDesktop from "./components/AboveFoldDesktop.svelte";
     import FooterSection from "./components/FooterSection.svelte";
+    import ExpandedIntro from "./components/ExpandedIntro.svelte";
+    import ExpandedCopyPasteInspSideBySide from "./components/ExpandedCopyPasteInspoSideBySide.svelte";
+    import ExpandedCopyPasteInspoLibrary from "./components/ExpandedCopyPasteInspoLibrary.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
@@ -35,18 +37,19 @@
         <div class="mobilelayout qcol">
             <AboveFoldMobile />
             <WhatIs />
-            <WhatMakesItWorth />
             <GetStarted />
             <BigScreen2 />
             <PowerPoint2 />
-            <ExpandedLanguage></ExpandedLanguage>
+            <ExpandedIntro />
             <ExpandedText></ExpandedText>
             <ExpandedCopyPaste1></ExpandedCopyPaste1>
-            <ExpandedCopyPaste2></ExpandedCopyPaste2>
+            <ExpandedCopyPasteRepeats></ExpandedCopyPasteRepeats>
+            <ExpandedCopyPasteTransforms />
+            <ExpandedCopyPasteInspSideBySide />
+            <ExpandedCopyPasteInspoLibrary />
             <ExpandedInfinite></ExpandedInfinite>
             <ExpandedZoomMethods></ExpandedZoomMethods>
             <ExpandedPreserveFlow></ExpandedPreserveFlow>
-            <ExpandedSpeed></ExpandedSpeed>
             <FooterSection />
         </div>
     {/if}
@@ -54,27 +57,29 @@
         <div class="deskylayout qcol">
             <AboveFoldDesktop />
 
-            <RowOfPanelsForDesktop>
-                <WhatIs />
-                <WhatMakesItWorth />
-            </RowOfPanelsForDesktop>
+            <WhatIs />
             <RowOfPanelsForDesktop bgAlt={true}>
                 <GetStarted />
                 <BigScreen2 />
             </RowOfPanelsForDesktop>
             <PowerPoint2 />
-            <ExpandedLanguage sideBySide={true}></ExpandedLanguage>
+            <ExpandedIntro />
 
             <ExpandedText sideBySide={true}></ExpandedText>
             <ExpandedCopyPaste1 sideBySide={true}></ExpandedCopyPaste1>
 
-            <ExpandedCopyPaste2 sideBySide={true}></ExpandedCopyPaste2>
+            <ExpandedCopyPasteRepeats sideBySide={true}
+            ></ExpandedCopyPasteRepeats>
+
+            <ExpandedCopyPasteTransforms />
+            <ExpandedCopyPasteInspSideBySide />
+            <ExpandedCopyPasteInspoLibrary />
+
             <ExpandedInfinite sideBySide={true}></ExpandedInfinite>
 
             <ExpandedZoomMethods sideBySide={true}></ExpandedZoomMethods>
             <RowOfPanelsForDesktop>
                 <ExpandedPreserveFlow></ExpandedPreserveFlow>
-                <ExpandedSpeed></ExpandedSpeed>
             </RowOfPanelsForDesktop>
             <FooterSection />
         </div>
@@ -97,9 +102,5 @@
         margin-left: auto;
         margin-right: auto;
         gap: 4rem;
-    }
-    .subtitlesandcta {
-        justify-content: space-around;
-        align-items: center;
     }
 </style>

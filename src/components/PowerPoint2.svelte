@@ -7,22 +7,9 @@
 </script>
 
 <div class="powerpoint qpanel-width">
-    <div class="qhead title">Why not PowerPoint, CAD, Or Adobe?</div>
+    <div class="qhead title">Comparison with CAD, Or Adobe Products</div>
     <div class="">
         <ul class="powerpointlist">
-            <li>
-                <ListItemWithIcon>
-                    {#snippet theIcon()}<Workflow
-                            size="50"
-                            strokeWidth="1"
-                            absoluteStrokeWidth={true}
-                        />{/snippet}
-                    {#snippet theCpt()}<span>
-                            <strong>PowerPoint</strong> is great at deciding
-                            things for you. In DrawExact, <strong>you decide</strong>.
-                        </span>{/snippet}
-                </ListItemWithIcon>
-            </li>
             <li>
                 <ListItemWithIcon>
                     {#snippet theIcon()}<Box
@@ -31,10 +18,12 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            <strong>CAD</strong> centres you in 3D thinking about
-                            real physical objects. Just the 3D aspect takes up a
-                            portion of your brain. DrawExact centres you in 2D thinking
-                            and the drawing process itself.
+                            <strong>CAD products</strong> are great at 3D
+                            design. They support you in
+                            <strong>3D thinking</strong> and <em>modelling</em>.
+                            DrawExact on the other hand, supports you in 2D
+                            thinking, and prioritises creating a fabulous
+                            drawing experience.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -46,10 +35,11 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            <strong>Adobe's</strong> tools include a strong
-                            emphasis on aesthetics and artistic flair. DrawExact
-                            focusses ruthlessly on geometric construction - and
-                            keeping it <strong>simple</strong>.
+                            <strong>Adobe's products</strong> have a well-earned
+                            reputation for supporting aesthetics and artistic
+                            expression. DrawExact focusses ruthlessly on geometric
+                            construction - and keeping it
+                            <strong>simple</strong>.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>

@@ -11,11 +11,14 @@
     } from "@lucide/svelte";
 </script>
 
-<div
-    class="whatis qpanel-width"
-    class:qbg-alt={responsiveMeta.deviceFormFactor != "desktop"}
->
-    <div class="qhead title">Drawing, Done Differently</div>
+<div class="whatis qpanel-width">
+    <div class="qhead title">DrawExact's priorities</div>
+    <span
+        >When we designed DrawExact, we made some deliberate trade-off decisions. We
+        wanted it to be fast, flexible, powerful, and satisfying to use — but
+        that means there's a bit of a learning curve. We’ll guide you through
+        that when you begin.
+    </span>
     <div class="">
         <ul class="screenlist">
             <li>
@@ -25,40 +28,21 @@
                             strokeWidth="1"
                             absoluteStrokeWidth={true}
                         />{/snippet}
-                    {#snippet theCpt()}<span>
-                            Drawing demands careful thought. DrawExact is your
-                            quietly competent partner — safeguarding your
-                            thinking rhythm.
-                        </span>{/snippet}
+                    {#snippet theCpt()}<div class="qcol qgap-rem">
+                            <span>
+                                We believe that creating a drawing requires
+                                careful thinking, and that DrawExact should
+                                avoid disturbing your thinking.
+                            </span>
+                            <span
+                                >So we keep the screen very uncluttered so you
+                                can keep your eyes fixed on your drawing — and
+                                you don't have to shift your mental focus.</span
+                            >
+                        </div>{/snippet}
                 </ListItemWithIcon>
             </li>
-            <li>
-                <ListItemWithIcon>
-                    {#snippet theIcon()}<Pi
-                            size="40"
-                            strokeWidth="1"
-                            absoluteStrokeWidth={true}
-                        />{/snippet}
-                    {#snippet theCpt()}<span>
-                            It's like <em>Google Docs</em>, but reimagined for
-                            geometrically precise drawings (rather than
-                            documents).
-                        </span>{/snippet}
-                </ListItemWithIcon>
-            </li>
-            <li>
-                <ListItemWithIcon>
-                    {#snippet theIcon()}<Chrome
-                            size="40"
-                            strokeWidth="1"
-                            absoluteStrokeWidth={true}
-                        />{/snippet}
-                    {#snippet theCpt()}<span>
-                            Like <em>Docs</em>, it works in your browser, uses
-                            Google Sign-In, saves to Google Drive, and is free.
-                        </span>{/snippet}
-                </ListItemWithIcon>
-            </li>
+
             <li>
                 <ListItemWithIcon>
                     {#snippet theIcon()}<Pin
@@ -66,28 +50,41 @@
                             strokeWidth="1"
                             absoluteStrokeWidth={true}
                         />{/snippet}
-                    {#snippet theCpt()}<span
-                            >Unlike tools that try to anticipate your intent
-                            (like PowerPoint snapping lines), DrawExact leaves
-                            the decisions to you.</span
-                        >{/snippet}
+                    {#snippet theCpt()}<div class="qcol qgap-rem">
+                            <span>
+                                We’re not keen on apps that guess what you want
+                                — but get it wrong. Like stopping you from
+                                connecting a line where you intended.
+                            </span>
+                            <span
+                                >Instead, DrawExact gives you full control over
+                                positions, sizes, and angles.</span
+                            >
+                        </div>{/snippet}
                 </ListItemWithIcon>
             </li>
 
             <li>
                 <ListItemWithIcon>
-                    {#snippet theIcon()}<Blocks
+                    {#snippet theIcon()}<Chrome
                             size="40"
                             strokeWidth="1"
                             absoluteStrokeWidth={true}
                         />{/snippet}
-                    {#snippet theCpt()}<span>
-                            Google encourages <em
-                                >"Third-party Google Workspace Apps"</em
-                            > — that's what DrawExact is.
-                        </span>{/snippet}
+                    {#snippet theCpt()}<div class="qcol qgap-rem">
+                            <span>
+                                Alongside control of your drawings, we also care
+                                about control of your data.
+                            </span>
+                            <span
+                                >That's why we chose Google Sign-in, and Google
+                                Drive. They're as good as it gets for privacy
+                                and reliability.</span
+                            >
+                        </div>{/snippet}
                 </ListItemWithIcon>
             </li>
+
             <li>
                 <ListItemWithIcon>
                     {#snippet theIcon()}<Mail
@@ -97,8 +94,9 @@
                         />{/snippet}
                     {#snippet theCpt()}<span>
                             <em
-                                >* If you have a Google email, you already have
-                                Drive</em
+                                >* By the way, if you have a Google email, you
+                                already have Google Drive — there's nothing to
+                                set up.</em
                             >
                         </span>{/snippet}
                 </ListItemWithIcon>
@@ -111,6 +109,8 @@
     .whatis {
         padding-top: 2rem;
         padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin: auto;
     }
     .title {
         padding-bottom: 1rem;

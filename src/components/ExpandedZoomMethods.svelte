@@ -1,38 +1,42 @@
 <script>
-    import {
-        responsiveImage,
-    } from "../services/responsive.svelte";
+    import { responsiveImage } from "../services/responsive.svelte";
     import zoomPrecise from "/src/assets/images/forlandingpageaccuratezoom_M.png";
     let { sideBySide = false } = $props();
 </script>
 
 <div class="expandedzoom {sideBySide ? 'qrow' : 'qcol'}">
     <div class="words qcol {sideBySide ? '' : 'qbg-alt'}">
-        <div class="qhead">Surgical Zoom</div>
+        <div class="qhead">More on ultra precise zoom</div>
         <span class=""
-            >Drawings, and the infinite canvas, deserve a <strong
-                >specialised</strong
-            > zoom approach.</span
+            >You saw earlier how you zoom in by dragging a rectangle around the
+            area you're interested in.</span
+        >
+        <span
+            >That works well, because you can get a very small & tight crop
+            often in just a single operation.</span
         >
         <span class=""
-            >For zooming in, you can tunnel into the tiniest, precise target
-            area by pulling a box round it.</span
+            >But you can also keep on going; zooming in further and further.</span
         >
         <span class=""
-            >That means — the perfect zoom in <strong>one</strong> step.</span
+            >You don't see any loss of crispness or clarity, even if you "drill
+            down" by a factor of 10,000X times.</span
         >
         <span class=""
-            >For zooming out, you'll likely want to either reset and see <strong
-                >everything</strong
-            >, or a small nudge to see a bit more of your surroundings.
+            >Our boat example drawing has a name on the front of the boat. The
+            first letter is "D". Inside the "D", there's a bird. The bird has an
+            eye. If you zoom in all the way to that eye - you see a face icon
+            staring back at you. That's a detail of size 0.541 in the context of
+            a drawing of overall size 10,000.
         </span>
+        <span
+            >That's not just a party trick. There's real value in a single
+            drawing being able to hold very small details at the same time as
+            the big picture.</span
+        >
         <span class=""
-            >So that's exactly what we give you. Both with single-key shortcuts
-            for speed.
-        </span>
-        <span class=""
-            >Zooming is so fast it feels instant, so no pause to interfere with
-            your flow.
+            >By the way Zooming is so fast it feels instant, so you don't get a
+            frustrating pause to interfere with your flow.
         </span>
     </div>
     <img

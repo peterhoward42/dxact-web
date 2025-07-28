@@ -42,8 +42,8 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            A mouse or trackpad brings out your dexterity for
-                            fine control.
+                            A mouse or trackpad makes your cursor movements much
+                            more precise.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -55,9 +55,10 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            A dedicated keyboard means that when you enter text
-                            you can see it going into your drawing key by key,
-                            which helps compose it and choose line breaks.
+                            A separate keyboard means that when you enter new
+                            text, it appears letter by letter <strong
+                                >in-place</strong
+                            > in the drawing. That helps you decide when to go onto a new line.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
