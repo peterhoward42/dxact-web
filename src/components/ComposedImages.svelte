@@ -58,7 +58,8 @@
             imageSearchTerm: "copiesonarc",
         },
         {
-            subLabel: "You get ultra precise zoom-in by dragging a rectangle.",
+            subLabel:
+                "You get ultra precise zoom-in using click-and-drag to draw a rectangle around what you want.",
             imageSearchTerm: "accuratezoom",
         },
         {
@@ -77,7 +78,7 @@
         },
         {
             subLabel:
-                "You can create a drawing with all your often-used stuff, and rapidly copy and paste from it.",
+                "You can create a drawing for all your often-used stuff, and rapidly copy and paste from it.",
             imageSearchTerm: "library",
         },
     ];

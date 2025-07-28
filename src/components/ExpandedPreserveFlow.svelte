@@ -8,13 +8,8 @@
     <div class="title qhead">Shortcut keys - a subtle superpower</div>
     <div class="paras qcol qgap-rem">
         <span
-            >Shortcut keys in most apps are really only for power users who
-            don't mind remembering awkward key combinations.</span
-        >
-        <span
-            >DrawExact on the other hand was built around a shortcut key vision
-            right from the beginning. They are
-            <strong>almost unbelievably simple</strong>.</span
+            >DrawExact was built around an unusually simple shortcut key vision
+            right from the beginning.</span
         >
         <span>Take these examples of DrawExact's command words: </span>
 
@@ -32,8 +27,8 @@
         </span>
 
         <span
-            >You quite quickly start thinking in those words. There aren't
-            very many.</span
+            >You quite quickly start thinking in those words, and the keyboard
+            shortcut for a command is just its first letter.</span
         >
         <span
             >The key presses become second nature. You find yourself visiting

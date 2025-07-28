@@ -15,7 +15,6 @@
     import ExpandedCopyPasteTransforms from "./components/ExpandedCopyPasteTransforms.svelte";
     import ExpandedInfinite from "./components/ExpandedInfinite.svelte";
     import ExpandedZoomMethods from "./components/ExpandedZoomMethods.svelte";
-    import ExpandedSpeed from "./components/ExpandedSpeed.svelte";
     import { setupMediaQueryObserver } from "./services/responsive.svelte";
     import RowOfPanelsForDesktop from "./components/RowOfPanelsForDesktop.svelte";
     import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
@@ -51,7 +50,6 @@
             <ExpandedInfinite></ExpandedInfinite>
             <ExpandedZoomMethods></ExpandedZoomMethods>
             <ExpandedPreserveFlow></ExpandedPreserveFlow>
-            <ExpandedSpeed></ExpandedSpeed>
             <FooterSection />
         </div>
     {/if}
@@ -83,7 +81,6 @@
             <ExpandedZoomMethods sideBySide={true}></ExpandedZoomMethods>
             <RowOfPanelsForDesktop>
                 <ExpandedPreserveFlow></ExpandedPreserveFlow>
-                <ExpandedSpeed></ExpandedSpeed>
             </RowOfPanelsForDesktop>
             <FooterSection />
         </div>

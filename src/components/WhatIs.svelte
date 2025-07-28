@@ -14,7 +14,7 @@
 <div class="whatis qpanel-width">
     <div class="qhead title">DrawExact's priorities</div>
     <span
-        >When we designed DrawExact, we made some deliberate trade-offs. We
+        >When we designed DrawExact, we made some deliberate trade-off decisions. We
         wanted it to be fast, flexible, powerful, and satisfying to use — but
         that means there's a bit of a learning curve. We’ll guide you through
         that when you begin.
