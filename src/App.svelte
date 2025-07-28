@@ -71,8 +71,7 @@
             <ExpandedCopyPasteRepeats sideBySide={true}
             ></ExpandedCopyPasteRepeats>
 
-            <ExpandedCopyPasteTransforms sideBySide={true}
-            ></ExpandedCopyPasteTransforms>
+            <ExpandedCopyPasteTransforms />
             <ExpandedCopyPasteInspSideBySide />
             <ExpandedCopyPasteInspoLibrary />
 
