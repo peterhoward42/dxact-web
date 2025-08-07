@@ -8,7 +8,6 @@
     import { carouselFrames } from "./ComposedImages.svelte";
     import { Pause, StepForward, StepBack } from "@lucide/svelte";
 
-    // XXXX todo - an experiment to see if it feels better if it starts in paused state.
     let paused = true;
 
     function handlePause() {

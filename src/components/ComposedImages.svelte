@@ -120,7 +120,8 @@
         stopTheTicker();
         // Start the animation frame generator
 
-        // XXXX todo - an experiment to see if it feels better if it starts in paused state.
+        // Experiments show it feels better if it starts in paused state.
+        // (In fact we don't currently expose the animated carousel behaviour).
 
         // theTicker = setInterval(advanceOneFrame, animationPeriod);
     });
