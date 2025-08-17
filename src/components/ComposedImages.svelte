@@ -7,6 +7,8 @@
     */
     export let theTicker;
 
+    export const imageAspectRatio = "0.66";
+
     export function stopTheTicker() {
         clearInterval(theTicker);
     }

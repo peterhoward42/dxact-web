@@ -1,5 +1,7 @@
 <script>
     import ComposedImages from "./ComposedImages.svelte";
+    import { imageAspectRatio } from "./ComposedImages.svelte";
+
     import ScrollCue from "./ScrollCue.svelte";
     import CTA from "./CTA.svelte";
 </script>
@@ -23,7 +25,7 @@
         >(We expand on these further down the page.)</span
     >
 
-    <ComposedImages aspectRatio="1.5"></ComposedImages>
+    <ComposedImages aspectRatio={imageAspectRatio}></ComposedImages>
     <div class="cta"><CTA /></div>
 </div>
 
