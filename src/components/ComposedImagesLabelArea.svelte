@@ -22,7 +22,7 @@
     }
 </script>
 
-<div class="labelarea qcol qbg-alt">
+<div class="labelarea qcol">
     <div class="label">
         <!-- Conditional layout is a trick to force Svelte to refresh the fade class on each new animation frame -->
         {#if composedImagesState.frameIndexToShow % 2}
@@ -52,26 +52,28 @@
         <!-- svelte-ignore a11y_click_events_have_key_events -->
         <!-- svelte-ignore a11y_no_static_element_interactions -->
         <div
-            class="next qlarge1 qaccent qbord-all qrad-btn"
+            class="next qlarge1 qbord-all qrad-btn q-rounded-ends"
             onclick={handleFwd}
         >
-            Next ▶
+            next
         </div>
     {/if}
 </div>
 
 <style>
     .labelarea {
-        gap: 0rem;
-        height: 7rem;
+        gap: 0.5rem;
         align-items: center;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
         padding-bottom: 0rem;
+
+        background-color: black;
+        border-bottom: 1px solid #444;
     }
     .label {
-        width: 100%;
+        height: 3rem;
     }
 
     .fade {
@@ -83,17 +85,18 @@
 
     .secondary {
         font-size: 1rem;
-        height: 3rem;
-        color: #777;
+        color: white;
         line-height: 1.25rem;
         padding-top: 0rem;
     }
     .next {
-        align-self: center;
+        color: yellow;
+        border: 1px solid yellow;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        margin-top: 1rem;
-        border-color: var(--accent);
+        margin-bottom: 0.5rem;
     }
 
     @keyframes fadeInKeyFrames {
