@@ -6,23 +6,11 @@
     import CTA from "./CTA.svelte";
 </script>
 
-<div class="abovefoldmobile qcol">
+<div class="abovefoldmobile qcol ">
     <span class="qe1 head">DrawExact</span>
 
     <span class="subhead qe1"
-        >Is an app for making drawings in your browser.</span
-    >
-    <span class="toplines"
-        >It's like Google Docs — reimagined for <strong>Drawings</strong>.</span
-    >
-    <span class="toplines"
-        >Sign in with Google. Save to Google Drive. It's Free.
-    </span>
-    <span class="toplines">It's aimed mainly for technical drawings.</span>
-
-    <span class="capabilities qlarge1 qe1">Key capabilities</span>
-    <span class="willexpand qsubdued qital"
-        >(We expand on these further down the page.)</span
+        >Is an app for making drawings in your browser</span
     >
 
     <ComposedImages aspectRatio={imageAspectRatio}></ComposedImages>
@@ -32,16 +20,16 @@
 <style>
     .abovefoldmobile {
         width: 100%;
-        text-align: center;
+        align-items: center;
     }
 
     .head {
         font-size: 2rem;
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         padding-bottom: 1rem;
     }
     .subhead {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     .toplines {
         margin-top: 1rem;

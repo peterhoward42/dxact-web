@@ -31,8 +31,28 @@
     export var carouselFrames = [
         {
             subLabel:
-                "You create Lines, Arcs and Text, using these kinds of construction methods and tools.",
-            imageSearchTerm: "language",
+                "Lines, arcs, and text are the raw materials of every DrawExact drawing",
+            imageSearchTerm: "justlines",
+        },
+        {
+            subLabel: "Example 1: Traditional engineering drawings",
+            imageSearchTerm: "chainexample",
+        },
+        {
+            subLabel: "Example 2: Good for assembling and trimming curves",
+            imageSearchTerm: "apple",
+        },
+        {
+            subLabel: "Example 3: Good for arranging text geometrically",
+            imageSearchTerm: "textarranged",
+        },
+        {
+            subLabel: "Example 4: Make diagrams to explore geometric relationships",
+            imageSearchTerm: "motionstudy",
+        },
+          {
+            subLabel: "Example 5: Good for presentation graphics - that need advanced geometric construction",
+            imageSearchTerm: "presentationtricky",
         },
         {
             subLabel:

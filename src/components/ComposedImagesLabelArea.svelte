@@ -63,16 +63,17 @@
 <style>
     .labelarea {
         gap: 0.5rem;
-        align-items: center;
+        align-items: flex-start;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         padding-bottom: 0rem;
 
         background-color: black;
-        border-bottom: 1px solid #444;
+        border-bottom: 1px solid #888;
     }
     .label {
+        align-self: center;
         height: 3rem;
     }
 
@@ -90,6 +91,7 @@
         padding-top: 0rem;
     }
     .next {
+        align-self: flex-end;
         color: yellow;
         border: 1px solid yellow;
         padding-top: 0rem;

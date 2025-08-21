@@ -23,6 +23,7 @@
     import ExpandedIntro from "./components/ExpandedIntro.svelte";
     import ExpandedCopyPasteInspSideBySide from "./components/ExpandedCopyPasteInspoSideBySide.svelte";
     import ExpandedCopyPasteInspoLibrary from "./components/ExpandedCopyPasteInspoLibrary.svelte";
+    import Construction from "./components/Construction.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
@@ -36,6 +37,7 @@
     {#if responsiveMeta.deviceFormFactor == "mobile" || responsiveMeta.deviceFormFactor == "tablet"}
         <div class="mobilelayout qcol">
             <AboveFoldMobile />
+            <Construction />
             <WhatIs />
             <GetStarted />
             <BigScreen2 />
@@ -56,6 +58,7 @@
     {#if responsiveMeta.deviceFormFactor == "desktop"}
         <div class="deskylayout qcol">
             <AboveFoldDesktop />
+            <Construction />
 
             <WhatIs />
             <RowOfPanelsForDesktop bgAlt={true}>
