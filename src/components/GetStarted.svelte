@@ -3,19 +3,27 @@
 </script>
 
 <div class="getstarted qbg-alt qpanel-width">
-    <div class="head qhead">Have a quick play; see what you think.</div>
+    <div class="head qhead">What to expect when you dive in</div>
     <div class="paras qcol">
         <span
-            >If you open DrawExact you'll see a few example drawings to play
-            around with.</span
+            >When you open DrawExact you drop straight in. You'll see a set of
+            built-in sample drawings - which provide a great way to explore and
+            play around.</span
         >
-        <span>You drop straight in. You don't need to sign-in to play with it.</span>
 
         <span>
-            It’ll quietly guide your first steps, just enough to get you going.
+            DrawExact's way of working is a little unusual, so we'll guide your
+            first few steps, to help you get the hang of it.
         </span>
-        <span>Hopefully, you'll love just how sharp and clear it is.</span>
-        <span>You only need to sign-in if you stick around and want to create your <strong>own</strong> drawings.</span>
+        <span>DrawExact is <strong>free</strong></span>
+        <span
+            >There's no need to sign in or create an account to play around with
+            the sample drawings.</span
+        >
+        <span
+            >But you sign-in with Google once you're ready to create and save
+            your own drawings, and they're saved to your Google Drive.</span
+        >
     </div>
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
@@ -35,7 +43,7 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    .head{
+    .head {
         padding-bottom: 1rem;
     }
     .paras {

@@ -47,61 +47,14 @@
             imageSearchTerm: "textarranged",
         },
         {
-            subLabel: "Example 4: Make diagrams to explore geometric relationships",
+            subLabel:
+                "Example 4: Make diagrams to explore geometric relationships",
             imageSearchTerm: "motionstudy",
         },
-          {
-            subLabel: "Example 5: Good for presentation graphics - that need advanced geometric construction",
+        {
+            subLabel:
+                "Example 5: Good for presentation graphics - that need advanced geometric construction",
             imageSearchTerm: "presentationtricky",
-        },
-        {
-            subLabel:
-                "YOU decide the geometric details, unlike say Powerpoint, which guesses for you. ",
-            imageSearchTerm: "flower",
-        },
-        {
-            subLabel:
-                "You also decide the position, height and angle for text.",
-            imageSearchTerm: "choreographedtext",
-        },
-        {
-            subLabel:
-                "Instead of just copy & paste, you get copy➤scale➤paste. (And rotate and mirror).",
-            imageSearchTerm: "transform",
-        },
-        {
-            subLabel:
-                "It can Paste repeat patterns along a line automatically.",
-            imageSearchTerm: "copyrepeat",
-        },
-        {
-            subLabel:
-                "It can also Paste repeats patterns around an arc automatically.",
-            imageSearchTerm: "copiesonarc",
-        },
-        {
-            subLabel:
-                "You get ultra precise zoom-in using click-and-drag to draw a rectangle around what you want.",
-            imageSearchTerm: "accuratezoom",
-        },
-        {
-            subLabel:
-                "You can zoom out on the infinite canvas any time, to make more space.",
-            imageSearchTerm: "sidebyside",
-        },
-        {
-            subLabel:
-                "It's good for engineering drawings. Including putting in dimensions automatically.",
-            imageSearchTerm: "chain",
-        },
-        {
-            subLabel: "It helps you align and trim arcs precisely.",
-            imageSearchTerm: "apple",
-        },
-        {
-            subLabel:
-                "You can create a drawing for all your often-used stuff, and rapidly copy and paste from it.",
-            imageSearchTerm: "library",
         },
     ];
 
