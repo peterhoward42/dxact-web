@@ -48,8 +48,8 @@
         {#snippet theCpt()}<div class="qcol qgap-rem">
             <strong>Copy & Paste — brought to life</strong>
             <span
-              >See your copies follow your hand, reshape on the fly, and preview
-              before they touch the page.</span
+              >See what you've copied: follow your hand, scale and rotate on the
+              fly, and preview accurately before it touches the page.</span
             >
             <em>(See the visual explanation below.)</em>
           </div>{/snippet}
@@ -65,7 +65,7 @@
         {#snippet theCpt()}<div class="qcol qgap-rem">
             <strong>An infinite canvas (both ways)</strong>
             <span
-              >Zoom in to the tiniest detail with perfect clarity, or zoom out
+              >Zoom in to microscopic detail with perfect clarity, or zoom out
               to reveal boundless new space.</span
             >
           </div>{/snippet}

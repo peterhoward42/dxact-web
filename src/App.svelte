@@ -4,7 +4,6 @@
     import { responsiveMeta } from "./services/responsive.svelte";
 
     import WhatIs from "./components/WhatIs.svelte";
-    import WhatMakesItWorth from "./components/WhatMakesItWorth.svelte";
     import GetStarted from "./components/GetStarted.svelte";
     import BigScreen2 from "./components/BigScreen2.svelte";
     import DifferencesOutline from "./components/DifferencesOutline.svelte";

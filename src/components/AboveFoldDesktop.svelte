@@ -1,7 +1,7 @@
 <script>
-    import ComposedImages from "./ComposedImages.svelte";
-    import { imageAspectRatio } from "./ComposedImages.svelte";
-    import ScrollCue from "./ScrollCue.svelte";
+    import ComposedImages from "./carousel/ComposedImages.svelte";
+    import { introCarouselFrames } from "./carousel/intro/frames.svelte.js";
+
     import CTA from "./CTA.svelte";
 </script>
 
@@ -24,7 +24,7 @@
         >(We expand on these further down the page.)</span
     >
 
-    <ComposedImages aspectRatio={imageAspectRatio}></ComposedImages>
+    <ComposedImages carouselFrames={introCarouselFrames}></ComposedImages>
     <div class="cta"><CTA /></div>
 </div>
 

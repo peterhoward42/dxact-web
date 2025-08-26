@@ -1,19 +1,32 @@
 <script>
+    // The Carousel is a reusable carousel component that knows how to
+    // superimpose a stack of images and animate the advancement from one
+    // to another.
+
     // @ts-nocheck
 
-    import { responsiveImage } from "../services/responsive.svelte";
-    import { composedImagesState, wrapped } from "./ComposedImages.svelte";
+    import { responsiveImage } from "../../services/responsive.svelte.js";
+    import { moduloNFrames } from "./orchestrator.js";
 
     let { frames, aspectRatio } = $props();
+    const nFrames = frames.labelsAndImages.length;
+    let indexToShow = $state(0);
+    let indexToParkLeft = $state(0);
+    let indexToParkRight = $state(0);
 
-    let indexToShow = $derived(composedImagesState.frameIndexToShow);
-    let indexToParkLeft = $derived(
-        wrapped(composedImagesState.frameIndexToShow + 1),
-    );
-    let indexToParkRight = $derived(
-        wrapped(composedImagesState.frameIndexToShow - 1),
-    );
+    // This $effect observes the current carousel frame number changing inside the
+    // frames passed as a prop, and when it does, it works out the indices of the key
+    // frames that should be visible and where they should be positioned - so as to
+    // create the impression of the new one sliding into position and in so doing, pushing
+    // out the old one to the right.
+    $effect(() => {
+        let i = frames.currentFrame;
+        indexToShow = moduloNFrames(i, nFrames);
+        indexToParkLeft = moduloNFrames(i + 1, nFrames);
+        indexToParkRight = moduloNFrames(i - 1, nFrames);
+    });
 
+    // This works out whether or not a given frame index should right now be visible or not.
     function shouldBeVisible(index) {
         return (
             index == indexToShow ||
@@ -24,7 +37,7 @@
 </script>
 
 <div class="carousel qbg-alt" style:aspect-ratio={aspectRatio}>
-    {#each frames as frame, index}
+    {#each frames.labelsAndImages as frame, index}
         <div
             class="frame-wrapper"
             class:centre={index == indexToShow}
