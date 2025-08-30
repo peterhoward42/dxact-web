@@ -31,9 +31,10 @@
           />{/snippet}
         {#snippet theCpt()}<div class="qcol qgap-rem">
             <strong>You stay in charge of alignment.</strong>
+            <span>Every element — even text — obeys your geometry.</span>
             <span
-              >Every element — even text — obeys your geometry, never guessing
-              wrong or second-guessing you.</span
+              >For example it won't ever try to guess where a line should join a
+              shape.</span
             >
           </div>{/snippet}
       </ListItemWithIcon>
@@ -46,12 +47,21 @@
             absoluteStrokeWidth={true}
           />{/snippet}
         {#snippet theCpt()}<div class="qcol qgap-rem">
-            <strong>Copy & Paste — brought to life</strong>
+            <strong>Copy & Paste — made almost infinitely more useful</strong>
             <span
-              >See what you've copied: follow your hand, scale and rotate on the
-              fly, and preview accurately before it touches the page.</span
+              >After you copy, but <strong>before</strong> you paste, you see your
+              copy following your cursor. So you can visualise various paste locations
+              before you commit.</span
             >
-            <em>(See the visual explanation below.)</em>
+            <span
+              >You can also adapt your copy at this stage to suit any context,
+              by applying rotations, scaling and mirroring.</span
+            >
+            <span
+              >And it will paste multiple copies along a line or arc — with a
+              single click.</span
+            >
+            <em>(We show these features step by step visually below.)</em>
           </div>{/snippet}
       </ListItemWithIcon>
     </li>

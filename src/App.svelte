@@ -20,7 +20,7 @@
     import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
     import AboveFoldDesktop from "./components/AboveFoldDesktop.svelte";
     import FooterSection from "./components/FooterSection.svelte";
-    import ExpandedIntro from "./components/ExpandedIntro.svelte";
+    import CopyAndPasteIntro from "./components/CopyAndPasteIntro.svelte";
     import ExpandedCopyPasteInspSideBySide from "./components/ExpandedCopyPasteInspoSideBySide.svelte";
     import ExpandedCopyPasteInspoLibrary from "./components/ExpandedCopyPasteInspoLibrary.svelte";
     import Construction from "./components/Construction.svelte";
@@ -42,8 +42,8 @@
             <GetStarted />
             <BigScreen2 />
             <DifferencesOutline />
+            <CopyAndPasteIntro />
             <PowerPoint2 />
-            <ExpandedIntro />
             <ExpandedText></ExpandedText>
             <ExpandedCopyPaste1></ExpandedCopyPaste1>
             <ExpandedCopyPasteRepeats></ExpandedCopyPasteRepeats>
@@ -67,8 +67,9 @@
                 <BigScreen2 />
             </RowOfPanelsForDesktop>
             <DifferencesOutline />
+            <CopyAndPasteIntro />
+
             <PowerPoint2 />
-            <ExpandedIntro />
 
             <ExpandedText sideBySide={true}></ExpandedText>
             <ExpandedCopyPaste1 sideBySide={true}></ExpandedCopyPaste1>

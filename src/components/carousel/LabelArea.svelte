@@ -20,13 +20,14 @@
         >
     {/if}
 
+   
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div
-        class="next qlarge1 qbord-all qrad-btn q-rounded-ends"
+        class="next qbord-all qrad-btn q-rounded-ends"
         onclick={frames.handleNext}
     >
-        next
+        {frames.labelsAndImages[frames.currentFrame].nextLabel} ▶
     </div>
 </div>
 
@@ -60,13 +61,13 @@
 
     .next {
         align-self: flex-end;
-        color: yellow;
         border: 1px solid yellow;
-        padding-top: 0rem;
-        padding-bottom: 0rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
         padding-left: 1rem;
         padding-right: 1rem;
         margin-bottom: 0.5rem;
+        color: yellow;
     }
 
     @keyframes fadeInKeyFrames {

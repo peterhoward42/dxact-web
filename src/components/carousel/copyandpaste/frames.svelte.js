@@ -6,45 +6,49 @@
 import { moduloNFrames } from "../orchestrator";
 
 function handleNext() {
-    introCarouselFrames.currentFrame = moduloNFrames(introCarouselFrames.currentFrame + 1, introCarouselFrames.labelsAndImages.length)
+    copyAndPasteCarouselFrames.currentFrame = moduloNFrames(copyAndPasteCarouselFrames.currentFrame + 1, copyAndPasteCarouselFrames.labelsAndImages.length)
 }
 
-export let introCarouselFrames = $state({
+export let copyAndPasteCarouselFrames = $state({
     labelsAndImages: [
         {
             subLabel:
-                "Lines, arcs, and text are the raw materials of every DrawExact drawing",
+                "Something to show it picked up a different one",
             imageSearchTerm: "justlines",
-            nextLabel: "Examples"
+            nextLabel: "tbd"
         },
         {
             subLabel: "Example 1: Traditional engineering drawings",
             imageSearchTerm: "chainexample",
-            nextLabel: "Ex. 2"
 
+            nextLabel: "tbd"
         },
         {
             subLabel: "Example 2: Good for assembling and trimming curves",
             imageSearchTerm: "apple",
-            nextLabel: "Ex. 3"
+
+            nextLabel: "tbd"
         },
         {
             subLabel: "Example 3: Good for arranging text geometrically",
             imageSearchTerm: "textarranged",
-            nextLabel: "Ex. 4"
+
+            nextLabel: "tbd"
         },
         {
             subLabel:
-                "Ex. 4: Make diagrams to explore geometric relationships",
+                "Example 4: Make diagrams to explore geometric relationships",
             imageSearchTerm: "motionstudy",
-            nextLabel: "Ex. 5"
+
+            nextLabel: "tbd"
         },
         {
             subLabel:
                 "Example 5: Good for presentation graphics - that need advanced geometric construction",
             imageSearchTerm: "presentationtricky",
-            nextLabel: "Replay?"
-        }],
+
+            nextLabel: "tbd"
+         }],
     currentFrame: 0,
     handleNext: handleNext
 });
