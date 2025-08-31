@@ -20,30 +20,30 @@ export let introCarouselFrames = $state({
         {
             subLabel: "Example 1: Traditional engineering drawings",
             imageSearchTerm: "chainexample",
-            nextLabel: "Ex. 2"
+            nextLabel: "next"
 
         },
         {
             subLabel: "Example 2: Good for assembling and trimming curves",
             imageSearchTerm: "apple",
-            nextLabel: "Ex. 3"
+            nextLabel: "next"
         },
         {
             subLabel: "Example 3: Good for arranging text geometrically",
             imageSearchTerm: "textarranged",
-            nextLabel: "Ex. 4"
+            nextLabel: "next"
         },
         {
             subLabel:
                 "Ex. 4: Make diagrams to explore geometric relationships",
             imageSearchTerm: "motionstudy",
-            nextLabel: "Ex. 5"
+            nextLabel: "next"
         },
         {
             subLabel:
                 "Example 5: Good for presentation graphics - that need advanced geometric construction",
             imageSearchTerm: "presentationtricky",
-            nextLabel: "Replay?"
+            nextLabel: "The End. Replay?"
         }],
     currentFrame: 0,
     handleNext: handleNext

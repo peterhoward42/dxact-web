@@ -13,7 +13,7 @@
 
 <div class="whatis qpanel-width">
     <div class="qhead title">What next?</div>
-    <span>This is what you'll find on the rest of this page: </span>
+    <span>What you'll find on the rest of this page: </span>
     <div class="">
         <ul class="screenlist">
             <li>
@@ -40,7 +40,7 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            The key things that makes DrawExact different?
+                            The key things that makes DrawExact different
                         </span>
                     {/snippet}
                 </ListItemWithIcon>

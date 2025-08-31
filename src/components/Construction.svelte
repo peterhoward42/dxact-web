@@ -8,7 +8,7 @@
         <div class="qhead">
             Sounds powerful — but aligning the lines and arcs must be tricky?
         </div>
-        <span>Actually, it's easy. And quick.</span>
+        <span>No. It's easy and quick.</span>
     </div>
     <img
         class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}

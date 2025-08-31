@@ -48,20 +48,10 @@
           />{/snippet}
         {#snippet theCpt()}<div class="qcol qgap-rem">
             <strong>Copy & Paste — made almost infinitely more useful</strong>
-            <span
-              >After you copy, but <strong>before</strong> you paste, you see your
-              copy following your cursor. So you can visualise various paste locations
-              before you commit.</span
+            <em
+              >(We show the copy and paste features step by step visually
+              below.)</em
             >
-            <span
-              >You can also adapt your copy at this stage to suit any context,
-              by applying rotations, scaling and mirroring.</span
-            >
-            <span
-              >And it will paste multiple copies along a line or arc — with a
-              single click.</span
-            >
-            <em>(We show these features step by step visually below.)</em>
           </div>{/snippet}
       </ListItemWithIcon>
     </li>

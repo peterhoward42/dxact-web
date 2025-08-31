@@ -13,42 +13,29 @@ export let copyAndPasteCarouselFrames = $state({
     labelsAndImages: [
         {
             subLabel:
-                "Something to show it picked up a different one",
-            imageSearchTerm: "justlines",
-            nextLabel: "tbd"
+                "It's visual and interactive. You can experiment.",
+            imageSearchTerm: "pastevisualise",
+            nextLabel: "next"
         },
         {
-            subLabel: "Example 1: Traditional engineering drawings",
-            imageSearchTerm: "chainexample",
+            subLabel: "You can adjust the copy before you paste it.",
+            imageSearchTerm: "pastescale",
 
-            nextLabel: "tbd"
+            nextLabel: "next"
         },
         {
-            subLabel: "Example 2: Good for assembling and trimming curves",
-            imageSearchTerm: "apple",
+            subLabel: "It can make repeat patterns for you — spread around an arc or circle, or along a line",
+            imageSearchTerm: "pasterepeat",
 
-            nextLabel: "tbd"
+            nextLabel: "next"
         },
         {
-            subLabel: "Example 3: Good for arranging text geometrically",
-            imageSearchTerm: "textarranged",
+            subLabel: '"Library" drawings become possible',
+            imageSearchTerm: "library",
 
-            nextLabel: "tbd"
+            nextLabel: "The End. Replay?"
         },
-        {
-            subLabel:
-                "Example 4: Make diagrams to explore geometric relationships",
-            imageSearchTerm: "motionstudy",
-
-            nextLabel: "tbd"
-        },
-        {
-            subLabel:
-                "Example 5: Good for presentation graphics - that need advanced geometric construction",
-            imageSearchTerm: "presentationtricky",
-
-            nextLabel: "tbd"
-         }],
+    ],
     currentFrame: 0,
     handleNext: handleNext
 });

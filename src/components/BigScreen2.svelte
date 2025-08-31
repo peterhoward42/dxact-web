@@ -28,7 +28,7 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            DrawExact exploits a big screen for diamond crisp
+                            DrawExact exploits a big screen for diamond-crisp
                             drawing clarity
                         </span>{/snippet}
                 </ListItemWithIcon>

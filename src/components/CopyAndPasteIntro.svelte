@@ -4,10 +4,9 @@
 </script>
 
 <div class="copyandpasteintro qpanel-width">
-    <div class="qhead">Copy & Paste features illustrated</div>
+    <div class="qhead">Copy & Paste made more useful</div>
     <div class="qcol">
-        <p>XXXX abc</p>
-        <p>XXXX def</p>
+        <p>These 4 slides show you what we mean.</p>
     </div>
     <ComposedImages carouselFrames={copyAndPasteCarouselFrames}
     ></ComposedImages>

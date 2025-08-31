@@ -6,9 +6,8 @@
     <div class="head qhead">What to expect when you dive in</div>
     <div class="paras qcol">
         <span
-            >When you open DrawExact you drop straight in. You'll see a set of
-            built-in sample drawings - which provide a great way to explore and
-            play around.</span
+            >When you open DrawExact you'll see a set of built-in sample
+            drawings. These are for you to explore and play around with.</span
         >
 
         <span>
@@ -21,8 +20,8 @@
             the sample drawings.</span
         >
         <span
-            >But you sign-in with Google once you're ready to create and save
-            your own drawings, and they're saved to your Google Drive.</span
+            >You sign-in with Google once you're ready to create and save your
+            own drawings. DrawExact then saves them to your Google Drive.</span
         >
     </div>
     <!-- svelte-ignore a11y_click_events_have_key_events -->
