@@ -15,25 +15,29 @@ export let copyAndPasteCarouselFrames = $state({
             subLabel:
                 "It's visual and interactive. You can experiment.",
             imageSearchTerm: "pastevisualise",
-            nextLabel: "next"
+            nextLabel: ""
         },
         {
             subLabel: "You can adjust the copy before you paste it.",
             imageSearchTerm: "pastescale",
 
-            nextLabel: "next"
+            nextLabel: ""
         },
         {
-            subLabel: "It can make repeat patterns for you — spread around an arc or circle, or along a line",
-            imageSearchTerm: "pasterepeat",
-
-            nextLabel: "next"
+            subLabel: "It can paste repeats along a line",
+            imageSearchTerm: "pasterepeatline",
+            nextLabel: ""
+        },
+        {
+            subLabel: "It can also paste repeats around arcs",
+            imageSearchTerm: "pasterepeatarc",
+            nextLabel: ""
         },
         {
             subLabel: '"Library" drawings become possible',
             imageSearchTerm: "library",
 
-            nextLabel: "The End. Replay?"
+            nextLabel: "Replay"
         },
     ],
     currentFrame: 0,

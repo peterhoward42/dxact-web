@@ -15,35 +15,35 @@ export let introCarouselFrames = $state({
             subLabel:
                 "Lines, arcs, and text are the raw materials of every DrawExact drawing",
             imageSearchTerm: "justlines",
-            nextLabel: "Examples"
+            nextLabel: "A few examples"
         },
         {
-            subLabel: "Example 1: Traditional engineering drawings",
+            subLabel: "Example (1 of 5) — Traditional engineering drawings",
             imageSearchTerm: "chainexample",
-            nextLabel: "next"
+            nextLabel: ""
 
         },
         {
-            subLabel: "Example 2: Good for assembling and trimming curves",
+            subLabel: "Example (2 of 5) — Good for assembling and trimming curves",
             imageSearchTerm: "apple",
-            nextLabel: "next"
+            nextLabel: ""
         },
         {
-            subLabel: "Example 3: Good for arranging text geometrically",
+            subLabel: "Example (3 of 5) — Good for arranging text geometrically",
             imageSearchTerm: "textarranged",
-            nextLabel: "next"
+            nextLabel: ""
         },
         {
             subLabel:
-                "Ex. 4: Make diagrams to explore geometric relationships",
+                "Example (4 of 5) — Make diagrams to explore geometric relationships",
             imageSearchTerm: "motionstudy",
-            nextLabel: "next"
+            nextLabel: ""
         },
         {
             subLabel:
-                "Example 5: Good for presentation graphics - that need advanced geometric construction",
+                "Example (5 of 5) — Good for presentation graphics - that need advanced geometric construction",
             imageSearchTerm: "presentationtricky",
-            nextLabel: "The End. Replay?"
+            nextLabel: "Replay"
         }],
     currentFrame: 0,
     handleNext: handleNext

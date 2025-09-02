@@ -9,20 +9,12 @@
     import DifferencesOutline from "./components/DifferencesOutline.svelte";
     import PowerPoint2 from "./components/PowerPoint2.svelte";
     import ExpandedPreserveFlow from "./components/ExpandedPreserveFlow.svelte";
-    import ExpandedText from "./components/ExpandedText.svelte";
-    import ExpandedCopyPaste1 from "./components/ExpandedCopyPaste1.svelte";
-    import ExpandedCopyPasteRepeats from "./components/ExpandedCopyPasteRepeats.svelte";
-    import ExpandedCopyPasteTransforms from "./components/ExpandedCopyPasteTransforms.svelte";
-    import ExpandedInfinite from "./components/ExpandedInfinite.svelte";
-    import ExpandedZoomMethods from "./components/ExpandedZoomMethods.svelte";
     import { setupMediaQueryObserver } from "./services/responsive.svelte";
     import RowOfPanelsForDesktop from "./components/RowOfPanelsForDesktop.svelte";
     import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
     import AboveFoldDesktop from "./components/AboveFoldDesktop.svelte";
     import FooterSection from "./components/FooterSection.svelte";
     import CopyAndPasteIntro from "./components/CopyAndPasteIntro.svelte";
-    import ExpandedCopyPasteInspSideBySide from "./components/ExpandedCopyPasteInspoSideBySide.svelte";
-    import ExpandedCopyPasteInspoLibrary from "./components/ExpandedCopyPasteInspoLibrary.svelte";
     import Construction from "./components/Construction.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
@@ -44,14 +36,7 @@
             <DifferencesOutline />
             <CopyAndPasteIntro />
             <PowerPoint2 />
-            <ExpandedText></ExpandedText>
-            <ExpandedCopyPaste1></ExpandedCopyPaste1>
-            <ExpandedCopyPasteRepeats></ExpandedCopyPasteRepeats>
-            <ExpandedCopyPasteTransforms />
-            <ExpandedCopyPasteInspSideBySide />
-            <ExpandedCopyPasteInspoLibrary />
-            <ExpandedInfinite></ExpandedInfinite>
-            <ExpandedZoomMethods></ExpandedZoomMethods>
+           
             <ExpandedPreserveFlow></ExpandedPreserveFlow>
             <FooterSection />
         </div>
@@ -71,19 +56,7 @@
 
             <PowerPoint2 />
 
-            <ExpandedText sideBySide={true}></ExpandedText>
-            <ExpandedCopyPaste1 sideBySide={true}></ExpandedCopyPaste1>
 
-            <ExpandedCopyPasteRepeats sideBySide={true}
-            ></ExpandedCopyPasteRepeats>
-
-            <ExpandedCopyPasteTransforms />
-            <ExpandedCopyPasteInspSideBySide />
-            <ExpandedCopyPasteInspoLibrary />
-
-            <ExpandedInfinite sideBySide={true}></ExpandedInfinite>
-
-            <ExpandedZoomMethods sideBySide={true}></ExpandedZoomMethods>
             <RowOfPanelsForDesktop>
                 <ExpandedPreserveFlow></ExpandedPreserveFlow>
             </RowOfPanelsForDesktop>

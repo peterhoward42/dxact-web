@@ -6,23 +6,20 @@
     <div class="head qhead">What to expect when you dive in</div>
     <div class="paras qcol">
         <span
-            >When you open DrawExact you'll see a set of built-in sample
-            drawings. These are for you to explore and play around with.</span
+            >We'll offer you a set of built-in sample
+            drawings to play around with.</span
         >
 
         <span>
-            DrawExact's way of working is a little unusual, so we'll guide your
-            first few steps, to help you get the hang of it.
+            We'll offer you some guidance with your first few steps to get you going comfortably.
         </span>
         <span>DrawExact is <strong>free</strong></span>
+       
         <span
-            >There's no need to sign in or create an account to play around with
-            the sample drawings.</span
+            >There's no sign-in until you're ready to create and save your
+            own drawings.</span
         >
-        <span
-            >You sign-in with Google once you're ready to create and save your
-            own drawings. DrawExact then saves them to your Google Drive.</span
-        >
+        <span>Then you sign in with Google, so DrawExact can save your drawings in your Google Drive on your behalf.</span>
     </div>
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->

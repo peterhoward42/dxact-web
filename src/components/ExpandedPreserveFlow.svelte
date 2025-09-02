@@ -27,7 +27,7 @@
         </span>
 
         <span
-            >You quite quickly start thinking in those words, and the keyboard
+            >You quickly start thinking in those words, and the keyboard
             shortcut for a command is just its first letter.</span
         >
         <span
