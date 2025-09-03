@@ -5,22 +5,22 @@
     import { fade } from "svelte/transition";
 
     let { frames } = $props();
+
 </script>
 
-<div class="labelarea qcol">
+<div class="label-and-next-column qcol">
     <!-- this is a trick to force a new span to be instantiated each time the
      label text changes - which then causes the fade animation to run on each change.-->
     {#if frames.currentFrame % 2}
-        <span class="label fade"
+        <span class="label-text fade"
             >{frames.labelsAndImages[frames.currentFrame].subLabel}</span
         >
     {:else}
-        <span class="label fade"
-            >{frames.labelsAndImages[frames.currentFrame].subLabel}</span
+        <span class="label-text fade"
+            >{frames.labelsAndImages[frames.currentFrame].subLabel}</span   
         >
     {/if}
 
-   
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div
@@ -32,7 +32,7 @@
 </div>
 
 <style>
-    .labelarea {
+    .label-and-next-column {
         gap: 0.5rem;
         align-items: flex-start;
         padding-left: 0.5rem;
@@ -41,9 +41,9 @@
         padding-bottom: 0rem;
 
         background-color: black;
-        border-bottom: 1px solid #888;
     }
-    .label {
+  
+    .label-text {
         align-self: flex-start;
         height: 3rem;
         font-size: 1rem;

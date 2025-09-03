@@ -8,7 +8,7 @@
     import { responsiveImage } from "../../services/responsive.svelte.js";
     import { moduloNFrames } from "./orchestrator.js";
 
-    let { frames, aspectRatio } = $props();
+    let { frames, aspectRatio, fill } = $props();
     const nFrames = frames.labelsAndImages.length;
     let indexToShow = $state(0);
     let indexToParkLeft = $state(0);
@@ -36,7 +36,11 @@
     }
 </script>
 
-<div class="carousel qbg-alt" style:aspect-ratio={aspectRatio}>
+<div
+    class="carousel qbg-alt fullHeight {fill == 'vert'} fullWidth {fill ==
+        'horiz'}"
+    style:aspect-ratio={aspectRatio}
+>
     {#each frames.labelsAndImages as frame, index}
         <div
             class="frame-wrapper"
@@ -54,8 +58,13 @@
 <style>
     .carousel {
         position: relative;
-        width: 100%;
         overflow: hidden;
+    }
+    .fullHeight {
+        height: 100%;
+    }
+    .fullWidth {
+        width: 100%;
     }
 
     /* Apply padding to the container around each image */

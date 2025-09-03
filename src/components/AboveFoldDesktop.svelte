@@ -5,23 +5,11 @@
     import CTA from "./CTA.svelte";
 </script>
 
-<div class="abovefoldmobile qcol">
+<div class="abovefold-desktop qcol">
     <span class="qe1 head">DrawExact</span>
 
     <span class="subhead qe1"
-        >Is an app for making drawings in your browser.</span
-    >
-    <span class="toplines"
-        >It's like Google Docs — reimagined for <strong>Drawings</strong>.</span
-    >
-    <span class="toplines"
-        >Sign in with Google. Save to Google Drive. It's Free.
-    </span>
-    <span class="toplines">It's aimed mainly for technical drawings.</span>
-
-    <span class="capabilities qlarge1 qe1">Key capabilities</span>
-    <span class="willexpand qsubdued qital"
-        >(We expand on these further down the page.)</span
+        >Is an app for making drawings in your browser</span
     >
 
     <ComposedImages carouselFrames={introCarouselFrames}></ComposedImages>
@@ -29,8 +17,8 @@
 </div>
 
 <style>
-    .abovefoldmobile {
-        width: 100%;
+    .abovefold-desktop {
+        align-items: center;
         text-align: center;
     }
 
@@ -41,22 +29,9 @@
     }
     .subhead {
         font-size: 2rem;
-        padding-bottom: 1rem;
-    }
-    .toplines {
-        font-size: 1.3rem;
-        margin-top: 1rem;
+        padding-bottom: 3rem;
     }
 
-    .capabilities {
-        margin-top: 2rem;
-        margin-bottom: 0.5rem;
-        align-self: flex-start;
-    }
-    .willexpand {
-        margin-bottom: 2rem;
-        align-self: flex-start;
-    }
     .cta {
         align-self: center;
         margin-top: 2rem;

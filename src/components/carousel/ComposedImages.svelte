@@ -11,41 +11,53 @@
 </script>
 
 {#if responsiveMeta.deviceFormFactor == "desktop"}
-    <div class="composed-row qrow qbg-alt">
-        <div class="labelarea-row">
+    <div class="composed-side-by-side qrow">
+        <div class="labelarea-for-left-side specified-height">
             <LabelArea frames={carouselFrames} />
         </div>
-
-        <Carousel frames={carouselFrames} aspectRatio={imageAspectRatio} />
+        <div class="specified-height">
+            <Carousel
+                frames={carouselFrames}
+                aspectRatio={imageAspectRatio}
+                fill="vert"
+            />
+        </div>
     </div>
 {:else}
     <div class="composed-col qcol">
-        <div class="labelarea-col">
+        <div class="labelarea-for-above">
             <LabelArea frames={carouselFrames} />
         </div>
-        <Carousel frames={carouselFrames} aspectRatio={imageAspectRatio} />
+        <Carousel
+            frames={carouselFrames}
+            aspectRatio={imageAspectRatio}
+            fill="horiz"
+        />
     </div>
 {/if}
 
 <style>
-    .composed-row {
-        gap: 3rem;
-        justify-content: space-between;
+    .composed-side-by-side {
+        gap: 0rem;
         margin-bottom: 3rem;
+        background-color: black;
     }
     .composed-col {
         width: 100%;
         align-items: center;
         margin-bottom: 0rem;
     }
-    .labelarea-col {
+    .labelarea-for-above {
         width: 100%;
+        border-bottom: 1px solid #888;
     }
-
-    .labelarea-row {
-        width: 35rem;
-        margin-top: 1rem;
-        margin-left: 1rem;
+    .labelarea-for-left-side {
+        width: 20rem;
+        height: 100%;
+        border-right: 1px solid #888;
+    }
+    .specified-height {
+        height: 90vh;
     }
 
     @keyframes fadeInKeyFrames {
