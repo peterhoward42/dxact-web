@@ -15,7 +15,7 @@ export let introCarouselFrames = $state({
             subLabel:
                 "Lines, arcs, and text are the raw materials of every DrawExact drawing",
             imageSearchTerm: "justlines",
-            nextLabel: "A few examples"
+            nextLabel: "See a few examples"
         },
         {
             subLabel: "Example (1 of 5) — Traditional engineering drawings",

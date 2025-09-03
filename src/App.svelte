@@ -24,27 +24,27 @@
     });
 </script>
 
-<div class="screen">
-    <!-- At the moment we use the mobile layout also for tablets.  -->
-    {#if responsiveMeta.deviceFormFactor == "mobile" || responsiveMeta.deviceFormFactor == "tablet"}
-        <div class="mobilelayout qcol">
-            <AboveFoldMobile />
-            <Construction />
-            <WhatIs />
-            <GetStarted />
-            <BigScreen2 />
-            <DifferencesOutline />
-            <CopyAndPasteIntro />
-            <PowerPoint2 />
-           
-            <ExpandedPreserveFlow></ExpandedPreserveFlow>
-            <FooterSection />
-        </div>
-    {/if}
-    {#if responsiveMeta.deviceFormFactor == "desktop"}
+<!-- At the moment we use the mobile layout also for tablets.  -->
+{#if responsiveMeta.deviceFormFactor == "mobile" || responsiveMeta.deviceFormFactor == "tablet"}
+    <div class="mobilelayout qcol">
+        <AboveFoldMobile />
+        <Construction />
+        <WhatIs />
+        <GetStarted />
+        <BigScreen2 />
+        <DifferencesOutline />
+        <CopyAndPasteIntro />
+        <PowerPoint2 />
+
+        <ExpandedPreserveFlow></ExpandedPreserveFlow>
+        <FooterSection />
+    </div>
+{/if}
+{#if responsiveMeta.deviceFormFactor == "desktop"}
+    <div class="screen">
         <div class="deskylayout qcol">
             <AboveFoldDesktop />
-            <Construction />
+            <Construction sideBySide={true} />
 
             <WhatIs />
             <RowOfPanelsForDesktop bgAlt={true}>
@@ -56,17 +56,17 @@
 
             <PowerPoint2 />
 
-
             <RowOfPanelsForDesktop>
                 <ExpandedPreserveFlow></ExpandedPreserveFlow>
             </RowOfPanelsForDesktop>
             <FooterSection />
         </div>
-    {/if}
-</div>
+    </div>
+{/if}
 
 <style>
     .screen {
+        background-color: #ddd;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
@@ -78,6 +78,7 @@
     }
     .deskylayout {
         max-width: 1200px;
+        background-color: white;
         margin-left: auto;
         margin-right: auto;
         gap: 4rem;

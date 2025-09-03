@@ -1,28 +1,78 @@
 <script>
+    // @ts-nocheck
+
     import { responsiveImage } from "../services/responsive.svelte";
     let { sideBySide = false } = $props();
 </script>
 
-<div class="construction {sideBySide ? 'qrow' : 'qcol'} ">
-    <div class="words qcol {sideBySide ? '' : 'qbg-alt'}">
-        <div class="qhead">
-            Sounds powerful — but aligning the lines and arcs must be tricky?
+{#if sideBySide}
+    <div class="side-by-side qbg-alt qrow">
+        <div class="side-words qcol">
+            <div class="qhead">
+                Sounds powerful — but aligning the lines and arcs must be
+                tricky?
+            </div>
+            <span>No. It's easy and quick.</span>
         </div>
-        <span>No. It's easy and quick.</span>
+        <div class="image-wrapper-horiz">
+            <img
+                src={responsiveImage("language")}
+                alt=""
+                class="image-constraints-horiz"
+            />
+        </div>
     </div>
-    <img
-        class={sideBySide ? "qside-by-side-img" : "qabove-below-img"}
-        src={responsiveImage("language")}
-        alt=""
-    />
-</div>
+{:else}
+    <div class="above-and-below qbg-alt qcol}">
+        <div class="above-words qcol">
+            <div class="qhead">
+                Sounds powerful — but aligning the lines and arcs must be
+                tricky?
+            </div>
+            <span>No. It's easy and quick.</span>
+        </div>
+        <div class="image-wrapper-vert">
+            <img
+                src={responsiveImage("language")}
+                alt=""
+                width="100%"
+                object-fit="cover"
+            />
+        </div>
+    </div>{/if}
 
 <style>
-    .construction {
-        padding-top: 2rem;
+    .above-and-below {
+        width: 100%;
+    }
+    .side-by-side {
+        margin: auto;
+    }
+
+    .image-wrapper-vert {
+        aspect-ratio: 0.66;
+    }
+
+    .image-wrapper-horiz {
+        height: 90vh;
+        aspect-ratio: 0.66;
+        background-color: grey;
+    }
+
+    .image-constraints-horiz {
+        width: 100%;
+        height: 100%;
+    }
+
+    .side-words {
+        width: 25rem;
+        gap: 1rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    .words {
+    .above-words {
         gap: 1rem;
         padding-left: 1rem;
         padding-right: 2rem;
