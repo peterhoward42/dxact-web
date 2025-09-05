@@ -32,7 +32,7 @@
         <WhatIs />
         <GetStarted />
         <BigScreen2 />
-        <DifferencesOutline />
+        <DifferencesOutline altBackground="true"/>
         <CopyAndPasteIntro />
         <PowerPoint2 />
 
@@ -51,7 +51,7 @@
                 <GetStarted />
                 <BigScreen2 />
             </RowOfPanelsForDesktop>
-            <DifferencesOutline />
+            <DifferencesOutline altBackground={false}/>
             <CopyAndPasteIntro />
 
             <PowerPoint2 />

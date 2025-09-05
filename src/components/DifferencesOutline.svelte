@@ -14,9 +14,11 @@
   import { responsiveMeta } from "../services/responsive.svelte";
   import CTA from "./CTA.svelte";
   import ListItemWithIcon from "./ListItemWithIcon.svelte";
+
+  let { altBackground } = $props();
 </script>
 
-<div class="differences qcol qpanel-width qbg-alt">
+<div class="differences qcol qpanel-width {altBackground ? 'qbg-alt' : ''}">
   <span class="title qhead"
     >The key things that makes DrawExact different — a summary</span
   >
