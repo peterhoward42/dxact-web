@@ -8,7 +8,7 @@
     import BigScreen2 from "./components/BigScreen2.svelte";
     import DifferencesOutline from "./components/DifferencesOutline.svelte";
     import PowerPoint2 from "./components/PowerPoint2.svelte";
-    import ExpandedPreserveFlow from "./components/ExpandedPreserveFlow.svelte";
+    import ExpandedShortcutKeys from "./components/ExpandedShortcutKeys.svelte";
     import { setupMediaQueryObserver } from "./services/responsive.svelte";
     import RowOfPanelsForDesktop from "./components/RowOfPanelsForDesktop.svelte";
     import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
@@ -32,11 +32,11 @@
         <WhatIs />
         <GetStarted />
         <BigScreen2 />
-        <DifferencesOutline altBackground="true"/>
+        <DifferencesOutline altBackground="true" />
         <CopyAndPasteIntro />
         <PowerPoint2 />
 
-        <ExpandedPreserveFlow></ExpandedPreserveFlow>
+        <ExpandedShortcutKeys></ExpandedShortcutKeys>
         <FooterSection />
     </div>
 {/if}
@@ -51,14 +51,12 @@
                 <GetStarted />
                 <BigScreen2 />
             </RowOfPanelsForDesktop>
-            <DifferencesOutline altBackground={false}/>
+            <DifferencesOutline altBackground={false} />
             <CopyAndPasteIntro />
 
             <PowerPoint2 />
 
-            <RowOfPanelsForDesktop>
-                <ExpandedPreserveFlow></ExpandedPreserveFlow>
-            </RowOfPanelsForDesktop>
+            <ExpandedShortcutKeys></ExpandedShortcutKeys>
             <FooterSection />
         </div>
     </div>

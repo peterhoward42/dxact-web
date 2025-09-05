@@ -1,6 +1,4 @@
 <script>
-    import { Lightbulb } from "@lucide/svelte";
-    import { handleOpenDrawExact } from "./CTA.svelte";
     import FirstLetterCommand from "./FirstLetterCommand.svelte";
 </script>
 
@@ -44,6 +42,7 @@
     .expandedflow {
         padding-left: 1rem;
         padding-right: 1rem;
+        margin: auto;
     }
     .title {
         margin-bottom: 1rem;
