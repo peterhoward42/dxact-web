@@ -1,6 +1,7 @@
 <script>
-    import ComposedImages from "./ComposedImages.svelte";
-    import ScrollCue from "./ScrollCue.svelte";
+    import ComposedImages from "./carousel/ComposedImages.svelte";
+    import { introCarouselFrames } from "./carousel/intro/frames.svelte.js";
+
     import CTA from "./CTA.svelte";
 </script>
 
@@ -8,50 +9,28 @@
     <span class="qe1 head">DrawExact</span>
 
     <span class="subhead qe1"
-        >Is an app for making drawings in your browser.</span
-    >
-    <span class="toplines"
-        >It's like Google Docs — reimagined for <strong>Drawings</strong>.</span
-    >
-    <span class="toplines"
-        >Sign in with Google. Save to Google Drive. It's Free.
-    </span>
-    <span class="toplines">It's aimed mainly for technical drawings.</span>
-
-    <span class="capabilities qlarge1 qe1">Key capabilities</span>
-    <span class="willexpand qsubdued qital"
-        >(We expand on these further down the page.)</span
+        >Is an app for making drawings in your browser</span
     >
 
-    <ComposedImages aspectRatio="1.5"></ComposedImages>
+    <ComposedImages carouselFrames={introCarouselFrames}></ComposedImages>
     <div class="cta"><CTA /></div>
 </div>
 
 <style>
     .abovefoldmobile {
         width: 100%;
-        text-align: center;
+        align-items: center;
     }
 
     .head {
         font-size: 2rem;
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         padding-bottom: 1rem;
     }
     .subhead {
-        padding-bottom: 1rem;
-    }
-    .toplines {
-        margin-top: 1rem;
+        padding-bottom: 2rem;
     }
 
-    .capabilities {
-        margin-top: 2rem;
-        margin-bottom: 0.5rem;
-    }
-    .willexpand {
-        margin-bottom: 1rem;
-    }
     .cta {
         align-self: center;
         margin-top: 2rem;
