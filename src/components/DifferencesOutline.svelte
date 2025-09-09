@@ -83,8 +83,10 @@
         {#snippet theCpt()}<div class="qcol qgap-rem">
             <strong>Commands at your fingertips</strong>
             <span
-              >A radically simple system: easy to learn, effortless to use, with
-              no tangled key-combinations.</span
+              >An extraordinarlay simple key-shortcut system. There's <strong
+                >nothing</strong
+              > to learn, and it's effortless to use.
+              <em>(There's a dedicated section on this later).</em></span
             >
           </div>{/snippet}
       </ListItemWithIcon>
@@ -99,8 +101,9 @@
         {#snippet theCpt()}<div class="qcol qgap-rem">
             <strong>Industrial strength performance</strong>
             <span
-              >Even a drawing with 10,000 lines stays blisteringly fast under
-              your hand.</span
+              >Even a complex drawing with maybe 10,000 lines is still
+              lightning-fast to work with. That's very unusual in apps that work
+              in your browser.</span
             >
           </div>{/snippet}
       </ListItemWithIcon>

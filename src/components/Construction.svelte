@@ -9,10 +9,10 @@
     <div class="side-by-side qbg-alt qrow">
         <div class="side-words qcol">
             <div class="qhead">
-                Sounds powerful — but aligning the lines and arcs must be
-                tricky?
+                Sounds powerful. But how do you align the lines and
+                arcs?
             </div>
-            <span>No. It's easy and quick.</span>
+            <span>It's very easy in DrawExact, because it offers you the alignment methods shown here.</span>
         </div>
         <div class="image-wrapper-horiz">
             <img
@@ -26,10 +26,10 @@
     <div class="above-and-below qbg-alt qcol}">
         <div class="above-words qcol">
             <div class="qhead">
-                Sounds powerful — but aligning the lines and arcs must be
-                tricky?
+                Sounds powerful. But how do you align the lines and
+                arcs?
             </div>
-            <span>No. It's easy and quick.</span>
+            <span>It's very easy in DrawExact, because it offers you the alignment methods shown here.</span>
         </div>
         <div class="image-wrapper-vert">
             <img

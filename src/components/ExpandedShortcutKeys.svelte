@@ -6,16 +6,21 @@
     <div class="title qhead">Shortcut keys - a subtle superpower</div>
     <div class="paras qcol qgap-rem">
         <span
-            >DrawExact was built around an unusually simple shortcut key vision
-            right from the beginning.</span
+            >DrawExact has a unique, and <strong>very simple</strong> approach to
+            shortcut-keys.</span
         >
-        <span>Take these examples of DrawExact's command words: </span>
+        <span
+            >It doesn't use sequences like <em>CTRL-ALT-3</em> or function keys like
+            other apps.</span
+        >
+        <span
+            >Instead, consider these examples of DrawExact's command words:
+        </span>
 
         <span class="cmdwords qrow qgap-rem">
             <FirstLetterCommand first="l" remainder="ine, "
             ></FirstLetterCommand>
-            <FirstLetterCommand first="f" remainder="illet, "
-            ></FirstLetterCommand>
+            <FirstLetterCommand first="a" remainder="rc, "></FirstLetterCommand>
             <FirstLetterCommand first="d" remainder="elete, "
             ></FirstLetterCommand><FirstLetterCommand
                 first="u"
@@ -24,17 +29,19 @@
             <span class="etc"> ...etc.</span>
         </span>
 
+        <span>The shortcut for a command is just its first letter.</span>
         <span
-            >You quickly start thinking in those words, and the keyboard
-            shortcut for a command is just its first letter.</span
+            >It means you don't have to remember anything, and once you've
+            thought <strong>"line"</strong> for example, the shortcut is just there
+            in your head too.</span
         >
         <span
-            >The key presses become second nature. You find yourself visiting
-            the menu less and less often, which not only speeds you up, but more
-            importantly, they mean your eyes needn't leave their focus on the
-            drawing area. That greatly reduces context switching and maintains
-            your flow.</span
-        >
+            >Of course key shortcuts make your drawing process much faster, but there's an
+            even bigger benefit which is not at first obvious. The shortcuts mean
+            that you don't have to move your focus away from the drawing area,
+            and the greatly reduced context switching helps you stay focussed and
+            in flow.
+        </span>
     </div>
 </div>
 
