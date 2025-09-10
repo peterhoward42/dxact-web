@@ -36,11 +36,11 @@
             in your head too.</span
         >
         <span
-            >Of course key shortcuts make your drawing process much faster, but there's an
-            even bigger benefit which is not at first obvious. The shortcuts mean
-            that you don't have to move your focus away from the drawing area,
-            and the greatly reduced context switching helps you stay focussed and
-            in flow.
+            >Of course key shortcuts make your drawing process much faster, but
+            there's an even bigger benefit which is not at first obvious. The
+            shortcuts mean that you don't have to move your focus away from the
+            drawing area, and this greatly reduced context switching helps you
+            stay focussed and in flow.
         </span>
     </div>
 </div>

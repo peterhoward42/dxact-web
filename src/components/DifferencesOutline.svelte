@@ -83,9 +83,10 @@
         {#snippet theCpt()}<div class="qcol qgap-rem">
             <strong>Commands at your fingertips</strong>
             <span
-              >An extraordinarlay simple key-shortcut system. There's <strong
+              >An extraordinary simple key-shortcut system. There's <strong
                 >nothing</strong
-              > to learn, and it's effortless to use.
+              >
+              to learn, and it's effortless to use.
               <em>(There's a dedicated section on this later).</em></span
             >
           </div>{/snippet}
