@@ -58,7 +58,8 @@
                             A physical keyboard means that when you type new
                             text into your drawing, it appears letter by letter <strong
                                 >in-place</strong
-                            > as you type. That helps you decide when to break it onto a new line.
+                            > as you type. That helps you decide when to break it
+                            onto a new line.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
@@ -70,8 +71,8 @@
                             absoluteStrokeWidth={true}
                         />{/snippet}
                     {#snippet theCpt()}<span>
-                            The keyboard also lets you use the key-shortcuts which
-                            are a very easy, and a complete game changer.
+                            The keyboard also lets you use the key-shortcuts
+                            which are very easy, and a complete game changer.
                         </span>{/snippet}
                 </ListItemWithIcon>
             </li>
