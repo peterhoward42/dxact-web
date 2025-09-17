@@ -31,6 +31,14 @@ Font sizing
   --background-inputs-hover: var(--bg-btn-hov);
 
 
+  /*-----------------------------------------------------------------------
+ Standard aspect ratio demanded for images in /src/assets/images
+ */
+  .q-portrait-aspect {
+    aspect-ratio: 0.66;
+  }
+
+
 
 
   /*-----------------------------------------------------------------------

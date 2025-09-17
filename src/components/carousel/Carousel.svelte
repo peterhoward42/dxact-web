@@ -8,7 +8,7 @@
     import { responsiveImage } from "../../services/responsive.svelte.js";
     import { moduloNFrames } from "./orchestrator.js";
 
-    let { frames, aspectRatio, fill } = $props();
+    let { frames, fill } = $props();
     const nFrames = frames.labelsAndImages.length;
     let indexToShow = $state(0);
     let indexToParkLeft = $state(0);
@@ -37,9 +37,8 @@
 </script>
 
 <div
-    class="carousel qbg-alt fullHeight {fill == 'vert'} fullWidth {fill ==
-        'horiz'}"
-    style:aspect-ratio={aspectRatio}
+    class="carousel qbg-alt fullHeight {fill ==
+        'vert'} q-portrait-aspect fullWidth {fill == 'horiz'}"
 >
     {#each frames.labelsAndImages as frame, index}
         <div

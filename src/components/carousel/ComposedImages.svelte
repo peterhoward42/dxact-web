@@ -6,7 +6,6 @@
     import Carousel from "./Carousel.svelte";
     import LabelArea from "./LabelArea.svelte";
 
-    const imageAspectRatio = "0.66";
     let { carouselFrames } = $props();
 </script>
 
@@ -18,7 +17,6 @@
         <div class="specified-height">
             <Carousel
                 frames={carouselFrames}
-                aspectRatio={imageAspectRatio}
                 fill="vert"
             />
         </div>
@@ -30,7 +28,6 @@
         </div>
         <Carousel
             frames={carouselFrames}
-            aspectRatio={imageAspectRatio}
             fill="horiz"
         />
     </div>

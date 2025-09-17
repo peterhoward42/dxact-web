@@ -14,7 +14,7 @@
             </div>
             <span>It's very easy in DrawExact, because it offers you the alignment methods shown here.</span>
         </div>
-        <div class="image-wrapper-horiz">
+        <div class="image-wrapper-horiz q-portrait-aspect">
             <img
                 src={responsiveImage("language")}
                 alt=""
@@ -31,7 +31,7 @@
             </div>
             <span>It's very easy in DrawExact, because it offers you the alignment methods shown here.</span>
         </div>
-        <div class="image-wrapper-vert">
+        <div class="q-portrait-aspect">
             <img
                 src={responsiveImage("language")}
                 alt=""
@@ -49,13 +49,9 @@
         margin: auto;
     }
 
-    .image-wrapper-vert {
-        aspect-ratio: 0.66;
-    }
 
     .image-wrapper-horiz {
         height: 90vh;
-        aspect-ratio: 0.66;
         background-color: grey;
     }
 
