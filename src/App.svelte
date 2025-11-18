@@ -15,7 +15,6 @@
     import AboveFoldDesktop from "./components/AboveFoldDesktop.svelte";
     import FooterSection from "./components/FooterSection.svelte";
     import CopyAndPasteIntro from "./components/CopyAndPasteIntro.svelte";
-    import Construction from "./components/Construction.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
@@ -28,23 +27,12 @@
 {#if responsiveMeta.deviceFormFactor == "mobile" || responsiveMeta.deviceFormFactor == "tablet"}
     <div class="mobilelayout qcol">
         <AboveFoldMobile />
-        <Construction />
-        <WhatIs />
-        <GetStarted />
-        <BigScreen2 />
-        <DifferencesOutline altBackground="true" />
-        <CopyAndPasteIntro />
-        <PowerPoint2 />
-
-        <ExpandedShortcutKeys></ExpandedShortcutKeys>
-        <FooterSection />
     </div>
 {/if}
 {#if responsiveMeta.deviceFormFactor == "desktop"}
     <div class="screen">
         <div class="deskylayout qcol">
             <AboveFoldDesktop />
-            <Construction sideBySide={true} />
 
             <WhatIs />
             <RowOfPanelsForDesktop bgAlt={true}>
