@@ -1,7 +1,4 @@
 <script>
-    import ComposedImages from "./carousel/ComposedImages.svelte";
-    import { introCarouselFrames } from "./carousel/intro/frames.svelte.js";
-
     import CTA from "./CTA.svelte";
 </script>
 

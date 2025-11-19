@@ -3,18 +3,10 @@
 
     import { responsiveMeta } from "./services/responsive.svelte";
 
-    import WhatIs from "./components/WhatIs.svelte";
-    import GetStarted from "./components/GetStarted.svelte";
-    import BigScreen2 from "./components/BigScreen2.svelte";
-    import DifferencesOutline from "./components/DifferencesOutline.svelte";
-    import PowerPoint2 from "./components/PowerPoint2.svelte";
-    import ExpandedShortcutKeys from "./components/ExpandedShortcutKeys.svelte";
+
     import { setupMediaQueryObserver } from "./services/responsive.svelte";
-    import RowOfPanelsForDesktop from "./components/RowOfPanelsForDesktop.svelte";
     import AboveFoldMobile from "./components/AboveFoldMobile.svelte";
     import AboveFoldDesktop from "./components/AboveFoldDesktop.svelte";
-    import FooterSection from "./components/FooterSection.svelte";
-    import CopyAndPasteIntro from "./components/CopyAndPasteIntro.svelte";
 
     // Capture changes to the viewport size (mobile/tablet/desktop) and publish changes
     // via a rune.
