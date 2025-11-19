@@ -33,26 +33,14 @@
     <div class="screen">
         <div class="deskylayout qcol">
             <AboveFoldDesktop />
-
-            <WhatIs />
-            <RowOfPanelsForDesktop bgAlt={true}>
-                <GetStarted />
-                <BigScreen2 />
-            </RowOfPanelsForDesktop>
-            <DifferencesOutline altBackground={false} />
-            <CopyAndPasteIntro />
-
-            <PowerPoint2 />
-
-            <ExpandedShortcutKeys></ExpandedShortcutKeys>
-            <FooterSection />
         </div>
     </div>
 {/if}
 
 <style>
     .screen {
-        background-color: #ddd;
+        /* background-color: #ddd; */
+        background-color: white;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
