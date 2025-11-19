@@ -11,13 +11,16 @@
         </div>
 
         <div class="ctacombo qcol">
+            <span class="curious">Curious? ... step inside</span>
             <CTA />
             <em class="free">DrawExact is free</em>
         </div>
     </div>
 
     <div class="iframe-wrapper qcol">
-        <em class="super">This is a story about three superpowers — see how it unfolds</em>
+        <em class="super"
+            >This is a story about three superpowers — see how it unfolds</em
+        >
         <div class="iframe-padding">
             <div class="iframe-ratio-box">
                 <iframe
@@ -48,15 +51,15 @@
     }
     .ctacombo {
         align-items: center;
-        margin-top:8rem;
-        margin-bottom:3rem;
+        margin-top: 8rem;
+        margin-bottom: 3rem;
     }
 
     .head {
         font-size: 3rem;
         margin-bottom: 0.75rem;
     }
-    .made{
+    .made {
         margin-top: 1rem;
     }
     .fluent {
@@ -64,20 +67,23 @@
     }
 
     .free {
-        font-size: 0.9rem;
-        color: #888;
-        margin-top: .8rem;
+        font-size: 0.8rem;
+        margin-top: 0.8rem;
         margin-bottom: 1rem;
     }
+    .curious {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
 
-    .super{
+    .super {
         align-self: flex-start;
-        margin-top:1rem;
+        margin-top: 1rem;
     }
 
     .iframe-wrapper {
         width: 70%;
-        gap: .5rem;
+        gap: 0.5rem;
         /* max-width: 960px; */
         margin: 0 auto;
     }

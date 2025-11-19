@@ -7,8 +7,10 @@
     <span class="">Exact drawing, made fluent</span>
     <span class="fluent">A new kind of drawing environment</span>
 
-    <em class="story">This is a story about three superpowers</em>
-    <em class="unfold">See how it unfolds</em>
+    <div class="story qcol">
+        <span class="three qital">This is a story about three superpowers</span>
+        <span class="unfold qital">See how it unfolds</span>
+    </div>
     <div class="video-wrapper">
         <iframe
             width="100%"
@@ -21,9 +23,9 @@
             allowfullscreen
         ></iframe>
     </div>
-    <span class="free">DrawExact is free</span>
+    <span class="curious">Curious? ... step inside</span>
     <CTA />
-    <em class="bye">Fluent, exact drawing</em>
+    <em class="free">DrawExact is free</em>
 </div>
 
 <style>
@@ -39,23 +41,32 @@
         margin-top: 0.3rem;
     }
     .story {
-        margin-top: 1rem;
+        align-self: flex-start;
+        gap: 0.3rem;
+        margin-left: 0.5rem;
+        margin-top: 2.5rem;
+    }
+    .three {
+        font-size: 0.9rem;
     }
     .unfold {
-        margin-top: 0.5rem;
-    }
-    .free {
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.65rem;
+        /* margin-top: 0.5rem; */
     }
 
-    .bye {
-        margin-top: 1.5rem;
+    .free {
+        font-size: 0.8rem;
+        margin-top: 0.7rem;
+    }
+    .curious {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
     }
 
     .video-wrapper {
         width: 100%;
-        margin-top: 1rem;
+        margin-bottom: 3rem;
         aspect-ratio: 16 / 9;
     }
 </style>
