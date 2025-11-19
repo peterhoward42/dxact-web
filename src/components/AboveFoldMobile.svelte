@@ -4,10 +4,11 @@
 
 <div class="abovefoldmobile qcol">
     <span class="qhead qe1 head">DrawExact</span>
-    <span class="">A new kind of drawing environment</span>
-    <span class="fluent">Exact drawing, made fluent</span>
+    <span class="">Exact drawing, made fluent</span>
+    <span class="fluent">A new kind of drawing environment</span>
+
     <em class="story">This is a story about three superpowers</em>
-    <em class="unfold">See how it unfolds ...</em>
+    <em class="unfold">See how it unfolds</em>
     <div class="video-wrapper">
         <iframe
             width="100%"
@@ -20,8 +21,7 @@
             allowfullscreen
         ></iframe>
     </div>
-    <span class="free">Free to use, right in your browser</span>
-    <span class="visit">Just visit and draw</span>
+    <span class="free">DrawExact is free</span>
     <CTA />
     <em class="bye">Fluent, exact drawing</em>
 </div>
@@ -29,14 +29,14 @@
 <style>
     .abovefoldmobile {
         width: 100%;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         align-items: center;
     }
     .head {
         margin-bottom: 0.75rem;
     }
     .fluent {
-        margin-top: 0.45rem;
+        margin-top: 0.3rem;
     }
     .story {
         margin-top: 1rem;
@@ -46,12 +46,10 @@
     }
     .free {
         margin-top: 1.5rem;
-    }
-    .visit {
-        margin-top:.5rem;
         margin-bottom: 1rem;
     }
-     .bye {
+
+    .bye {
         margin-top: 1.5rem;
     }
 
