@@ -1,5 +1,3 @@
-import { selectImageForFormFactor } from "./imagerouter";
-
 // This rune emits state changes when the host viewport switches between
 // for example, a mobile and desktop media query breakpoint.
 export let responsiveMeta = $state({
@@ -32,15 +30,6 @@ export function setupMediaQueryObserver() {
     isMobile.addEventListener("change", (mql) => { handleChange(mql, "mobile") });
     isTablet.addEventListener("change", (mql) => { handleChange(mql, "tablet") });
     isDesktop.addEventListener("change", (mql) => { handleChange(mql, "desktop") });
-}
-
-
-// responsiveImage() returns one of the built in images that satisfies the given search term.
-// Specifically it chooses the one that is optimised for the current device's form factor,
-// as given by the responsiveMeta.deviceFormFactor rune.
-export function responsiveImage(imageSearchTerm) {
-    const chosenImg = selectImageForFormFactor(imageSearchTerm, responsiveMeta.deviceFormFactor)
-    return chosenImg
 }
 
 
