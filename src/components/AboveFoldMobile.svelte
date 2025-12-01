@@ -1,6 +1,8 @@
 <script>
     import { youTubeOverViewURL } from "../services/youtube";
     import CTA from "./CTA.svelte";
+    import Orientation from "./Orientation.svelte";
+    import Superpowers from "./Superpowers.svelte";
 </script>
 
 <div class="abovefoldmobile qcol">
@@ -27,6 +29,9 @@
     <span class="curious">Curious? ... step inside</span>
     <CTA />
     <em class="free">DrawExact is free</em>
+
+    <div class="orient-area"><Orientation /></div>
+    <div class="orient-area"><Superpowers /></div>
 </div>
 
 <style>
@@ -69,5 +74,10 @@
         width: 100%;
         margin-bottom: 3rem;
         aspect-ratio: 16 / 9;
+    }
+    .orient-area {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
 </style>
