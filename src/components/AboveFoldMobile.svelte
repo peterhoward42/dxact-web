@@ -1,4 +1,5 @@
 <script>
+    import { youTubeOverViewURL } from "../services/youtube";
     import CTA from "./CTA.svelte";
 </script>
 
@@ -15,7 +16,7 @@
         <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/dIoUHYvmZvY?si=0ALctXq2A-OLVHTW"
+            src={youTubeOverViewURL}
             title="Title from code"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -1,4 +1,5 @@
 <script>
+    import { youTubeOverViewURL } from "../services/youtube";
     import CTA from "./CTA.svelte";
 </script>
 
@@ -24,7 +25,7 @@
         <div class="iframe-padding">
             <div class="iframe-ratio-box">
                 <iframe
-                    src="https://www.youtube.com/embed/dIoUHYvmZvY?si=0ALctXq2A-OLVHTW"
+                    src={youTubeOverViewURL}
                     loading="lazy"
                     allowfullscreen
                     frameborder="0"
