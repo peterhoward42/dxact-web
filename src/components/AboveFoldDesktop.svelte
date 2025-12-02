@@ -1,6 +1,8 @@
 <script>
     import { youTubeOverViewURL } from "../services/youtube";
     import CTA from "./CTA.svelte";
+    import Orientation from "./Orientation.svelte";
+    import Superpowers from "./Superpowers.svelte";
 </script>
 
 <div class="abovefold-desktop qrow">
@@ -35,6 +37,11 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="bottom qrow">
+    <div class="orient-area"><Orientation /></div>
+    <div class="super-area"><Superpowers /></div>
 </div>
 
 <style>
@@ -106,5 +113,15 @@
         height: 100%;
         border: 0;
         display: block;
+    }
+    .bottom {
+        justify-content: space-around;
+        margin-bottom: 4rem;
+    }
+    .super-area {
+        width: 30rem;
+    }
+    .orient-area {
+        width: 30rem;
     }
 </style>
